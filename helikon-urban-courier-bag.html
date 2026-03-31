@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Helikon-Tex Urban Courier Bag Large — Observe/Report</title>
+  <meta name="description" content="Shadow Gray, modular interior, 16-inch laptop support, and a stabilizer strap that solves the messenger bag's oldest problem. Reviewed loaded for a real workday." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0f0f0f;
+      --bg2:        #161616;
+      --bg3:        #1e1e1e;
+      --border:     #2a2a2a;
+      --border2:    #333;
+      --text:       #e8e4dc;
+      --text2:      #a09890;
+      --text3:      #6a6560;
+      --accent:     #c8a96e;
+      --accent2:    #8b6f3e;
+      --serif:      'Libre Baskerville', Georgia, serif;
+      --sans:       'IBM Plex Sans', system-ui, sans-serif;
+      --mono:       'IBM Plex Mono', monospace;
+    }
+
+    html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 56px;
+    }
+    .nav-logo {
+      font-family: var(--mono); font-size: .85rem; font-weight: 500;
+      color: var(--text); text-decoration: none; letter-spacing: .04em;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500;
+      color: var(--text2); text-decoration: none; letter-spacing: .06em;
+      text-transform: uppercase; transition: color .15s; }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 2rem 3rem;
+      max-width: 780px; margin: 0 auto;
+    }
+    .hero-meta {
+      display: flex; align-items: center; gap: .75rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--text3);
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1.5rem;
+      flex-wrap: wrap;
+    }
+    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border2); }
+    .tag {
+      display: inline-block; font-family: var(--mono); font-size: .68rem;
+      font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+      padding: .25rem .6rem; border: 1px solid var(--border2); color: var(--text3);
+    }
+    .tag.original { border-color: var(--accent2); color: var(--accent); }
+    .hero h1 {
+      font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; line-height: 1.2; color: var(--text);
+      margin-bottom: 1rem;
+    }
+    .hero-deck {
+      font-family: var(--sans); font-size: 1.05rem; color: var(--text2);
+      line-height: 1.65; max-width: 620px; margin-bottom: 1.75rem;
+    }
+    .byline {
+      font-family: var(--mono); font-size: .75rem; color: var(--text3);
+      letter-spacing: .04em;
+    }
+    .byline strong { color: var(--text2); }
+
+    /* ── ARTICLE BODY ── */
+    .article-wrap {
+      max-width: 780px; margin: 0 auto;
+      padding: 0 2rem 6rem;
+      display: grid;
+      grid-template-columns: 1fr 220px;
+      gap: 0 4rem;
+      align-items: start;
+    }
+    .article-body { min-width: 0; padding-top: 2.5rem; }
+
+    .article-body img {
+      width: 100%; aspect-ratio: 16/9;
+      object-fit: cover; display: block;
+      margin: 0 0 2.5rem;
+    }
+
+    .article-body h2 {
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
+      color: var(--text); margin: 2.5rem 0 .75rem;
+      padding-bottom: .5rem; border-bottom: 1px solid var(--border);
+    }
+    .article-body h2:first-child { margin-top: 0; }
+
+    .article-body p {
+      font-family: var(--sans); font-size: .975rem; color: var(--text2);
+      line-height: 1.8; margin-bottom: 1.1rem;
+    }
+
+    .article-body ul {
+      margin: .5rem 0 1.1rem 1.25rem;
+    }
+    .article-body ul li {
+      font-family: var(--sans); font-size: .975rem; color: var(--text2);
+      line-height: 1.8; margin-bottom: .3rem;
+    }
+
+    /* ── PROS / CONS ── */
+    .pros-cons {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+      border: 1px solid var(--border); margin: 2.5rem 0;
+      background: var(--border);
+    }
+    .pros-cons-col { background: var(--bg2); padding: 1.25rem 1.5rem; }
+    .pros-cons-col h3 {
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .pros-cons-col.pros h3 { color: #5a9e72; }
+    .pros-cons-col.cons h3 { color: #c0392b; }
+    .pros-cons-col ul { list-style: none; margin: 0; }
+    .pros-cons-col li {
+      font-family: var(--sans); font-size: .875rem; color: var(--text2);
+      padding: .4rem 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: .6rem; align-items: baseline; line-height: 1.5;
+    }
+    .pros-cons-col li:last-child { border-bottom: none; }
+    .pros-cons-col.pros li::before { content: '+'; color: #5a9e72; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
+    .pros-cons-col.cons li::before { content: '−'; color: #c0392b; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
+
+    /* ── VERDICT BOX ── */
+    .verdict {
+      border: 1px solid var(--accent2);
+      background: var(--bg2);
+      padding: 1.5rem 1.75rem;
+      margin: 2.5rem 0 0;
+    }
+    .verdict-label {
+      font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: .75rem;
+    }
+    .verdict p {
+      font-family: var(--serif); font-size: 1rem; color: var(--text);
+      line-height: 1.75; font-style: italic; margin-bottom: 0;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
+    .sidebar-block {
+      border: 1px solid var(--border);
+      background: var(--bg2);
+      padding: 1.25rem;
+      margin-bottom: 1.25rem;
+    }
+    .sidebar-block h4 {
+      font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--text3); margin-bottom: 1rem;
+      padding-bottom: .6rem; border-bottom: 1px solid var(--border);
+    }
+    .spec-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--border);
+    }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
+    .spec-val   { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
+    .sidebar-block p {
+      font-family: var(--sans); font-size: .82rem; color: var(--text2); line-height: 1.6; margin: 0;
+    }
+    .back-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--text3);
+      text-decoration: none; letter-spacing: .05em; text-transform: uppercase;
+      transition: color .15s; margin-bottom: 1.25rem;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: '←'; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 2rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--text3);
+      letter-spacing: .04em; text-align: center; line-height: 1.8;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .article-wrap { grid-template-columns: 1fr; gap: 0; }
+      .sidebar { position: static; padding-top: 0; }
+      .pros-cons { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="./index.html">Observe/Report</a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#browse">Browse</a></li>
+      <li><a href="./index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-meta">
+      <span class="tag">Tactical</span>
+      <span class="tag">EDC Bags</span>
+      <span class="dot"></span>
+      <span class="tag original">Original Review</span>
+      <span class="dot"></span>
+      <span>2026</span>
+    </div>
+    <h1>Helikon-Tex Urban Courier Bag Large — The Covert Carry Commuter</h1>
+    <p class="hero-deck">Shadow Gray, modular interior, 16-inch laptop support, and a stabilizer strap that solves the messenger bag's oldest problem. Reviewed loaded for a real workday.</p>
+    <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
+  </header>
+
+  <!-- BODY + SIDEBAR -->
+  <div class="article-wrap">
+
+    <article class="article-body">
+
+      <img src="images/helikon-urban-courier.jpg" alt="Helikon-Tex Urban Courier Bag Large" />
+
+      <p>The Urban Courier Large keeps proving itself as more than just a commuter bag. Once loaded the way a working adult actually carries gear, it earns its place. Configured with a Grid-It panel for charging essentials, a compact boo-boo kit, and a Maxpedition pouch for never-leave-home-without-them items, the bag supports structured modular organization inside a civilian-friendly exterior.</p>
+
+      <h2>Color Choice Matters</h2>
+      <p>I opted for the Shadow Gray / Black combo specifically so it did not look overtly tacticool. Trips to the office did not garner attention visually. It blended in without drawing questions. It simply looked like a durable commuter bag.</p>
+      <p>If you want capability without broadcasting it, this is the smarter colorway.</p>
+
+      <h2>Laptop & Office Loadout</h2>
+      <p>The padded laptop compartment comfortably handles a 16-inch class machine like a Dell Pro Max 16 without feeling forced. With the laptop seated, there is still usable space for:</p>
+      <ul>
+        <li>Grid-It panel with charger brick, cables, SSD, mouse, and adapters</li>
+        <li>Boo-boo kit that stays accessible but out of the way</li>
+        <li>Maxpedition pouch for essential daily items</li>
+      </ul>
+      <p>Everything has a place. Nothing turns into a pile at the bottom of the bag.</p>
+
+      <h2>Water Bottle Storage Done Right</h2>
+      <p>The external water bottle pouches easily hold a 26oz Yeti Rambler without issue. On the opposite side, that external pouch becomes a perfect quick-dump location for keys or a phone. Close enough to grab fast, secure enough not to worry about it falling out.</p>
+      <p>Internally, the bag includes four bottle-style pockets. These help keep smaller gear organized. A sunglasses case stays upright. A GMRS radio has its own slot. Chargers or small tools remain separated instead of floating around the main compartment.</p>
+
+      <h2>Internal Loop Real Estate</h2>
+      <p>The interior loop panels allow mounting of multiple hook-backed pouches. You are not locked into fixed organization. Quick trip to the office? Keep it streamlined. Using it as a resupply bag? Add additional med pouches, sustainment gear, or specialty equipment and reconfigure the interior as needed. The large main compartment becomes flexible instead of chaotic because you control the layout.</p>
+
+      <h2>Movement & Stability</h2>
+      <p>Messenger bags often flop when moving quickly. The secondary stabilizer strap secures the bag to your hip and prevents excessive movement. If you need to move quickly across a parking lot, up stairs, or through a crowded space, the bag stays planted instead of swinging wildly. This is an area traditional messenger bags usually struggle with.</p>
+
+      <h2>Noise Consideration</h2>
+      <p>While the bag looks low profile, opening it is not subtle. The combination of hook-and-loop under the flap and the buckles creates noticeable sound when accessing the main compartment. In a quiet office environment, people will hear it. It is not a deal breaker, but it is worth noting.</p>
+
+      <h2>Daily Carry Reality</h2>
+      <p>A 16-inch laptop, full charger kit, med pouch, admin pouch, and normal office items add weight quickly. Messenger bags concentrate that weight on one shoulder. Unlike directional sling bags, this true messenger layout allows you to alternate shoulders throughout the day. If one side begins to fatigue, simply switch. Many fixed sling designs do not allow that flexibility. Combined with the stabilizer strap, this makes the bag far more sustainable for long workdays.</p>
+
+      <!-- PROS / CONS -->
+      <div class="pros-cons">
+        <div class="pros-cons-col pros">
+          <h3>Pros</h3>
+          <ul>
+            <li>Civilian-friendly Shadow Gray colorway</li>
+            <li>Fits 16-inch laptop with room to spare</li>
+            <li>Modular interior adapts to the mission</li>
+            <li>External pouches work for bottles and quick-access items</li>
+            <li>Stabilizer strap solves the messenger bag flop problem</li>
+            <li>True messenger layout allows shoulder switching</li>
+            <li>Internal loop real estate is genuinely flexible</li>
+          </ul>
+        </div>
+        <div class="pros-cons-col cons">
+          <h3>Cons</h3>
+          <ul>
+            <li>Hook-and-loop and buckles are loud in quiet environments</li>
+            <li>Full load concentrates weight on one shoulder</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- VERDICT -->
+      <div class="verdict">
+        <div class="verdict-label">Final Thoughts</div>
+        <p>Configured in Shadow Gray / Black and set up with modular pouches, internal organization, and a 16-inch laptop, this becomes more than a commuter bag. It blends visually. It organizes intelligently. It carries securely. It adapts to the mission. For daily office carry with real-world functionality, it earns its keep.</p>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <a class="back-link" href="./index.html">All Reviews</a>
+
+      <div class="sidebar-block">
+        <h4>Quick Specs</h4>
+        <div class="spec-row"><span class="spec-label">Brand</span><span class="spec-val">Helikon-Tex</span></div>
+        <div class="spec-row"><span class="spec-label">Model</span><span class="spec-val">Urban Courier Large</span></div>
+        <div class="spec-row"><span class="spec-label">Category</span><span class="spec-val">EDC / Messenger Bag</span></div>
+        <div class="spec-row"><span class="spec-label">Color</span><span class="spec-val">Shadow Gray / Black</span></div>
+        <div class="spec-row"><span class="spec-label">Laptop Size</span><span class="spec-val">Up to 16"</span></div>
+        <div class="spec-row"><span class="spec-label">Bottle Size</span><span class="spec-val">26oz Yeti Rambler</span></div>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Reviewer</h4>
+        <p>Brian J. — Independent field testing. Reviewed under real daily carry conditions. Editorial standards are mine alone.</p>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Filed Under</h4>
+        <div class="spec-row"><span class="spec-label">Section</span><span class="spec-val">Tactical / EDC Bags</span></div>
+        <div class="spec-row"><span class="spec-label">Type</span><span class="spec-val">Original Review</span></div>
+        <div class="spec-row"><span class="spec-label">Year</span><span class="spec-val">2026</span></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    © 2025 Observe/Report · Written by Brian J.<br>
+    Independent field testing — editorial standards are mine alone.
+  </footer>
+
+</body>
+</html>
