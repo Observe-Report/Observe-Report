@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WG13S11YG9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WG13S11YG9');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Helikon-Tex Level 7 Jacket — Observe/Report</title>
@@ -38,6 +29,32 @@
     }
 
     html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+
+    /* ── PROMO BANNER ── */
+    .promo-banner {
+      background: var(--accent2);
+      border-bottom: 1px solid var(--accent);
+      padding: .55rem 2rem;
+      display: flex; align-items: center; justify-content: center; gap: .75rem;
+      flex-wrap: wrap;
+    }
+    .promo-banner span {
+      font-family: var(--sans); font-size: .8rem; color: var(--text2);
+      letter-spacing: .02em;
+    }
+    .promo-code {
+      font-family: var(--mono); font-size: .82rem; font-weight: 500;
+      color: var(--accent); background: var(--bg);
+      padding: .2rem .6rem; border: 1px solid var(--accent2);
+      letter-spacing: .1em; cursor: pointer; transition: background .15s;
+      position: relative;
+    }
+    .promo-code:hover { background: var(--bg3); }
+    .promo-copied {
+      font-family: var(--mono); font-size: .7rem; color: #5a9e72;
+      letter-spacing: .06em; opacity: 0; transition: opacity .2s;
+    }
+    .promo-copied.show { opacity: 1; }
 
     /* ── NAV ── */
     nav {
@@ -211,6 +228,14 @@
 </head>
 <body>
 
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <span>Use code</span>
+    <span class="promo-code" onclick="copyCode(this)">GUNBRJA26</span>
+    <span>for 10% off at Helikon-Tex</span>
+    <span class="promo-copied" id="copied-msg">Copied!</span>
+  </div>
+
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="./index.html">Observe/Report</a>
@@ -241,9 +266,9 @@
 
     <article class="article-body">
 
-      <div class=<img src="images/helikon-level7.jpg" alt="Helikon-Tex Level 7 Jacket" style="width:100%; aspect-ratio:16/9; object-fit:cover; display:block;" /></div>
+      <div class="img-placeholder">[ add image ]</div>
 
-      <p>I was interested in the Level 7 jacket from Helikon-Tex as a true cold weather insulation layer, not as an everyday winter coat. I have used a fair amount of Helikon-Tex gear over time, and this jacket fits right in with what I have come to expect from them. It feels like another product built to a duty grade standard rather than a consumer fashion piece. Everything about it, from materials to construction, reflects that mindset.</p>
+      <p>I was interested the Level 7 jacket from Helikon-Tex as a true cold weather insulation layer, not as an everyday winter coat. I have used a fair amount of Helikon-Tex gear over time, and this jacket fits right in with what I have come to expect from them. It feels like another product built to a duty grade standard rather than a consumer fashion piece. Everything about it, from materials to construction, reflects that mindset.</p>
 
       <h2>Packability</h2>
       <p>The jacket compresses easily into its included stuff sack and takes up far less room than its loft would suggest. For something this warm, the packed size is impressive. It is practical to carry until conditions demand it, which is exactly how a Level 7 layer should be used.</p>
@@ -337,5 +362,13 @@
     Independent field testing — editorial standards are mine alone.
   </footer>
 
+  <script>
+    function copyCode(el) {
+      navigator.clipboard.writeText('GUNBRJA26');
+      const msg = document.getElementById('copied-msg');
+      msg.classList.add('show');
+      setTimeout(() => msg.classList.remove('show'), 2000);
+    }
+  </script>
 </body>
 </html>

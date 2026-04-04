@@ -1,15 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-WG13S11YG9"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-WG13S11YG9');
-</script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Helikon-Tex Urban Courier Bag Large — Observe/Report</title>
@@ -37,6 +28,31 @@
     }
 
     html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+
+    /* ── PROMO BANNER ── */
+    .promo-banner {
+      background: var(--accent2);
+      border-bottom: 1px solid var(--accent);
+      padding: .55rem 2rem;
+      display: flex; align-items: center; justify-content: center; gap: .75rem;
+      flex-wrap: wrap;
+    }
+    .promo-banner span {
+      font-family: var(--sans); font-size: .8rem; color: var(--text2);
+      letter-spacing: .02em;
+    }
+    .promo-code {
+      font-family: var(--mono); font-size: .82rem; font-weight: 500;
+      color: var(--accent); background: var(--bg);
+      padding: .2rem .6rem; border: 1px solid var(--accent2);
+      letter-spacing: .1em; cursor: pointer; transition: background .15s;
+    }
+    .promo-code:hover { background: var(--bg3); }
+    .promo-copied {
+      font-family: var(--mono); font-size: .7rem; color: #5a9e72;
+      letter-spacing: .06em; opacity: 0; transition: opacity .2s;
+    }
+    .promo-copied.show { opacity: 1; }
 
     /* ── NAV ── */
     nav {
@@ -215,6 +231,14 @@
 </head>
 <body>
 
+  <!-- PROMO BANNER -->
+  <div class="promo-banner">
+    <span>Use code</span>
+    <span class="promo-code" onclick="copyCode(this)">GUNBRJA26</span>
+    <span>for 10% off at Helikon-Tex</span>
+    <span class="promo-copied" id="copied-msg">Copied!</span>
+  </div>
+
   <!-- NAV -->
   <nav>
     <a class="nav-logo" href="./index.html">Observe/Report</a>
@@ -343,5 +367,13 @@
     Independent field testing — editorial standards are mine alone.
   </footer>
 
+  <script>
+    function copyCode(el) {
+      navigator.clipboard.writeText('GUNBRJA26');
+      const msg = document.getElementById('copied-msg');
+      msg.classList.add('show');
+      setTimeout(() => msg.classList.remove('show'), 2000);
+    }
+  </script>
 </body>
 </html>
