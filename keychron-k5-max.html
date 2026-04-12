@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Keychron K5 Max Review — Observe/Report</title>
+  <meta name="description" content="The keyboard I didn't expect to stick with. A full-size low-profile that earns its place on the desk." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0f0f0f;
+      --bg2:        #161616;
+      --bg3:        #1e1e1e;
+      --border:     #2a2a2a;
+      --border2:    #333;
+      --text:       #e8e4dc;
+      --text2:      #a09890;
+      --text3:      #6a6560;
+      --accent:     #c8a96e;
+      --accent2:    #8b6f3e;
+      --serif:      'Libre Baskerville', Georgia, serif;
+      --sans:       'IBM Plex Sans', system-ui, sans-serif;
+      --mono:       'IBM Plex Mono', monospace;
+    }
+
+    html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 56px;
+    }
+    .nav-logo {
+      font-family: var(--mono); font-size: .85rem; font-weight: 500;
+      color: var(--text); text-decoration: none; letter-spacing: .04em;
+    }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500;
+      color: var(--text2); text-decoration: none; letter-spacing: .06em;
+      text-transform: uppercase; transition: color .15s; }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero {
+      border-bottom: 1px solid var(--border);
+      padding: 4rem 2rem 3rem;
+      max-width: 780px; margin: 0 auto;
+    }
+    .hero-meta {
+      display: flex; align-items: center; gap: .75rem; flex-wrap: wrap;
+      font-family: var(--mono); font-size: .72rem; color: var(--text3);
+      letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border2); }
+    .tag {
+      display: inline-block; font-family: var(--mono); font-size: .68rem;
+      font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+      padding: .25rem .6rem; border: 1px solid var(--border2); color: var(--text3);
+    }
+    .tag.original { border-color: var(--accent2); color: var(--accent); }
+    .hero h1 {
+      font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem);
+      font-weight: 700; line-height: 1.2; color: var(--text); margin-bottom: 1rem;
+    }
+    .hero-deck {
+      font-family: var(--sans); font-size: 1.05rem; color: var(--text2);
+      line-height: 1.65; max-width: 620px; margin-bottom: 1.75rem;
+    }
+    .byline { font-family: var(--mono); font-size: .75rem; color: var(--text3); letter-spacing: .04em; }
+    .byline strong { color: var(--text2); }
+
+    /* ── SPECS TABLE ── */
+    .specs-block {
+      border: 1px solid var(--border); background: var(--bg2);
+      padding: 1.25rem 1.5rem; margin: 0 auto 0;
+      max-width: 780px;
+    }
+    .specs-block h4 {
+      font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--text3);
+      margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border);
+    }
+    .specs-grid {
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .1rem 2rem;
+    }
+    .spec-row {
+      display: flex; justify-content: space-between; align-items: baseline;
+      gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--border);
+    }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
+    .spec-val   { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
+
+    /* ── ARTICLE BODY ── */
+    .article-wrap {
+      max-width: 780px; margin: 0 auto;
+      padding: 0 2rem 6rem;
+      display: grid; grid-template-columns: 1fr 220px;
+      gap: 0 4rem; align-items: start;
+    }
+    .article-body { min-width: 0; padding-top: 2.5rem; }
+
+    .article-body img {
+      width: 100%; object-fit: cover; display: block;
+      margin: 2rem 0; border: 1px solid var(--border);
+    }
+    .img-caption {
+      font-family: var(--mono); font-size: .68rem; color: var(--text3);
+      letter-spacing: .05em; text-transform: uppercase;
+      margin: -.75rem 0 2rem; padding: .5rem .75rem;
+      border: 1px solid var(--border); border-top: none;
+      background: var(--bg2);
+    }
+
+    .article-body h2 {
+      font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
+      color: var(--text); margin: 2.5rem 0 .75rem;
+      padding-bottom: .5rem; border-bottom: 1px solid var(--border);
+    }
+    .article-body h2:first-child { margin-top: 0; }
+    .article-body p {
+      font-family: var(--sans); font-size: .975rem; color: var(--text2);
+      line-height: 1.8; margin-bottom: 1.1rem;
+    }
+    .article-body ul { margin: .5rem 0 1.1rem 1.25rem; }
+    .article-body ul li {
+      font-family: var(--sans); font-size: .975rem; color: var(--text2);
+      line-height: 1.8; margin-bottom: .3rem;
+    }
+
+    /* ── PROS / CONS ── */
+    .pros-cons {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+      border: 1px solid var(--border); margin: 2.5rem 0;
+      background: var(--border);
+    }
+    .pros-cons-col { background: var(--bg2); padding: 1.25rem 1.5rem; }
+    .pros-cons-col h3 {
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
+      text-transform: uppercase; margin-bottom: 1rem;
+    }
+    .pros-cons-col.pros h3 { color: #5a9e72; }
+    .pros-cons-col.cons h3 { color: #c0392b; }
+    .pros-cons-col ul { list-style: none; margin: 0; }
+    .pros-cons-col li {
+      font-family: var(--sans); font-size: .875rem; color: var(--text2);
+      padding: .4rem 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: .6rem; align-items: baseline; line-height: 1.5;
+    }
+    .pros-cons-col li:last-child { border-bottom: none; }
+    .pros-cons-col.pros li::before { content: '+'; color: #5a9e72; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
+    .pros-cons-col.cons li::before { content: '−'; color: #c0392b; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
+
+    /* ── WHO IT'S FOR ── */
+    .for-block {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+      border: 1px solid var(--border); margin: 2.5rem 0;
+      background: var(--border);
+    }
+    .for-col { background: var(--bg2); padding: 1.25rem 1.5rem; }
+    .for-col h3 {
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
+      text-transform: uppercase; margin-bottom: 1rem; color: var(--text3);
+    }
+    .for-col ul { list-style: none; margin: 0; }
+    .for-col li {
+      font-family: var(--sans); font-size: .875rem; color: var(--text2);
+      padding: .4rem 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: .6rem; align-items: baseline; line-height: 1.5;
+    }
+    .for-col li:last-child { border-bottom: none; }
+    .for-col.for li::before { content: '✓'; color: #5a9e72; font-family: var(--mono); font-size: .75rem; flex-shrink: 0; }
+    .for-col.not li::before { content: '✗'; color: #c0392b; font-family: var(--mono); font-size: .75rem; flex-shrink: 0; }
+
+    /* ── VERDICT BOX ── */
+    .verdict {
+      border: 1px solid var(--accent2); background: var(--bg2);
+      padding: 1.5rem 1.75rem; margin: 2.5rem 0 0;
+    }
+    .verdict-label {
+      font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+      text-transform: uppercase; color: var(--accent); margin-bottom: .75rem;
+    }
+    .verdict p {
+      font-family: var(--serif); font-size: 1rem; color: var(--text);
+      line-height: 1.75; font-style: italic; margin-bottom: 0;
+    }
+
+    /* ── SIDEBAR ── */
+    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
+    .sidebar-block {
+      border: 1px solid var(--border); background: var(--bg2);
+      padding: 1.25rem; margin-bottom: 1.25rem;
+    }
+    .sidebar-block h4 {
+      font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+      text-transform: uppercase; color: var(--text3); margin-bottom: 1rem;
+      padding-bottom: .6rem; border-bottom: 1px solid var(--border);
+    }
+    .sidebar-block p { font-family: var(--sans); font-size: .82rem; color: var(--text2); line-height: 1.6; margin: 0; }
+    .back-link {
+      display: inline-flex; align-items: center; gap: .5rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--text3);
+      text-decoration: none; letter-spacing: .05em; text-transform: uppercase;
+      transition: color .15s; margin-bottom: 1.25rem;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: '←'; }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border); padding: 2rem;
+      font-family: var(--mono); font-size: .72rem; color: var(--text3);
+      letter-spacing: .04em; text-align: center; line-height: 1.8;
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 700px) {
+      .article-wrap { grid-template-columns: 1fr; gap: 0; }
+      .sidebar { position: static; padding-top: 0; }
+      .pros-cons, .for-block { grid-template-columns: 1fr; }
+      .specs-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="./index.html">Observe/Report</a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#browse">Browse</a></li>
+      <li><a href="./index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-meta">
+      <span class="tag">Tech</span>
+      <span class="tag">Desk</span>
+      <span class="dot"></span>
+      <span class="tag original">Original Review</span>
+      <span class="dot"></span>
+      <span>2026</span>
+    </div>
+    <h1>Keychron K5 Max Review: The Keyboard I Didn't Expect to Stick With</h1>
+    <p class="hero-deck">A full-size low-profile that earns its place. Tested daily for work, writing, and everything in between.</p>
+    <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
+  </header>
+
+  <!-- QUICK SPECS -->
+  <div class="specs-block" style="max-width:780px;margin:0 auto;padding-left:2rem;padding-right:2rem;">
+    <h4>Quick Specs — Tested Configuration</h4>
+    <div class="specs-grid">
+      <div class="spec-row"><span class="spec-label">Layout</span><span class="spec-val">Full-size (100%)</span></div>
+      <div class="spec-row"><span class="spec-label">Switches</span><span class="spec-val">Gateron LP Brown</span></div>
+      <div class="spec-row"><span class="spec-label">Connectivity</span><span class="spec-val">2.4GHz / BT / USB-C</span></div>
+      <div class="spec-row"><span class="spec-label">Polling Rate</span><span class="spec-val">Up to 1000Hz</span></div>
+      <div class="spec-row"><span class="spec-label">Keycaps</span><span class="spec-val">Low-profile PBT</span></div>
+      <div class="spec-row"><span class="spec-label">Customization</span><span class="spec-val">QMK / VIA</span></div>
+      <div class="spec-row"><span class="spec-label">Compatibility</span><span class="spec-val">Mac & Windows</span></div>
+      <div class="spec-row"><span class="spec-label">Backlighting</span><span class="spec-val">White / RGB</span></div>
+    </div>
+  </div>
+
+  <!-- BODY + SIDEBAR -->
+  <div class="article-wrap">
+
+    <article class="article-body">
+
+      <img src="images/keychron-k5-max-side.jpg" alt="Keychron K5 Max side profile showing low-profile design" style="aspect-ratio:16/9;" />
+
+      <h2>First Impressions</h2>
+      <p>I'll be honest — I didn't expect the Keychron K5 Max to earn a permanent spot on my desk. I've used enough keyboards at this point to know what I like, and low-profile boards usually don't make the cut. But this one surprised me right out of the box.</p>
+      <p>The first thing I noticed was just how slim it is. Not "mechanical keyboard slim," but actually slim. It almost feels like a laptop keyboard at first glance, but once I started typing, it was clear this wasn't just another flat board pretending to be something more.</p>
+
+      <h2>Build & Design</h2>
+      <p>Keychron kept things simple here, and I think that's the right call. I've got the full-size layout, which means I'm getting a numpad without sacrificing desk usability. That's usually where things go wrong, but the low-profile design keeps it from feeling oversized.</p>
+      <p>It's got a mix of aluminum and plastic, and while it's not a tank like some of the heavier boards out there, I don't feel like I'm missing anything. It feels solid where it needs to.</p>
+      <p>What I appreciate most is that it doesn't scream for attention. It fits just as well in a work setup as it does in a more dialed-in desk build.</p>
+
+      <img src="images/keychron-k5-max-overhead.jpg" alt="Keychron K5 Max overhead view with EDC gear" style="aspect-ratio:16/9;" />
+      <div class="img-caption">Daily carry context — the K5 Max fits the same ethos as the rest of the setup</div>
+
+      <h2>Why I Switched From the Keychron K4v2</h2>
+      <p>Before this, I was running the Keychron K4v2, and on paper, it checks a lot of the same boxes. 96% layout, compact footprint, still gives you a numpad. It's a solid board. No real complaints.</p>
+      <p>But over time, I started noticing something small that turned into a consistent annoyance — that tighter layout. With the K4v2, everything is just a little more compressed, and for me that meant every once in a while I'd overshoot with my right hand and hit the wrong key, especially when I was moving fast. Not a dealbreaker, but enough to break rhythm.</p>
+      <p>Switching to the full-size layout on the K5 Max gave me just a bit more breathing room on that right side, and that's made a bigger difference than I expected. I'm making fewer mistakes, correcting less, and everything just feels more natural when I'm in the flow. It's one of those things you don't notice until it's gone.</p>
+      <p>Also, I've got a buddy at work who loves to give me a hard time for "needing" a full-size keyboard. But honestly, I'm just optimizing my hardware so I can keep up with his efficiency. That's my story and I'm sticking to it.</p>
+
+      <h2>Typing Experience</h2>
+      <p>This is where the K5 Max really won me over. I went with the Gateron Brown switches, and the best way I can describe it is simple: it's creamy. Not overly loud, not scratchy, just smooth and controlled. It's got enough tactile feedback to feel intentional without getting in the way when I'm moving fast.</p>
+      <p>And compared to my K4v2 with Gateron Reds, this is a noticeable shift. The Reds felt good, but they were louder than I realized at the time — loud enough that when my wife and I were sharing a small office, my typing was getting picked up on her work calls. That's one of those real-world things nobody talks about until it's a problem.</p>
+      <p>Both boards are great to type on, no question. But if you're in a shared space, switch choice matters more than you think. Now that my office has moved, it's less of an issue — but even with that change, I still prefer the feel of the K5 Max. It's just… better. Like butta.</p>
+
+      <img src="images/keychron-k5-max-desk.jpg" alt="Keychron K5 Max in full desk setup with monitors" style="aspect-ratio:16/9;" />
+      <div class="img-caption">In context — the K5 Max on the daily driver desk alongside dual monitors</div>
+
+      <h2>Connectivity & Daily Use</h2>
+      <p>This is where the K5 Max really pulls ahead. I've been bouncing between devices pretty regularly, and having 2.4GHz wireless, Bluetooth for multiple devices, and wired USB-C makes a bigger difference than I expected.</p>
+      <p>The 2.4GHz connection is fast enough that I don't think about it. No lag, no hiccups, no frustration. It just works, and that's exactly what I want from something I use every day.</p>
+
+      <h2>Customization</h2>
+      <p>I didn't think I needed customization… until I had it. With QMK and VIA support, I've been able to tweak this board to fit how I actually work instead of adapting to a stock layout. Small changes, macros, remaps — it all adds up. If you're someone who likes dialing things in, this is where the K5 Max really starts to separate itself.</p>
+
+      <h2>Battery Life</h2>
+      <p>No complaints here. I'm not running full RGB all the time, so I'm getting solid use out of it without constantly thinking about charging. And when I do need to plug in, USB-C keeps it simple. It's not something I've had to manage, which is exactly how it should be.</p>
+
+      <!-- WHO IT'S FOR -->
+      <div class="for-block">
+        <div class="for-col for">
+          <h3>Who It's For</h3>
+          <ul>
+            <li>Want full-size without desk takeover</li>
+            <li>Long writing or work sessions</li>
+            <li>Multi-device flexibility</li>
+            <li>Shared office or noise-conscious environments</li>
+            <li>Enough customization to make it yours</li>
+          </ul>
+        </div>
+        <div class="for-col not">
+          <h3>Who It's Not For</h3>
+          <ul>
+            <li>Chasing deep thock-heavy sound profile</li>
+            <li>Want a heavy, all-metal board</li>
+            <li>Deep into fully custom builds</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- PROS / CONS -->
+      <div class="pros-cons">
+        <div class="pros-cons-col pros">
+          <h3>Pros</h3>
+          <ul>
+            <li>Genuinely slim without feeling cheap</li>
+            <li>Gateron Browns are smooth and quiet enough for shared spaces</li>
+            <li>Full-size layout eliminates right-hand miskeys</li>
+            <li>2.4GHz wireless is lag-free</li>
+            <li>Multi-device Bluetooth switching works well</li>
+            <li>QMK / VIA support for real customization</li>
+            <li>Fits work and desk build aesthetics equally</li>
+          </ul>
+        </div>
+        <div class="pros-cons-col cons">
+          <h3>Cons</h3>
+          <ul>
+            <li>Not for thock seekers or heavy board enthusiasts</li>
+            <li>Full-size footprint isn't for everyone</li>
+            <li>Customizers may want something more tailored</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- VERDICT -->
+      <div class="verdict">
+        <div class="verdict-label">Final Thoughts</div>
+        <p>I didn't expect this to stick, but it has. The Keychron K5 Max isn't trying to be the flashiest keyboard out there. It's trying to be something you can actually use every day without thinking about it. And for me, that's exactly why it's stayed on my desk. It's efficient, comfortable, and just works. At the end of the day… it's like butta.</p>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <a class="back-link" href="./index.html">All Reviews</a>
+
+      <div class="sidebar-block">
+        <h4>Quick Specs</h4>
+        <div class="spec-row"><span class="spec-label">Brand</span><span class="spec-val">Keychron</span></div>
+        <div class="spec-row"><span class="spec-label">Model</span><span class="spec-val">K5 Max</span></div>
+        <div class="spec-row"><span class="spec-label">Layout</span><span class="spec-val">Full-size (100%)</span></div>
+        <div class="spec-row"><span class="spec-label">Switches</span><span class="spec-val">Gateron LP Brown</span></div>
+        <div class="spec-row"><span class="spec-label">Wireless</span><span class="spec-val">2.4GHz + BT</span></div>
+        <div class="spec-row"><span class="spec-label">Wired</span><span class="spec-val">USB-C</span></div>
+        <div class="spec-row"><span class="spec-label">Polling</span><span class="spec-val">Up to 1000Hz</span></div>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>vs. K4v2</h4>
+        <p>Switched from the Keychron K4v2 (96%, Gateron Red). The full-size layout eliminated consistent right-hand miskeys. Browns are quieter than Reds in shared office use.</p>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Filed Under</h4>
+        <div class="spec-row"><span class="spec-label">Section</span><span class="spec-val">Tech / Desk</span></div>
+        <div class="spec-row"><span class="spec-label">Type</span><span class="spec-val">Original Review</span></div>
+        <div class="spec-row"><span class="spec-label">Year</span><span class="spec-val">2026</span></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    © 2026 Observe/Report · Written by Brian J.<br>
+    Independent field testing — editorial standards are mine alone.
+  </footer>
+
+</body>
+</html>
