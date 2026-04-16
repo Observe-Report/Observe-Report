@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Streamlight TLR-1 HL vs HLX vs TLR-7 HLX — Observe/Report</title>
+  <meta name="description" content="Stop overthinking your weapon light. A real-world comparison of three Streamlight TLRs from a responsible concealed carrier." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:         #0f0f0f;
+      --bg2:        #161616;
+      --bg3:        #1e1e1e;
+      --border:     #2a2a2a;
+      --border2:    #333;
+      --text:       #e8e4dc;
+      --text2:      #a09890;
+      --text3:      #6a6560;
+      --accent:     #c8a96e;
+      --accent2:    #8b6f3e;
+      --serif:      'Libre Baskerville', Georgia, serif;
+      --sans:       'IBM Plex Sans', system-ui, sans-serif;
+      --mono:       'IBM Plex Mono', monospace;
+    }
+
+    html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+
+    /* ── NAV ── */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg); border-bottom: 1px solid var(--border);
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 0 2rem; height: 56px;
+    }
+    .nav-logo { font-family: var(--mono); font-size: .85rem; font-weight: 500; color: var(--text); text-decoration: none; letter-spacing: .04em; }
+    .nav-links { display: flex; gap: 2rem; list-style: none; }
+    .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500; color: var(--text2); text-decoration: none; letter-spacing: .06em; text-transform: uppercase; transition: color .15s; }
+    .nav-links a:hover { color: var(--text); }
+
+    /* ── HERO ── */
+    .hero { border-bottom: 1px solid var(--border); padding: 4rem 2rem 3rem; max-width: 780px; margin: 0 auto; }
+    .hero-meta { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; font-family: var(--mono); font-size: .72rem; color: var(--text3); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border2); }
+    .tag { display: inline-block; font-family: var(--mono); font-size: .68rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; padding: .25rem .6rem; border: 1px solid var(--border2); color: var(--text3); }
+    .tag.original { border-color: var(--accent2); color: var(--accent); }
+    .hero h1 { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; color: var(--text); margin-bottom: 1rem; }
+    .hero-deck { font-family: var(--sans); font-size: 1.05rem; color: var(--text2); line-height: 1.65; max-width: 620px; margin-bottom: 1.75rem; }
+    .byline { font-family: var(--mono); font-size: .75rem; color: var(--text3); letter-spacing: .04em; }
+    .byline strong { color: var(--text2); }
+
+    /* ── ARTICLE ── */
+    .article-wrap { max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem; display: grid; grid-template-columns: 1fr 220px; gap: 0 4rem; align-items: start; }
+    .article-body { min-width: 0; padding-top: 2.5rem; }
+
+    .article-body img { width: 100%; object-fit: cover; display: block; margin: 2rem 0; border: 1px solid var(--border); }
+    .img-caption { font-family: var(--mono); font-size: .68rem; color: var(--text3); letter-spacing: .05em; text-transform: uppercase; margin: -.75rem 0 2rem; padding: .5rem .75rem; border: 1px solid var(--border); border-top: none; background: var(--bg2); }
+
+    .article-body h2 { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: var(--text); margin: 2.5rem 0 .75rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
+    .article-body h3 { font-family: var(--mono); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 1.75rem 0 .6rem; }
+    .article-body p { font-family: var(--sans); font-size: .975rem; color: var(--text2); line-height: 1.8; margin-bottom: 1.1rem; }
+    .article-body ul { margin: .5rem 0 1.1rem 1.25rem; }
+    .article-body ul li { font-family: var(--sans); font-size: .975rem; color: var(--text2); line-height: 1.8; margin-bottom: .3rem; }
+
+    /* ── COMPARISON TABLE ── */
+    .compare-table { width: 100%; border-collapse: collapse; margin: 2rem 0; font-family: var(--sans); font-size: .85rem; }
+    .compare-table th { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text3); padding: .75rem 1rem; border-bottom: 2px solid var(--border2); text-align: left; background: var(--bg2); }
+    .compare-table td { padding: .65rem 1rem; border-bottom: 1px solid var(--border); color: var(--text2); vertical-align: top; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-table td:first-child { font-family: var(--mono); font-size: .75rem; color: var(--text3); white-space: nowrap; }
+    .compare-table .winner { color: var(--accent); font-weight: 500; }
+
+    /* ── USE CASE BLOCKS ── */
+    .use-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1px; border: 1px solid var(--border); background: var(--border); margin: 2rem 0; }
+    .use-col { background: var(--bg2); padding: 1.25rem; }
+    .use-col h4 { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
+    .use-col ul { list-style: none; margin: 0; }
+    .use-col li { font-family: var(--sans); font-size: .82rem; color: var(--text2); padding: .3rem 0; border-bottom: 1px solid var(--border); line-height: 1.5; }
+    .use-col li:last-child { border-bottom: none; }
+
+    /* ── VERDICT ── */
+    .verdict { border: 1px solid var(--accent2); background: var(--bg2); padding: 1.5rem 1.75rem; margin: 2.5rem 0 0; }
+    .verdict-label { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; }
+    .verdict p { font-family: var(--serif); font-size: 1rem; color: var(--text); line-height: 1.75; font-style: italic; margin-bottom: 0; }
+
+    /* ── SIDEBAR ── */
+    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
+    .sidebar-block { border: 1px solid var(--border); background: var(--bg2); padding: 1.25rem; margin-bottom: 1.25rem; }
+    .sidebar-block h4 { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text3); margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border); }
+    .spec-row { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--border); }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
+    .spec-val { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
+    .sidebar-block p { font-family: var(--sans); font-size: .82rem; color: var(--text2); line-height: 1.6; margin: 0; }
+    .back-link { display: inline-flex; align-items: center; gap: .5rem; font-family: var(--mono); font-size: .72rem; color: var(--text3); text-decoration: none; letter-spacing: .05em; text-transform: uppercase; transition: color .15s; margin-bottom: 1.25rem; }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: '←'; }
+
+    /* ── FOOTER ── */
+    footer { border-top: 1px solid var(--border); padding: 2rem; font-family: var(--mono); font-size: .72rem; color: var(--text3); letter-spacing: .04em; text-align: center; line-height: 1.8; }
+
+    @media (max-width: 700px) {
+      .article-wrap { grid-template-columns: 1fr; gap: 0; }
+      .sidebar { position: static; padding-top: 0; }
+      .use-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <a class="nav-logo" href="./index.html">Observe/Report</a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#browse">Browse</a></li>
+      <li><a href="./index.html#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero-meta">
+      <span class="tag">Firearms</span>
+      <span class="tag">EDC</span>
+      <span class="dot"></span>
+      <span class="tag original">Original Review</span>
+      <span class="dot"></span>
+      <span>2026</span>
+    </div>
+    <h1>Streamlight TLR-1 HL vs HLX vs TLR-7 HLX: Stop Overthinking Your Weapon Light</h1>
+    <p class="hero-deck">Three lights from Streamlight that actually matter — reviewed from the perspective of a responsible concealed carrier who wants to identify a threat, not win a spec sheet argument.</p>
+    <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
+  </header>
+
+  <!-- BODY + SIDEBAR -->
+  <div class="article-wrap">
+
+    <article class="article-body">
+
+      <img src="images/tlr-comparison-hero.jpg" alt="Streamlight TLR-1 HLX, TLR-7 HLX, and TLR-1 HL side by side on gray background" style="aspect-ratio:16/9;" />
+      <div class="img-caption">Left to right: TLR-1 HLX, TLR-7 HLX, TLR-1 HL</div>
+
+      <p>Weapon lights are one of those things people love to overcomplicate. Forums, Reddit, YouTube — everybody arguing lumens, candela, beam patterns like they're running night ops every weekend.</p>
+      <p>Most of us aren't.</p>
+      <p>So let's talk about three lights from Streamlight that actually matter: the TLR-1 HL, the one most of us already own; the TLR-1 HLX, the upgraded version that fixes what needed fixing; and the TLR-7 HLX, the one that actually makes sense for carry.</p>
+      <p>This is not a SWAT review. This is real life — a review from a responsible concealed carrier who wants to accurately and quickly identify and assess a threat in less than perfect lighting.</p>
+
+      <!-- COMPARISON TABLE -->
+      <table class="compare-table">
+        <thead>
+          <tr>
+            <th></th>
+            <th>TLR-1 HL</th>
+            <th>TLR-1 HLX</th>
+            <th>TLR-7 HLX</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Form Factor</td><td>Full-size</td><td>Full-size</td><td>Compact</td></tr>
+          <tr><td>Best For</td><td>Home defense / range</td><td>Home defense / duty</td><td>Concealed carry</td></tr>
+          <tr><td>Candela</td><td>Lower</td><td class="winner">Higher</td><td>Improved</td></tr>
+          <tr><td>Beam</td><td>Wider</td><td class="winner">Tighter hotspot</td><td>Focused</td></tr>
+          <tr><td>Holster Support</td><td class="winner">Wide</td><td>Wide</td><td>Wide</td></tr>
+          <tr><td>Carry Comfort</td><td>Bulky</td><td>Bulky</td><td class="winner">Best</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The One You Already Have: TLR-1 HL</h2>
+      <p>Let's be honest. The TLR-1 HL has been doing the job for years. It's bright. It's reliable. It's been mounted on everything from nightstand guns to range toys to duty setups. And for most people, it's still enough.</p>
+
+      <h3>What It Does Well</h3>
+      <ul>
+        <li>It just works</li>
+        <li>Durable and proven</li>
+        <li>Wide holster support</li>
+        <li>Plenty of light for realistic situations</li>
+      </ul>
+
+      <h3>Where It Falls Behind</h3>
+      <ul>
+        <li>Candela is lower than newer options</li>
+        <li>Beam can get washed out in busy lighting</li>
+        <li>A little chunky by today's standards</li>
+      </ul>
+      <p>Translation: you're not under-equipped. But you're also not running the best thing available anymore.</p>
+
+      <h2>The Upgrade That Actually Matters: TLR-1 HLX</h2>
+      <p>The HLX is not a gimmick upgrade. It fixes a real problem. More candela. Tighter beam. More usable light. And that matters way more than people think.</p>
+
+      <h3>Let's Talk About the Thing Nobody Explains Well</h3>
+      <p>Everyone throws around lumens. Cool — that tells you how much light you have. Candela is what actually lets you use that light. Because real life doesn't happen in a dark, empty room.</p>
+      <p>You've got lights on inside a house, TV glare, streetlights through windows, reflections bouncing back at you. Picture this: you're standing at the end of a hallway looking into a lit room. There's overhead lighting in the hall and an open, lit window perpendicular to the person in the room. Those are two photonic barriers your light has to punch through to illuminate that person's hands — so you can tell if it's a phone or a weapon.</p>
+      <p>The HLX cuts through that. You get a defined hotspot, you can see what's in someone's hands, and you're not fighting your own light. That's the difference between "yeah it's bright" and actually being useful.</p>
+
+      <h2>The One You'll Actually Carry: TLR-7 HLX</h2>
+      <p>Most people aren't strapping a full-size light to a concealed carry gun and living comfortably. That's where the TLR-7 HLX comes in. Smaller. Lighter. Way more practical. And finally powerful enough to not feel like a compromise.</p>
+
+      <img src="images/tlr-glock19-mounted.jpg" alt="Streamlight TLR-7 HLX mounted on Glock 19 Gen 5" style="aspect-ratio:16/9;" />
+      <div class="img-caption">TLR-7 HLX mounted on a Glock 19 Gen 5 — the carry setup that actually makes sense</div>
+
+      <h3>What It Does Right</h3>
+      <ul>
+        <li>Fits compact and carry guns better</li>
+        <li>Comfortable for daily carry</li>
+        <li>Noticeably improved output over older TLR-7 models</li>
+      </ul>
+
+      <h3>What You Give Up</h3>
+      <ul>
+        <li>Some throw</li>
+        <li>Some performance at distance</li>
+      </ul>
+      <p>But ask yourself: if something happens, how far away is it really happening? This light is built for that distance.</p>
+
+      <h2>Size Matters More Than Specs</h2>
+      <p>Here's where most people get it wrong — they chase numbers instead of being honest about how they actually use their gear.</p>
+
+      <div class="use-grid">
+        <div class="use-col">
+          <h4>TLR-1 HL</h4>
+          <ul>
+            <li>Home defense</li>
+            <li>Range use</li>
+            <li>Open carry / duty</li>
+            <li>Not ideal for concealment</li>
+            <li>Not ideal for daily wear</li>
+          </ul>
+        </div>
+        <div class="use-col">
+          <h4>TLR-1 HLX</h4>
+          <ul>
+            <li>Home defense</li>
+            <li>Duty setups</li>
+            <li>Messy lighting situations</li>
+            <li>Not ideal for concealment</li>
+            <li>Not ideal for daily wear</li>
+          </ul>
+        </div>
+        <div class="use-col">
+          <h4>TLR-7 HLX</h4>
+          <ul>
+            <li>Concealed carry</li>
+            <li>Smaller / compact guns</li>
+            <li>Actually keeping it on you</li>
+            <li>Not ideal for long distance</li>
+            <li>Not ideal for outdoor throw</li>
+          </ul>
+        </div>
+      </div>
+
+      <h2>Holsters: It's Not That Deep</h2>
+      <p>People love to make this sound complicated. Reality: the TLR-1 HL and HLX are close enough that most holsters will work for both. Same story with the TLR-7A and TLR-7 HLX. Retention is usually solid. Fit might not be perfect, but it works. Just don't be lazy — test your setup before you trust it.</p>
+
+      <h2>So What Should You Actually Buy?</h2>
+
+      <h3>You Already Have a TLR-1 HL</h3>
+      <p>Keep it. Train with it. Upgrade to the HLX if you want better performance in messy lighting — that's a real, noticeable improvement.</p>
+
+      <h3>You're Setting Up a Full-Size Gun</h3>
+      <p>Get the HLX and be done with it.</p>
+
+      <h3>You're Carrying Every Day</h3>
+      <p>Get the TLR-7 HLX. Not because it's trendy — because you'll actually keep it on the gun.</p>
+
+      <!-- VERDICT -->
+      <div class="verdict">
+        <div class="verdict-label">Final Thoughts</div>
+        <p>Most people don't need the brightest light on the market. They need enough output to identify a threat, enough candela to see clearly under stress, and a setup they'll actually carry consistently. The TLR-1 HL proved itself. The HLX makes it better where it counts. The TLR-7 HLX finally makes compact lights make sense. If your light comes on, it's because something already went wrong. At that point, you don't care about specs. You care about what you can actually see.</p>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <a class="back-link" href="./index.html">All Reviews</a>
+
+      <div class="sidebar-block">
+        <h4>Lights Tested</h4>
+        <div class="spec-row"><span class="spec-label">TLR-1 HL</span><span class="spec-val">Full-size</span></div>
+        <div class="spec-row"><span class="spec-label">TLR-1 HLX</span><span class="spec-val">Full-size</span></div>
+        <div class="spec-row"><span class="spec-label">TLR-7 HLX</span><span class="spec-val">Compact</span></div>
+        <div class="spec-row"><span class="spec-label">Brand</span><span class="spec-val">Streamlight</span></div>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Bottom Line</h4>
+        <p>Full-size home defense or duty → TLR-1 HLX. Concealed carry → TLR-7 HLX. Already own the HL → keep it unless messy lighting is a concern.</p>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Filed Under</h4>
+        <div class="spec-row"><span class="spec-label">Section</span><span class="spec-val">Firearms / EDC</span></div>
+        <div class="spec-row"><span class="spec-label">Type</span><span class="spec-val">Original Review</span></div>
+        <div class="spec-row"><span class="spec-label">Year</span><span class="spec-val">2026</span></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    © 2026 Observe/Report · Written by Brian J.<br>
+    Independent field testing — editorial standards are mine alone.
+  </footer>
+
+</body>
+</html>
