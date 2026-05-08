@@ -12,16 +12,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:         #0f0f0f;
-      --bg2:        #161616;
-      --bg3:        #1e1e1e;
-      --border:     #2a2a2a;
-      --border2:    #333;
-      --text:       #e8e4dc;
-      --text2:      #a09890;
-      --text3:      #6a6560;
-      --accent:     #c8a96e;
-      --accent2:    #8b6f3e;
+      --bg:         #1a1a1a;
+      --bg2:        #222222;
+      --bg3:        #2a2a2a;
+      --border:     #333333;
+      --border2:    #444444;
+      --text:       #e0e0e0;
+      --text2:      #aaaaaa;
+      --text3:      #666666;
+      --accent:     #ff6b4a;
+      --accent2:    #cc5538;
       --serif:      'Libre Baskerville', Georgia, serif;
       --sans:       'IBM Plex Sans', system-ui, sans-serif;
       --mono:       'IBM Plex Mono', monospace;
@@ -56,12 +56,18 @@
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--bg); border-bottom: 1px solid var(--border);
+      padding: 0 2rem; height: 64px;
+      display: flex; align-items: center; justify-content: center;
+    }
+    .nav-inner {
+      width: 100%; max-width: 1100px;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2rem; height: 56px;
+      gap: 2rem;
     }
     .nav-logo {
       font-family: var(--mono); font-size: .85rem; font-weight: 500;
       color: var(--text); text-decoration: none; letter-spacing: .04em;
+      flex-shrink: 0;
     }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500;
@@ -186,7 +192,7 @@
       line-height: 1.75; font-style: italic; margin-bottom: 0;
     }
 
-    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
+    .sidebar { padding-top: 2.5rem; position: sticky; top: 80px; }
     .sidebar-block {
       border: 1px solid var(--border);
       background: var(--bg2);
@@ -242,12 +248,14 @@
   </div>
 
   <nav>
-    <a class="nav-logo" href="./index.html">Observe/Report</a>
-    <ul class="nav-links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./index.html#browse">Browse</a></li>
-      <li><a href="./index.html#contact">Contact</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a class="nav-logo" href="./index.html">Observe/Report</a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#browse">Browse</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <header class="hero">
