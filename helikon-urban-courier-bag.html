@@ -12,16 +12,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:         #1a1a1a;
-      --bg2:        #222222;
-      --bg3:        #2a2a2a;
-      --border:     #333333;
-      --border2:    #444444;
-      --text:       #e0e0e0;
-      --text2:      #aaaaaa;
-      --text3:      #666666;
-      --accent:     #ff6b4a;
-      --accent2:    #cc5538;
+      --bg:         #0f0f0f;
+      --bg2:        #161616;
+      --bg3:        #1e1e1e;
+      --border:     #2a2a2a;
+      --border2:    #333;
+      --text:       #e8e4dc;
+      --text2:      #a09890;
+      --text3:      #6a6560;
+      --accent:     #c8a96e;
+      --accent2:    #8b6f3e;
       --serif:      'Libre Baskerville', Georgia, serif;
       --sans:       'IBM Plex Sans', system-ui, sans-serif;
       --mono:       'IBM Plex Mono', monospace;
@@ -29,6 +29,7 @@
 
     html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
 
+    /* ── PROMO BANNER ── */
     .promo-banner {
       background: var(--accent2);
       border-bottom: 1px solid var(--accent);
@@ -53,28 +54,25 @@
     }
     .promo-copied.show { opacity: 1; }
 
+    /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--bg); border-bottom: 1px solid var(--border);
-      padding: 0 2rem; height: 64px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .nav-inner {
-      width: 100%; max-width: 1100px;
       display: flex; align-items: center; justify-content: space-between;
-      gap: 2rem;
+      padding: 0 2rem; height: 56px;
     }
     .nav-logo {
       font-family: var(--mono); font-size: .85rem; font-weight: 500;
       color: var(--text); text-decoration: none; letter-spacing: .04em;
-      flex-shrink: 0;
     }
+    .nav-logo span { color: var(--accent); }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500;
       color: var(--text2); text-decoration: none; letter-spacing: .06em;
       text-transform: uppercase; transition: color .15s; }
     .nav-links a:hover { color: var(--text); }
 
+    /* ── HERO ── */
     .hero {
       border-bottom: 1px solid var(--border);
       padding: 4rem 2rem 3rem;
@@ -108,6 +106,7 @@
     }
     .byline strong { color: var(--text2); }
 
+    /* ── ARTICLE BODY ── */
     .article-wrap {
       max-width: 780px; margin: 0 auto;
       padding: 0 2rem 6rem;
@@ -136,17 +135,6 @@
       line-height: 1.8; margin-bottom: 1.1rem;
     }
 
-    .article-body a { 
-      color: var(--accent); 
-      text-decoration: none; 
-      border-bottom: 1px solid var(--accent2); 
-      transition: all .15s;
-    }
-    .article-body a:hover { 
-      color: var(--text); 
-      border-bottom-color: var(--accent); 
-    }
-
     .article-body ul {
       margin: .5rem 0 1.1rem 1.25rem;
     }
@@ -155,6 +143,7 @@
       line-height: 1.8; margin-bottom: .3rem;
     }
 
+    /* ── PROS / CONS ── */
     .pros-cons {
       display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
       border: 1px solid var(--border); margin: 2.5rem 0;
@@ -177,6 +166,7 @@
     .pros-cons-col.pros li::before { content: '+'; color: #5a9e72; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
     .pros-cons-col.cons li::before { content: '−'; color: #c0392b; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
 
+    /* ── VERDICT BOX ── */
     .verdict {
       border: 1px solid var(--accent2);
       background: var(--bg2);
@@ -192,7 +182,8 @@
       line-height: 1.75; font-style: italic; margin-bottom: 0;
     }
 
-    .sidebar { padding-top: 2.5rem; position: sticky; top: 80px; }
+    /* ── SIDEBAR ── */
+    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
     .sidebar-block {
       border: 1px solid var(--border);
       background: var(--bg2);
@@ -210,10 +201,9 @@
     }
     .spec-row:last-child { border-bottom: none; }
     .spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
-    .spec-val { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
+    .spec-val   { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
     .sidebar-block p {
-      font-family: var(--sans); font-size: .82rem; color: var(--text2);
-      line-height: 1.6; margin: 0;
+      font-family: var(--sans); font-size: .82rem; color: var(--text2); line-height: 1.6; margin: 0;
     }
     .back-link {
       display: inline-flex; align-items: center; gap: .5rem;
@@ -224,6 +214,7 @@
     .back-link:hover { color: var(--accent); }
     .back-link::before { content: '←'; }
 
+    /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border);
       padding: 2rem;
@@ -231,6 +222,7 @@
       letter-spacing: .04em; text-align: center; line-height: 1.8;
     }
 
+    /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
       .article-wrap { grid-template-columns: 1fr; gap: 0; }
       .sidebar { position: static; padding-top: 0; }
@@ -240,6 +232,7 @@
 </head>
 <body>
 
+  <!-- PROMO BANNER -->
   <div class="promo-banner">
     <span>Use code</span>
     <span class="promo-code" onclick="copyCode(this)">GUNBRJA26</span>
@@ -247,17 +240,17 @@
     <span class="promo-copied" id="copied-msg">Copied!</span>
   </div>
 
+  <!-- NAV -->
   <nav>
-    <div class="nav-inner">
-      <a class="nav-logo" href="./index.html">Observe/Report</a>
-      <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html#browse">Browse</a></li>
-        <li><a href="./index.html#contact">Contact</a></li>
-      </ul>
-    </div>
+    <a class="nav-logo" href="./index.html">Observe<span>/</span>Report</a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#browse">Browse</a></li>
+      <li><a href="./index.html#contact">Contact</a></li>
+    </ul>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-meta">
       <span class="tag">Tactical</span>
@@ -272,13 +265,14 @@
     <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
   </header>
 
+  <!-- BODY + SIDEBAR -->
   <div class="article-wrap">
 
     <article class="article-body">
 
       <img src="images/helikon-courier.jpg" alt="Helikon-Tex Urban Courier Bag Large" />
 
-      <p>The <a href="https://www.helikon-tex.com/" target="_blank" rel="noopener">Helikon-Tex</a> Urban Courier Large keeps proving itself as more than just a commuter bag. Like their <a href="helikon-level7-jacket.html">Level 7 jacket</a>, it demonstrates the duty-grade quality I've come to expect from the brand. Once loaded the way a working adult actually carries gear, it earns its place. Configured with a <a href="https://www.cocooninnovations.com/grid.php" target="_blank" rel="noopener">Grid-It</a> panel for charging essentials, a compact boo-boo kit, and a <a href="https://www.maxpedition.com/" target="_blank" rel="noopener">Maxpedition</a> pouch for never-leave-home-without-them items, the bag supports structured modular organization inside a civilian-friendly exterior.</p>
+      <p>The Urban Courier Large keeps proving itself as more than just a commuter bag. Once loaded the way a working adult actually carries gear, it earns its place. Configured with a Grid-It panel for charging essentials, a compact boo-boo kit, and a Maxpedition pouch for never-leave-home-without-them items, the bag supports structured modular organization inside a civilian-friendly exterior.</p>
 
       <h2>Color Choice Matters</h2>
       <p>I opted for the Shadow Gray / Black combo specifically so it did not look overtly tacticool. Trips to the office did not garner attention visually. It blended in without drawing questions. It simply looked like a durable commuter bag.</p>
@@ -298,7 +292,7 @@
       <p>Internally, the bag includes four bottle-style pockets. These help keep smaller gear organized. A sunglasses case stays upright. A GMRS radio has its own slot. Chargers or small tools remain separated instead of floating around the main compartment.</p>
 
       <h2>Internal Loop Real Estate</h2>
-      <p>The interior loop panels allow mounting of multiple hook-backed pouches. You are not locked into fixed organization. Quick trip to the office? Keep it streamlined. Using it as a resupply bag? Add additional med pouches, sustainment gear, or specialty equipment and reconfigure the interior as needed. For carrying essentials, this pairs well with other <a href="https://www.guns.com/news/concealed-carry-essentials-and-why-theyre-essential" target="_blank" rel="noopener">EDC considerations</a>. The large main compartment becomes flexible instead of chaotic because you control the layout.</p>
+      <p>The interior loop panels allow mounting of multiple hook-backed pouches. You are not locked into fixed organization. Quick trip to the office? Keep it streamlined. Using it as a resupply bag? Add additional med pouches, sustainment gear, or specialty equipment and reconfigure the interior as needed. The large main compartment becomes flexible instead of chaotic because you control the layout.</p>
 
       <h2>Movement & Stability</h2>
       <p>Messenger bags often flop when moving quickly. The secondary stabilizer strap secures the bag to your hip and prevents excessive movement. If you need to move quickly across a parking lot, up stairs, or through a crowded space, the bag stays planted instead of swinging wildly. This is an area traditional messenger bags usually struggle with.</p>
@@ -309,6 +303,7 @@
       <h2>Daily Carry Reality</h2>
       <p>A 16-inch laptop, full charger kit, med pouch, admin pouch, and normal office items add weight quickly. Messenger bags concentrate that weight on one shoulder. Unlike directional sling bags, this true messenger layout allows you to alternate shoulders throughout the day. If one side begins to fatigue, simply switch. Many fixed sling designs do not allow that flexibility. Combined with the stabilizer strap, this makes the bag far more sustainable for long workdays.</p>
 
+      <!-- PROS / CONS -->
       <div class="pros-cons">
         <div class="pros-cons-col pros">
           <h3>Pros</h3>
@@ -331,6 +326,7 @@
         </div>
       </div>
 
+      <!-- VERDICT -->
       <div class="verdict">
         <div class="verdict-label">Final Thoughts</div>
         <p>Configured in Shadow Gray / Black and set up with modular pouches, internal organization, and a 16-inch laptop, this becomes more than a commuter bag. It blends visually. It organizes intelligently. It carries securely. It adapts to the mission. For daily office carry with real-world functionality, it earns its keep.</p>
@@ -338,6 +334,7 @@
 
     </article>
 
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <a class="back-link" href="./index.html">All Reviews</a>
 
@@ -349,6 +346,12 @@
         <div class="spec-row"><span class="spec-label">Color</span><span class="spec-val">Shadow Gray / Black</span></div>
         <div class="spec-row"><span class="spec-label">Laptop Size</span><span class="spec-val">Up to 16"</span></div>
         <div class="spec-row"><span class="spec-label">Bottle Size</span><span class="spec-val">26oz Yeti Rambler</span></div>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Where to Buy</h4>
+        <p style="margin-bottom: 0;"><a href="https://www.helikon-tex.com/en_eur/tb-ucb-cd-urban-courier-bag-medium.html" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">Helikon-Tex Official Store →</a></p>
+        <p style="margin-top: .75rem; font-size: .75rem; color: var(--text3);">Use code <strong style="color: var(--accent);">GUNBRJA26</strong> for 10% off</p>
       </div>
 
       <div class="sidebar-block">
@@ -364,6 +367,23 @@
       </div>
     </aside>
 
+  </div>
+
+  <!-- RELATED ARTICLES -->
+  <div style="max-width: 780px; margin: 0 auto; padding: 3rem 2rem 4rem; border-top: 1px solid var(--border);">
+    <h3 style="font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text3); margin-bottom: 1.5rem;">Related Reviews</h3>
+    <div style="display: grid; gap: 1.5rem;">
+      
+      <a href="./helikon-level7-jacket.html" style="display: grid; grid-template-columns: 120px 1fr; gap: 1rem; text-decoration: none; padding: 1rem; border: 1px solid var(--border); background: var(--bg2); transition: border-color .15s;">
+        <div style="aspect-ratio: 16/10; background: var(--bg3); border: 1px solid var(--border);"></div>
+        <div>
+          <div style="font-family: var(--mono); font-size: .68rem; color: var(--text3); letter-spacing: .08em; text-transform: uppercase; margin-bottom: .3rem;">Tactical · Gear</div>
+          <div style="font-family: var(--serif); font-size: 1rem; color: var(--text); margin-bottom: .3rem;">Helikon-Tex Level 7 Jacket Review</div>
+          <div style="font-family: var(--sans); font-size: .82rem; color: var(--text2);">Duty-grade warmth that packs down — tested in single-digit temperatures</div>
+        </div>
+      </a>
+
+    </div>
   </div>
 
   <footer>
