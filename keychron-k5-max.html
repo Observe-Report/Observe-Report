@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Keychron K5 Max Review: The Keyboard I Didn't Expect to Stick With — Observe/Report</title>
-  <meta name="description" content="Full-size low-profile, Gateron Browns, 2.4GHz wireless. Tested daily for work and writing. It's like butta." />
+  <title>Keychron K5 Max Review — Observe/Report</title>
+  <meta name="description" content="The keyboard I didn't expect to stick with. A full-size low-profile that earns its place on the desk." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -12,16 +12,16 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:         #1a1a1a;
-      --bg2:        #222222;
-      --bg3:        #2a2a2a;
-      --border:     #333333;
-      --border2:    #444444;
-      --text:       #e0e0e0;
-      --text2:      #aaaaaa;
-      --text3:      #666666;
-      --accent:     #ff6b4a;
-      --accent2:    #cc5538;
+      --bg:         #0f0f0f;
+      --bg2:        #161616;
+      --bg3:        #1e1e1e;
+      --border:     #2a2a2a;
+      --border2:    #333;
+      --text:       #e8e4dc;
+      --text2:      #a09890;
+      --text3:      #6a6560;
+      --accent:     #c8a96e;
+      --accent2:    #8b6f3e;
       --serif:      'Libre Baskerville', Georgia, serif;
       --sans:       'IBM Plex Sans', system-ui, sans-serif;
       --mono:       'IBM Plex Mono', monospace;
@@ -29,38 +29,34 @@
 
     html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
 
+    /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
       background: var(--bg); border-bottom: 1px solid var(--border);
-      padding: 0 2rem; height: 64px;
-      display: flex; align-items: center; justify-content: center;
-    }
-    .nav-inner {
-      width: 100%; max-width: 1100px;
       display: flex; align-items: center; justify-content: space-between;
-      gap: 2rem;
+      padding: 0 2rem; height: 56px;
     }
     .nav-logo {
       font-family: var(--mono); font-size: .85rem; font-weight: 500;
       color: var(--text); text-decoration: none; letter-spacing: .04em;
-      flex-shrink: 0;
     }
+    .nav-logo span { color: var(--accent); }
     .nav-links { display: flex; gap: 2rem; list-style: none; }
     .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500;
       color: var(--text2); text-decoration: none; letter-spacing: .06em;
       text-transform: uppercase; transition: color .15s; }
     .nav-links a:hover { color: var(--text); }
 
+    /* ── HERO ── */
     .hero {
       border-bottom: 1px solid var(--border);
       padding: 4rem 2rem 3rem;
       max-width: 780px; margin: 0 auto;
     }
     .hero-meta {
-      display: flex; align-items: center; gap: .75rem;
+      display: flex; align-items: center; gap: .75rem; flex-wrap: wrap;
       font-family: var(--mono); font-size: .72rem; color: var(--text3);
       letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1.5rem;
-      flex-wrap: wrap;
     }
     .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border2); }
     .tag {
@@ -71,92 +67,75 @@
     .tag.original { border-color: var(--accent2); color: var(--accent); }
     .hero h1 {
       font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem);
-      font-weight: 700; line-height: 1.2; color: var(--text);
-      margin-bottom: 1rem;
+      font-weight: 700; line-height: 1.2; color: var(--text); margin-bottom: 1rem;
     }
     .hero-deck {
       font-family: var(--sans); font-size: 1.05rem; color: var(--text2);
       line-height: 1.65; max-width: 620px; margin-bottom: 1.75rem;
     }
-    .byline {
-      font-family: var(--mono); font-size: .75rem; color: var(--text3);
-      letter-spacing: .04em;
-    }
+    .byline { font-family: var(--mono); font-size: .75rem; color: var(--text3); letter-spacing: .04em; }
     .byline strong { color: var(--text2); }
 
+    /* ── SPECS TABLE ── */
     .specs-block {
-      border-bottom: 1px solid var(--border);
-      padding: 2rem 0;
+      border: 1px solid var(--border); background: var(--bg2);
+      padding: 1.25rem 1.5rem; margin: 0 auto 0;
+      max-width: 780px;
     }
     .specs-block h4 {
       font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
-      text-transform: uppercase; color: var(--text3); margin-bottom: 1.25rem;
+      text-transform: uppercase; color: var(--text3);
+      margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border);
     }
     .specs-grid {
-      display: grid; grid-template-columns: 1fr 1fr;
-      gap: 1rem;
+      display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: .1rem 2rem;
     }
     .spec-row {
       display: flex; justify-content: space-between; align-items: baseline;
-      gap: .5rem; padding: .5rem; background: var(--bg2);
-      border: 1px solid var(--border);
+      gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--border);
     }
+    .spec-row:last-child { border-bottom: none; }
     .spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
-    .spec-val { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
+    .spec-val   { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
 
+    /* ── ARTICLE BODY ── */
     .article-wrap {
       max-width: 780px; margin: 0 auto;
       padding: 0 2rem 6rem;
-      display: grid;
-      grid-template-columns: 1fr 220px;
-      gap: 0 4rem;
-      align-items: start;
+      display: grid; grid-template-columns: 1fr 220px;
+      gap: 0 4rem; align-items: start;
     }
     .article-body { min-width: 0; padding-top: 2.5rem; }
 
-    .article-body img { width: 100%; object-fit: cover; display: block; margin: 2rem 0; border: 1px solid var(--border); }
-    .img-caption { font-family: var(--mono); font-size: .68rem; color: var(--text3); letter-spacing: .05em; text-transform: uppercase; margin: -.75rem 0 2rem; padding: .5rem .75rem; border: 1px solid var(--border); border-top: none; background: var(--bg2); }
+    .article-body img {
+      width: 100%; object-fit: cover; display: block;
+      margin: 2rem 0; border: 1px solid var(--border);
+    }
+    .img-caption {
+      font-family: var(--mono); font-size: .68rem; color: var(--text3);
+      letter-spacing: .05em; text-transform: uppercase;
+      margin: -.75rem 0 2rem; padding: .5rem .75rem;
+      border: 1px solid var(--border); border-top: none;
+      background: var(--bg2);
+    }
 
     .article-body h2 {
       font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
       color: var(--text); margin: 2.5rem 0 .75rem;
       padding-bottom: .5rem; border-bottom: 1px solid var(--border);
     }
+    .article-body h2:first-child { margin-top: 0; }
     .article-body p {
       font-family: var(--sans); font-size: .975rem; color: var(--text2);
       line-height: 1.8; margin-bottom: 1.1rem;
     }
-    .article-body a { 
-      color: var(--accent); 
-      text-decoration: none; 
-      border-bottom: 1px solid var(--accent2); 
-      transition: all .15s;
-    }
-    .article-body a:hover { 
-      color: var(--text); 
-      border-bottom-color: var(--accent); 
+    .article-body ul { margin: .5rem 0 1.1rem 1.25rem; }
+    .article-body ul li {
+      font-family: var(--sans); font-size: .975rem; color: var(--text2);
+      line-height: 1.8; margin-bottom: .3rem;
     }
 
-    .for-block {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
-      border: 1px solid var(--border); margin: 2.5rem 0;
-      background: var(--border);
-    }
-    .for-col { background: var(--bg2); padding: 1.25rem 1.5rem; }
-    .for-col h3 {
-      font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
-      text-transform: uppercase; margin-bottom: 1rem; color: var(--text3);
-    }
-    .for-col ul { list-style: none; margin: 0; }
-    .for-col li {
-      font-family: var(--sans); font-size: .875rem; color: var(--text2);
-      padding: .4rem 0; border-bottom: 1px solid var(--border);
-      display: flex; gap: .6rem; align-items: baseline; line-height: 1.5;
-    }
-    .for-col li:last-child { border-bottom: none; }
-    .for-col.for li::before { content: '✓'; color: #5a9e72; font-family: var(--mono); font-size: .75rem; flex-shrink: 0; }
-    .for-col.not li::before { content: '✗'; color: #c0392b; font-family: var(--mono); font-size: .75rem; flex-shrink: 0; }
-
+    /* ── PROS / CONS ── */
     .pros-cons {
       display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
       border: 1px solid var(--border); margin: 2.5rem 0;
@@ -179,11 +158,31 @@
     .pros-cons-col.pros li::before { content: '+'; color: #5a9e72; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
     .pros-cons-col.cons li::before { content: '−'; color: #c0392b; font-family: var(--mono); font-size: .8rem; flex-shrink: 0; }
 
+    /* ── WHO IT'S FOR ── */
+    .for-block {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 1px;
+      border: 1px solid var(--border); margin: 2.5rem 0;
+      background: var(--border);
+    }
+    .for-col { background: var(--bg2); padding: 1.25rem 1.5rem; }
+    .for-col h3 {
+      font-family: var(--mono); font-size: .72rem; letter-spacing: .1em;
+      text-transform: uppercase; margin-bottom: 1rem; color: var(--text3);
+    }
+    .for-col ul { list-style: none; margin: 0; }
+    .for-col li {
+      font-family: var(--sans); font-size: .875rem; color: var(--text2);
+      padding: .4rem 0; border-bottom: 1px solid var(--border);
+      display: flex; gap: .6rem; align-items: baseline; line-height: 1.5;
+    }
+    .for-col li:last-child { border-bottom: none; }
+    .for-col.for li::before { content: '✓'; color: #5a9e72; font-family: var(--mono); font-size: .75rem; flex-shrink: 0; }
+    .for-col.not li::before { content: '✗'; color: #c0392b; font-family: var(--mono); font-size: .75rem; flex-shrink: 0; }
+
+    /* ── VERDICT BOX ── */
     .verdict {
-      border: 1px solid var(--accent2);
-      background: var(--bg2);
-      padding: 1.5rem 1.75rem;
-      margin: 2.5rem 0 0;
+      border: 1px solid var(--accent2); background: var(--bg2);
+      padding: 1.5rem 1.75rem; margin: 2.5rem 0 0;
     }
     .verdict-label {
       font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
@@ -194,12 +193,11 @@
       line-height: 1.75; font-style: italic; margin-bottom: 0;
     }
 
-    .sidebar { padding-top: 2.5rem; position: sticky; top: 80px; }
+    /* ── SIDEBAR ── */
+    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
     .sidebar-block {
-      border: 1px solid var(--border);
-      background: var(--bg2);
-      padding: 1.25rem;
-      margin-bottom: 1.25rem;
+      border: 1px solid var(--border); background: var(--bg2);
+      padding: 1.25rem; margin-bottom: 1.25rem;
     }
     .sidebar-block h4 {
       font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
@@ -216,12 +214,14 @@
     .back-link:hover { color: var(--accent); }
     .back-link::before { content: '←'; }
 
+    /* ── FOOTER ── */
     footer {
       border-top: 1px solid var(--border); padding: 2rem;
       font-family: var(--mono); font-size: .72rem; color: var(--text3);
       letter-spacing: .04em; text-align: center; line-height: 1.8;
     }
 
+    /* ── RESPONSIVE ── */
     @media (max-width: 700px) {
       .article-wrap { grid-template-columns: 1fr; gap: 0; }
       .sidebar { position: static; padding-top: 0; }
@@ -230,28 +230,19 @@
     }
   </style>
 </head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-4YP6FSF0BM');
-</script>
 <body>
 
+  <!-- NAV -->
   <nav>
-    <div class="nav-inner">
-      <a class="nav-logo" href="./index.html">Observe/Report</a>
-      <ul class="nav-links">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./index.html#browse">Browse</a></li>
-        <li><a href="./index.html#contact">Contact</a></li>
-      </ul>
-    </div>
+    <a class="nav-logo" href="./index.html">Observe<span>/</span>Report</a>
+    <ul class="nav-links">
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./index.html#browse">Browse</a></li>
+      <li><a href="./index.html#contact">Contact</a></li>
+    </ul>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-meta">
       <span class="tag">Tech</span>
@@ -266,6 +257,7 @@
     <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
   </header>
 
+  <!-- QUICK SPECS -->
   <div class="specs-block" style="max-width:780px;margin:0 auto;padding-left:2rem;padding-right:2rem;">
     <h4>Quick Specs — Tested Configuration</h4>
     <div class="specs-grid">
@@ -280,6 +272,7 @@
     </div>
   </div>
 
+  <!-- BODY + SIDEBAR -->
   <div class="article-wrap">
 
     <article class="article-body">
@@ -287,7 +280,7 @@
       <img src="images/keychron-k5-max-side.jpg" alt="Keychron K5 Max side profile showing low-profile design" style="aspect-ratio:16/9;" />
 
       <h2>First Impressions</h2>
-      <p>I'll be honest — I didn't expect the <a href="https://www.keychron.com/products/keychron-k5-max-qmk-via-wireless-custom-mechanical-keyboard" target="_blank" rel="noopener">Keychron K5 Max</a> to earn a permanent spot on my desk. I've used enough keyboards at this point to know what I like, and low-profile boards usually don't make the cut. But this one surprised me right out of the box.</p>
+      <p>I'll be honest — I didn't expect the Keychron K5 Max to earn a permanent spot on my desk. I've used enough keyboards at this point to know what I like, and low-profile boards usually don't make the cut. But this one surprised me right out of the box.</p>
       <p>The first thing I noticed was just how slim it is. Not "mechanical keyboard slim," but actually slim. It almost feels like a laptop keyboard at first glance, but once I started typing, it was clear this wasn't just another flat board pretending to be something more.</p>
 
       <h2>Build & Design</h2>
@@ -315,7 +308,6 @@
       <h2>Connectivity & Daily Use</h2>
       <p>This is where the K5 Max really pulls ahead. I've been bouncing between devices pretty regularly, and having 2.4GHz wireless, Bluetooth for multiple devices, and wired USB-C makes a bigger difference than I expected.</p>
       <p>The 2.4GHz connection is fast enough that I don't think about it. No lag, no hiccups, no frustration. It just works, and that's exactly what I want from something I use every day.</p>
-      <p>The K5 Max pairs well with my <a href="edifier-m60-speakers-review.html">Edifier M60 speakers</a> to create a complete desk setup that balances function and aesthetics.</p>
 
       <h2>Customization</h2>
       <p>I didn't think I needed customization… until I had it. With QMK and VIA support, I've been able to tweak this board to fit how I actually work instead of adapting to a stock layout. Small changes, macros, remaps — it all adds up. If you're someone who likes dialing things in, this is where the K5 Max really starts to separate itself.</p>
@@ -323,6 +315,7 @@
       <h2>Battery Life</h2>
       <p>No complaints here. I'm not running full RGB all the time, so I'm getting solid use out of it without constantly thinking about charging. And when I do need to plug in, USB-C keeps it simple. It's not something I've had to manage, which is exactly how it should be.</p>
 
+      <!-- WHO IT'S FOR -->
       <div class="for-block">
         <div class="for-col for">
           <h3>Who It's For</h3>
@@ -344,6 +337,7 @@
         </div>
       </div>
 
+      <!-- PROS / CONS -->
       <div class="pros-cons">
         <div class="pros-cons-col pros">
           <h3>Pros</h3>
@@ -367,13 +361,15 @@
         </div>
       </div>
 
+      <!-- VERDICT -->
       <div class="verdict">
         <div class="verdict-label">Final Thoughts</div>
-        <p>I didn't expect this to stick, but it has. The Keychron K5 Max isn't trying to be the flashiest keyboard out there. It's trying to be something you can actually use every day without thinking about it. And for me, that's exactly why it's stayed on my desk. It's efficient, comfortable, and just works. Combined with clean <a href="edifier-m60-speakers-review.html">desk audio</a> and proper peripherals, it creates a workspace that gets out of the way and lets you focus. At the end of the day… it's like butta.</p>
+        <p>I didn't expect this to stick, but it has. The Keychron K5 Max isn't trying to be the flashiest keyboard out there. It's trying to be something you can actually use every day without thinking about it. And for me, that's exactly why it's stayed on my desk. It's efficient, comfortable, and just works. At the end of the day… it's like butta.</p>
       </div>
 
     </article>
 
+    <!-- SIDEBAR -->
     <aside class="sidebar">
       <a class="back-link" href="./index.html">All Reviews</a>
 
@@ -389,6 +385,12 @@
       </div>
 
       <div class="sidebar-block">
+        <h4>Where to Buy</h4>
+        <p style="margin-bottom: .75rem;"><a href="https://www.amazon.com/dp/B0CR6ZLQ6S" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">View on Amazon →</a></p>
+        <p style="margin-bottom: 0;"><a href="https://www.keychron.com/products/keychron-k5-max-qmk-via-wireless-custom-mechanical-keyboard" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">Keychron Official Store →</a></p>
+      </div>
+
+      <div class="sidebar-block">
         <h4>vs. K4v2</h4>
         <p>Switched from the Keychron K4v2 (96%, Gateron Red). The full-size layout eliminated consistent right-hand miskeys. Browns are quieter than Reds in shared office use.</p>
       </div>
@@ -401,6 +403,23 @@
       </div>
     </aside>
 
+  </div>
+
+  <!-- RELATED ARTICLES -->
+  <div style="max-width: 780px; margin: 0 auto; padding: 3rem 2rem 4rem; border-top: 1px solid var(--border);">
+    <h3 style="font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text3); margin-bottom: 1.5rem;">Related Reviews</h3>
+    <div style="display: grid; gap: 1.5rem;">
+      
+      <a href="./edifier-m60-speakers-review__1_.html" style="display: grid; grid-template-columns: 120px 1fr; gap: 1rem; text-decoration: none; padding: 1rem; border: 1px solid var(--border); background: var(--bg2); transition: border-color .15s;">
+        <div style="aspect-ratio: 16/10; background: var(--bg3); border: 1px solid var(--border);"></div>
+        <div>
+          <div style="font-family: var(--mono); font-size: .68rem; color: var(--text3); letter-spacing: .08em; text-transform: uppercase; margin-bottom: .3rem;">Tech · Desk</div>
+          <div style="font-family: var(--serif); font-size: 1rem; color: var(--text); margin-bottom: .3rem;">Edifier M60 Speakers Review</div>
+          <div style="font-family: var(--sans); font-size: .82rem; color: var(--text2);">Small footprint, serious sound — the desk audio upgrade that just works</div>
+        </div>
+      </a>
+
+    </div>
   </div>
 
   <footer>
