@@ -7,85 +7,209 @@
   <meta name="description" content="Eclipse Sirius holster for Glock 19 with TLR-7 light. Recon Monsoon pattern, DCC monoblock clip. Real-world concealability, retention, and comfort reviewed by Brian J." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --bg:         #0f0f0f;
-      --bg2:        #161616;
-      --bg3:        #1e1e1e;
-      --border:     #2a2a2a;
-      --border2:    #333;
-      --text:       #e8e4dc;
-      --text2:      #a09890;
-      --text3:      #6a6560;
-      --accent:     #c8a96e;
-      --accent2:    #8b6f3e;
-      --serif:      'Libre Baskerville', Georgia, serif;
-      --sans:       'IBM Plex Sans', system-ui, sans-serif;
-      --mono:       'IBM Plex Mono', monospace;
+      --ink: #111;
+      --ink-muted: #555;
+      --ink-faint: #999;
+      --rule: #ddd;
+      --bg: #fafaf8;
+      --bg-card: #fff;
+      --accent: #c0392b;
+      --nav-h: 64px;
+      --max: 1100px;
     }
 
-    html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f0ede8;
+        --ink-muted: #aaa;
+        --ink-faint: #666;
+        --rule: #2e2e2e;
+        --bg: #111;
+        --bg-card: #1a1a1a;
+        --accent: #e05a4a;
+      }
+    }
 
-    /* ── NAV ── */
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Literata', Georgia, serif; background: var(--bg); color: var(--ink); font-size: 16px; line-height: 1.65; }
+
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--bg); border-bottom: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      padding: 0 2rem; height: 56px;
+      background: var(--bg); border-bottom: 1px solid var(--rule);
+      height: var(--nav-h);
+      display: flex; align-items: center;
     }
-    .nav-logo { font-family: var(--mono); font-size: .85rem; font-weight: 500; color: var(--text); text-decoration: none; letter-spacing: .04em; }
-    .nav-logo span { color: var(--accent); }
-    .nav-links { display: flex; gap: 2rem; list-style: none; }
-    .nav-links a { font-family: var(--sans); font-size: .82rem; font-weight: 500; color: var(--text2); text-decoration: none; letter-spacing: .06em; text-transform: uppercase; transition: color .15s; }
-    .nav-links a:hover { color: var(--text); }
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto; padding: 0 2rem;
+      width: 100%; display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem;
+    }
+    .wordmark {
+      font-family: 'DM Mono', monospace; font-weight: 500;
+      font-size: 15px; letter-spacing: 0.08em;
+      text-transform: uppercase; cursor: pointer;
+      flex-shrink: 0; text-decoration: none; color: var(--ink);
+    }
+    .wordmark span { color: var(--accent); }
+    .nav-links {
+      display: flex; gap: 2rem; font-family: 'DM Mono', monospace;
+      font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--ink-muted);
+      list-style: none;
+    }
+    .nav-links a {
+      cursor: pointer; transition: color 0.15s;
+      border-bottom: 1px solid transparent; padding-bottom: 2px;
+      text-decoration: none; color: inherit;
+    }
+    .nav-links a:hover { color: var(--ink); }
 
-    /* ── HERO ── */
-    .hero { border-bottom: 1px solid var(--border); padding: 4rem 2rem 3rem; max-width: 780px; margin: 0 auto; }
-    .hero-meta { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; font-family: var(--mono); font-size: .72rem; color: var(--text3); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1.5rem; }
-    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border2); }
-    .tag { display: inline-block; font-family: var(--mono); font-size: .68rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; padding: .25rem .6rem; border: 1px solid var(--border2); color: var(--text3); }
-    .tag.original { border-color: var(--accent2); color: var(--accent); }
-    .hero h1 { font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; color: var(--text); margin-bottom: 1rem; }
-    .hero-deck { font-family: var(--sans); font-size: 1.05rem; color: var(--text2); line-height: 1.65; max-width: 620px; margin-bottom: 1.75rem; }
-    .byline { font-family: var(--mono); font-size: .75rem; color: var(--text3); letter-spacing: .04em; }
-    .byline strong { color: var(--text2); }
+    .hero {
+      max-width: var(--max); margin: 0 auto;
+      padding: 4rem 2rem 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .hero-meta {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 0.1em; color: var(--ink-faint);
+      text-transform: uppercase; margin-bottom: 1.25rem;
+    }
+    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--rule); }
+    .tag {
+      display: inline-block; font-family: 'DM Mono', monospace;
+      font-size: 10px; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.25rem 0.6rem;
+      border: 1px solid var(--rule); color: var(--ink-faint);
+    }
+    .tag.original { border-color: var(--accent); color: var(--accent); }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700; line-height: 1.1;
+      letter-spacing: -0.01em; margin-bottom: 1rem;
+    }
+    .hero-deck {
+      font-size: 1rem; color: var(--ink-muted);
+      line-height: 1.7; margin-bottom: 1.5rem; max-width: 620px;
+    }
+    .byline {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      color: var(--ink-faint); letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .byline em { color: var(--ink-muted); font-style: normal; }
 
-    /* ── ARTICLE ── */
-    .article-wrap { max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem; display: grid; grid-template-columns: 1fr 220px; gap: 0 4rem; align-items: start; }
+    .article-wrap {
+      max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem;
+      display: grid; grid-template-columns: 1fr 220px;
+      gap: 0 4rem; align-items: start;
+    }
     .article-body { min-width: 0; padding-top: 2.5rem; }
 
-    .article-body img { width: 100%; object-fit: cover; display: block; margin: 2rem 0; border: 1px solid var(--border); }
-    .img-caption { font-family: var(--mono); font-size: .68rem; color: var(--text3); letter-spacing: .05em; text-transform: uppercase; margin: -.75rem 0 2rem; padding: .5rem .75rem; border: 1px solid var(--border); border-top: none; background: var(--bg2); }
+    .article-body img {
+      width: 100%; object-fit: cover; display: block;
+      margin: 2rem 0; border: 1px solid var(--rule);
+    }
+    .img-caption {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: var(--ink-faint); letter-spacing: 0.1em;
+      text-transform: uppercase; margin: -0.75rem 0 2rem;
+      padding: 0.5rem 0.75rem; border: 1px solid var(--rule);
+      border-top: none; background: var(--bg-card);
+    }
 
-    .article-body h2 { font-family: var(--serif); font-size: 1.3rem; font-weight: 700; color: var(--text); margin: 2.5rem 0 .75rem; padding-bottom: .5rem; border-bottom: 1px solid var(--border); }
-    .article-body h3 { font-family: var(--mono); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 1.75rem 0 .6rem; }
-    .article-body p { font-family: var(--sans); font-size: .975rem; color: var(--text2); line-height: 1.8; margin-bottom: 1.1rem; }
-    .article-body ul { margin: .5rem 0 1.1rem 1.25rem; }
-    .article-body ul li { font-family: var(--sans); font-size: .975rem; color: var(--text2); line-height: 1.8; margin-bottom: .3rem; }
+    .article-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700; color: var(--ink);
+      margin: 2.5rem 0 0.75rem; padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .article-body h3 {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); margin: 1.75rem 0 0.6rem;
+    }
+    .article-body p {
+      font-size: 1rem; color: var(--ink-muted);
+      line-height: 1.8; margin-bottom: 1.1rem;
+    }
+    .article-body a {
+      color: var(--accent); text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: opacity 0.15s;
+    }
+    .article-body a:hover { opacity: 0.7; }
+    .article-body ul { margin: 0.5rem 0 1.1rem 1.25rem; }
+    .article-body ul li {
+      font-size: 1rem; color: var(--ink-muted);
+      line-height: 1.8; margin-bottom: 0.3rem;
+    }
 
-    /* ── VERDICT ── */
-    .verdict { border: 1px solid var(--accent2); background: var(--bg2); padding: 1.5rem 1.75rem; margin: 2.5rem 0 0; }
-    .verdict-label { font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; }
-    .verdict p { font-family: var(--serif); font-size: 1rem; color: var(--text); line-height: 1.75; font-style: italic; margin-bottom: 0; }
+    .verdict {
+      border: 1px solid var(--accent);
+      background: var(--bg-card);
+      padding: 1.5rem 1.75rem; margin: 2.5rem 0 0;
+    }
+    .verdict-label {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .verdict p {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem;
+      color: var(--ink); line-height: 1.75; font-style: italic;
+      margin-bottom: 0;
+    }
 
-    /* ── SIDEBAR ── */
-    .sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
-    .sidebar-block { border: 1px solid var(--border); background: var(--bg2); padding: 1.25rem; margin-bottom: 1.25rem; }
-    .sidebar-block h4 { font-family: var(--mono); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--text3); margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--border); }
-    .spec-row { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--border); }
+    .sidebar { padding-top: 2.5rem; position: sticky; top: calc(var(--nav-h) + 16px); }
+    .sidebar-block {
+      border: 1px solid var(--rule); background: var(--bg-card);
+      padding: 1.25rem; margin-bottom: 1.25rem;
+    }
+    .sidebar-block h4 {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink-faint); margin-bottom: 1rem;
+      padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule);
+    }
+    .spec-row {
+      display: flex; justify-content: space-between;
+      align-items: baseline; gap: 0.5rem; padding: 0.35rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
     .spec-row:last-child { border-bottom: none; }
-    .spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
-    .spec-val { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
-    .sidebar-block p { font-family: var(--sans); font-size: .82rem; color: var(--text2); line-height: 1.6; margin: 0; }
-    .back-link { display: inline-flex; align-items: center; gap: .5rem; font-family: var(--mono); font-size: .72rem; color: var(--text3); text-decoration: none; letter-spacing: .05em; text-transform: uppercase; transition: color .15s; margin-bottom: 1.25rem; }
+    .spec-label { font-size: 0.85rem; color: var(--ink-faint); }
+    .spec-val {
+      font-family: 'DM Mono', monospace; font-size: 0.85rem;
+      color: var(--ink-muted); text-align: right;
+    }
+    .sidebar-block p {
+      font-size: 0.9rem; color: var(--ink-muted);
+      line-height: 1.6; margin: 0;
+    }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: var(--ink-faint); text-decoration: none;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      transition: color 0.15s; margin-bottom: 1.25rem;
+    }
     .back-link:hover { color: var(--accent); }
     .back-link::before { content: '←'; }
 
-    /* ── FOOTER ── */
-    footer { border-top: 1px solid var(--border); padding: 2rem; font-family: var(--mono); font-size: .72rem; color: var(--text3); letter-spacing: .04em; text-align: center; line-height: 1.8; }
+    footer {
+      border-top: 1px solid var(--rule); padding: 1.5rem 2rem;
+      text-align: center; font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--ink-faint);
+      line-height: 1.8;
+    }
 
     @media (max-width: 700px) {
       .article-wrap { grid-template-columns: 1fr; gap: 0; }
@@ -95,17 +219,17 @@
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <a class="nav-logo" href="./index.html">Observe<span>/</span>Report</a>
-    <ul class="nav-links">
-      <li><a href="./index.html">Home</a></li>
-      <li><a href="./index.html#browse">Browse</a></li>
-      <li><a href="./index.html#contact">Contact</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a class="wordmark" href="./index.html">Observe<span>/</span>Report</a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#browse">Browse</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- HERO -->
   <header class="hero">
     <div class="hero-meta">
       <span class="tag">Firearms</span>
@@ -117,10 +241,9 @@
     </div>
     <h1>Eclipse Sirius Holster Review: Glock 19 + TLR-7 Series</h1>
     <p class="hero-deck">Recon Monsoon pattern, antique washers, DCC monoblock clip. A Glock 19 with a weapon light that actually conceals well — without needing a claw. Tested for retention, comfort, and real-world carry.</p>
-    <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
+    <div class="byline"><em>By Brian J.</em> &nbsp;·&nbsp; <em>Original Review</em> &nbsp;·&nbsp; <em>2026</em></div>
   </header>
 
-  <!-- BODY + SIDEBAR -->
   <div class="article-wrap">
 
     <article class="article-body">
@@ -128,8 +251,8 @@
       <img src="images/eclipse-sirius-hero.jpg" alt="Eclipse Sirius holster with Glock 19 and TLR-7 HLX" style="aspect-ratio:3/4;" />
       <div class="img-caption">Eclipse Sirius — Glock 19 with TLR-7 HLX in Recon Monsoon pattern</div>
 
-      <p>This kicks off my time with the Eclipse lineup, starting with the Sirius holster configured for a Glock 19 with a TLR-7 series light. The setup here is the Recon Monsoon pattern with antique washers and a Discreet Carry Concepts monoblock clip.</p>
-      <p>While the holster is designed around the TLR-7X, Eclipse confirmed it would also fit the TLR-7 HLX. I've been running the HLX for review, and while it does protrude slightly from the bottom, it's minimal and doesn't affect function. If anything, the ability to run both lights adds some flexibility.</p>
+      <p>This kicks off my time with the <a href="https://eclipseholsters.com/" target="_blank" rel="noopener">Eclipse</a> lineup, starting with the Sirius holster configured for a Glock 19 with a TLR-7 series light. The setup here is the Recon Monsoon pattern with antique washers and a <a href="https://discreetcarryconcepts.com/" target="_blank" rel="noopener">Discreet Carry Concepts</a> monoblock clip.</p>
+      <p>While the holster is designed around the TLR-7X, Eclipse confirmed it would also fit the <a href="streamlight-tlr-comparison.html">TLR-7 HLX</a>. I've been running the HLX for review, and while it does protrude slightly from the bottom, it's minimal and doesn't affect function. If anything, the ability to run both lights adds some flexibility.</p>
       <p>Fit and finish are exactly where they should be. It's slim, compact, and avoids the extra bulk you sometimes see with Glock 19 holsters.</p>
 
       <h2>Retention</h2>
@@ -140,7 +263,7 @@
       <p>Bottom line: retention is predictable, repeatable, and confidence-inspiring.</p>
 
       <h2>Concealability</h2>
-      <p>This is where I was honestly expecting more compromise, given it's a Glock 19 with a weapon light.</p>
+      <p>This is where I was honestly expecting more compromise, given it's a Glock 19 with a <a href="streamlight-tlr-comparison.html">weapon light</a>.</p>
       <p>But the Sirius does a good job keeping things tight to the body. The slim profile and lack of unnecessary material help more than you'd think.</p>
 
       <img src="images/eclipse-sirius-concealment.jpg" alt="Eclipse Sirius holster concealment test" style="aspect-ratio:16/9;" />
@@ -191,9 +314,8 @@
         <li>Ultra-minimal holsters will feel lighter, but at the cost of stability and retention</li>
       </ul>
 
-      <p>This sits in a very practical middle ground. It's built for real-world carry, not just range use or niche concealment setups.</p>
+      <p>This sits in a very practical middle ground. It's built for real-world carry, not just range use or niche concealment setups. For additional perspective on what makes a solid <a href="https://www.guns.com/news/concealed-carry-essentials-and-why-theyre-essential" target="_blank" rel="noopener">concealed carry setup</a>, I've covered the essentials elsewhere.</p>
 
-      <!-- VERDICT -->
       <div class="verdict">
         <div class="verdict-label">Final Thoughts</div>
         <p>The Sirius is a straightforward, well-executed holster that focuses on what actually matters: retention, comfort, and stability. It handles a Glock 19 with a weapon light better than expected, especially without needing extra concealment aids like a claw. The DCC monoblock is a standout here — it takes an already solid holster and makes it feel locked in and dependable. Add in the fact that Eclipse is a Virginia-based company and easy to work with, and it rounds out as a genuinely positive experience. If this is any indication of the rest of their lineup, I'm looking forward to spending more time with their gear.</p>
@@ -201,7 +323,6 @@
 
     </article>
 
-    <!-- SIDEBAR -->
     <aside class="sidebar">
       <a class="back-link" href="./index.html">All Reviews</a>
 
@@ -213,11 +334,6 @@
         <div class="spec-row"><span class="spec-label">Light</span><span class="spec-val">TLR-7 Series</span></div>
         <div class="spec-row"><span class="spec-label">Clip</span><span class="spec-val">DCC Monoblock</span></div>
         <div class="spec-row"><span class="spec-label">Pattern</span><span class="spec-val">Recon Monsoon</span></div>
-      </div>
-
-      <div class="sidebar-block">
-        <h4>Where to Buy</h4>
-        <p style="margin-bottom: 0;"><a href="https://eclipseholsters.com/collections/iwb/products/sirius-iwb-holster" target="_blank" rel="noopener" style="color: var(--accent); text-decoration: underline;">Eclipse Holsters Official →</a></p>
       </div>
 
       <div class="sidebar-block">
@@ -233,23 +349,6 @@
       </div>
     </aside>
 
-  </div>
-
-  <!-- RELATED ARTICLES -->
-  <div style="max-width: 780px; margin: 0 auto; padding: 3rem 2rem 4rem; border-top: 1px solid var(--border);">
-    <h3 style="font-family: var(--mono); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--text3); margin-bottom: 1.5rem;">Related Reviews</h3>
-    <div style="display: grid; gap: 1.5rem;">
-      
-      <a href="./streamlight-tlr-comparison.html" style="display: grid; grid-template-columns: 120px 1fr; gap: 1rem; text-decoration: none; padding: 1rem; border: 1px solid var(--border); background: var(--bg2); transition: border-color .15s;">
-        <div style="aspect-ratio: 16/10; background: var(--bg3); border: 1px solid var(--border);"></div>
-        <div>
-          <div style="font-family: var(--mono); font-size: .68rem; color: var(--text3); letter-spacing: .08em; text-transform: uppercase; margin-bottom: .3rem;">Firearms · EDC</div>
-          <div style="font-family: var(--serif); font-size: 1rem; color: var(--text); margin-bottom: .3rem;">Streamlight TLR-1 vs TLR-7 Comparison</div>
-          <div style="font-family: var(--sans); font-size: .82rem; color: var(--text2);">Real-world comparison of TLR-1 HL, HLX, and TLR-7 HLX weapon lights</div>
-        </div>
-      </a>
-
-    </div>
   </div>
 
   <footer>
