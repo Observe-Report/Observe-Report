@@ -21,15 +21,26 @@
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --ink:#e0e0e0;
-  --ink-muted:#aaa;
-  --ink-faint:#666;
-  --rule:#333333;
-  --bg:#1a1a1a;
-  --bg-card:#1a1a1a;
-  --accent:#ff6b4a;
+  --ink:#111;
+  --ink-muted:#555;
+  --ink-faint:#999;
+  --rule:#ddd;
+  --bg:#fafaf8;
+  --bg-card:#fff;
+  --accent:#c0392b;
   --nav-h:64px;
   --max:1100px;
+}
+@media(prefers-color-scheme:dark){
+  :root{
+    --ink:#f0ede8;
+    --ink-muted:#aaa;
+    --ink-faint:#666;
+    --rule:#2e2e2e;
+    --bg:#111;
+    --bg-card:#1a1a1a;
+    --accent:#e05a4a;
+  }
 }
 html{scroll-behavior:smooth;}
 body{font-family:'Literata',Georgia,serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;}
@@ -322,7 +333,7 @@ footer{
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="wordmark" onclick="show('home')">Observe<span style="color: var(--accent);">/</span>Report</div>
+    <div class="wordmark" onclick="show('home')">Observe<span>/</span>Report</div>
     <div class="nav-links">
       <a id="nav-home" class="active" onclick="show('home')">Home</a>
       <a id="nav-browse" onclick="show('browse')">Browse</a>
@@ -342,7 +353,7 @@ footer{
       <h1 class="hero-title">Edifier M60 Speakers Review: Small Footprint, Serious Sound</h1>
       <p class="hero-excerpt">The desk audio upgrade that just works. Clean design, balanced sound, and the kind of consistency you notice over time. Built for real-world use, not spec sheets.</p>
       <div class="hero-meta"><em>By Brian J.</em> &nbsp;&middot;&nbsp; <em>Original Review</em> &nbsp;&middot;&nbsp; <em>2026</em></div>
-      <a class="read-link" onclick="window.location.href='edifier-m60-speakers-review.html'">Read Full Review &rarr;</a>
+      <a class="read-link" onclick="window.location.href='edifier-m60-speakers-review__1_.html'">Read Full Review &rarr;</a>
     </div>
     <div class="hero-img-box"><img src="images/edifier-m60-hero.jpg" alt="Edifier M60 speakers"/></div>
   </div>
@@ -350,7 +361,7 @@ footer{
   <div class="sec-head"><h2>Original Reviews</h2><div class="sec-line"></div></div>
   <div class="card-grid">
 
-    <div class="card" onclick="window.location.href='edifier-m60-speakers-review.html'">
+    <div class="card" onclick="window.location.href='edifier-m60-speakers-review__1_.html'">
       <div class="card-img"><img src="images/edifier-m60-hero.jpg" alt="Edifier M60 Speakers"/></div>
       <div class="card-cat">Tech &middot; Desk</div>
       <div class="score-badge">Original Review</div>
@@ -454,7 +465,7 @@ footer{
 
   <div class="art-list">
 
-    <div class="art-row" data-tags="tech own" onclick="window.location.href='edifier-m60-speakers-review.html'">
+    <div class="art-row" data-tags="tech own" onclick="window.location.href='edifier-m60-speakers-review__1_.html'">
       <div class="art-thumb"><img src="images/edifier-m60-hero.jpg" alt="Edifier M60 Speakers"/></div>
       <div>
         <div class="art-cat">Tech &middot; Desk</div>
