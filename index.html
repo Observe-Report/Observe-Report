@@ -21,16 +21,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{
-  --ink:#111;
-  --ink-muted:#555;
-  --ink-faint:#999;
-  --rule:#ddd;
-  --bg:#1a1a1a;
-  --bg-card:#fff;
-  --accent:#c0392b;
-  --nav-h:64px;
-  --max:1100px;
+:root {
+  /* BACKGROUND: Updated to match article charcoal (#111) */
+  --bg: #111;       
+  --bg-card: #1a1a1a; 
+  --rule: #2e2e2e;
+
+  /* TEXT: Light colors to ensure visibility on the new dark background */
+  --ink: #f0ede8;      /* Primary light text for headers and body */
+  --ink-muted: #aaa;    /* Muted secondary text */
+  --ink-faint: #666;    /* Small meta text */
+  
+  /* ACCENT: Signature orange used across all pages */
+  --accent: #e05a4a;   
+  
+  --nav-h: 64px;
+  --max: 1100px;
 }
 @media(prefers-color-scheme:dark){
   :root{
