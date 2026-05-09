@@ -2,13 +2,12 @@
 <html lang="en">
 <head>
 <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-WG13S11YG9"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
-  gtag('config', 'G-4YP6FSF0BM');
+  gtag('config', 'G-WG13S11YG9');
 </script>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -21,33 +20,16 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&display=swap" rel="stylesheet"/>
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root {
-  /* BACKGROUND: Updated to match article charcoal (#111) */
-  --bg: #111;       
-  --bg-card: #1a1a1a; 
-  --rule: #2e2e2e;
-
-  /* TEXT: Light colors to ensure visibility on the new dark background */
-  --ink: #f0ede8;      /* Primary light text for headers and body */
-  --ink-muted: #aaa;    /* Muted secondary text */
-  --ink-faint: #666;    /* Small meta text */
-  
-  /* ACCENT: Signature orange used across all pages */
-  --accent: #e05a4a;   
-  
-  --nav-h: 64px;
-  --max: 1100px;
-}
-@media(prefers-color-scheme:dark){
-  :root{
-    --ink:#f0ede8;
-    --ink-muted:#aaa;
-    --ink-faint:#666;
-    --rule:#2e2e2e;
-    --bg:#111;
-    --bg-card:#1a1a1a;
-    --accent:#e05a4a;
-  }
+:root{
+  --ink:#e0e0e0;
+  --ink-muted:#aaa;
+  --ink-faint:#666;
+  --rule:#333333;
+  --bg:#1a1a1a;
+  --bg-card:#1a1a1a;
+  --accent:#ff6b4a;
+  --nav-h:64px;
+  --max:1100px;
 }
 html{scroll-behavior:smooth;}
 body{font-family:'Literata',Georgia,serif;background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65;}
@@ -340,7 +322,7 @@ footer{
 <!-- NAV -->
 <nav>
   <div class="nav-inner">
-    <div class="wordmark" onclick="show('home')">Observe<span>/</span>Report</div>
+    <div class="wordmark" onclick="show('home')">Observe<span style="color: var(--accent);">/</span>Report</div>
     <div class="nav-links">
       <a id="nav-home" class="active" onclick="show('home')">Home</a>
       <a id="nav-browse" onclick="show('browse')">Browse</a>
