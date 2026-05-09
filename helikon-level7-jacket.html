@@ -68,24 +68,25 @@
     }
     .nav-links a:hover { color: var(--ink); }
 
-    .promo-banner {
-      background: var(--accent);
-      border-bottom: 1px solid var(--accent);
-      padding: 0.55rem 2rem;
-      display: flex; align-items: center; justify-content: center; gap: 0.75rem;
-      flex-wrap: wrap;
-    }
-    .promo-banner span {
-      font-family: 'DM Mono', monospace; font-size: 11px;
-      color: var(--ink-muted);
-      letter-spacing: 0.08em;
-    }
-    .promo-code {
-      font-family: 'DM Mono', monospace; font-size: 11px; font-weight: 500;
-      color: var(--accent); background: var(--bg-card);
-      padding: 0.2rem 0.6rem; border: 1px solid var(--accent);
-      letter-spacing: 0.1em; cursor: pointer; transition: background 0.15s;
-    }
+.promo-banner {
+  background: var(--bg-card); /* Matches your article background */
+  border: 1px solid var(--accent); /* Adds a subtle border using your theme color */
+  padding: 1rem;
+  margin-bottom: 1rem; /* Creates space between the banner and the image below */
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px; /* Matches your image/card styling [cite: 43, 45] */
+}
+.promo-code {
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 1px dashed var(--accent);
+  margin: 0 0.5rem;
+}
     .promo-code:hover { opacity: 0.8; }
     .promo-copied {
       font-family: 'DM Mono', monospace; font-size: 10px;
@@ -253,14 +254,6 @@
   </style>
 </head>
 <body>
-
-  <div class="promo-banner">
-    <span>Use code</span>
-    <span class="promo-code" onclick="copyCode(this)">GUNBRJA26</span>
-    <span>for 10% off at Helikon-Tex</span>
-    <span class="promo-copied" id="copied-msg">Copied!</span>
-  </div>
-
   <nav>
     <div class="nav-inner">
       <a class="wordmark" href="./index.html">Observe<span>/</span>Report</a>
@@ -279,8 +272,16 @@
       <span class="dot"></span>
       <span class="tag original">Original Review</span>
       <span class="dot"></span>
-      <span>2025</span>
+      <span>2026</span>
     </div>
+
+      <div class="promo-banner">
+    <span>Use code</span>
+    <span class="promo-code" onclick="copyCode(this)">GUNBRJA26</span>
+    <span>for 10% off at Helikon-Tex</span>
+    <span class="promo-copied" id="copied-msg">Copied!</span>
+  </div>
+    
     <h1>Helikon-Tex Level 7 Jacket — Duty-Grade Warmth That Packs Down</h1>
     <p class="hero-deck">Tested in single-digit temperatures and snow. Puffer-level insulation with a far more durable shell. A cold-weather layer built to be used, not babied.</p>
     <div class="byline"><em>By Brian J.</em> &nbsp;·&nbsp; <em>Original Review</em> &nbsp;·&nbsp; <em>2025</em></div>
