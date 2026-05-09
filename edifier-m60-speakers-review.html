@@ -1,146 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+  <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-    gtag('config', 'G-4YP6FSF0BM');
-  </script>
-  
+  gtag('config', 'G-4YP6FSF0BM');
+</script>
+<head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edifier M60 Speakers Review: Small Footprint, Serious Sound — Observe/Report</title>
-  <meta name="description" content="Edifier M60 desktop speakers review. Compact design, balanced sound, clean aesthetics. Reviewed by Brian J." />
-  
+  <meta name="description" content="Edifier M60 desktop speakers review. Compact design, balanced sound, clean aesthetics. The desk audio upgrade that just works. Reviewed by Brian J." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&family=IBM+Plex+Sans:wght@300;400;500;600&display=swap" rel="stylesheet" />
-  
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&display=swap" rel="stylesheet" />
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-    :root {
-      /* Synchronized with Homepage Dark Charcoal Theme */
-      --bg:         #111;       
-      --bg2:        #1a1a1a;    
-      --bg3:        #2e2e2e;
-      --border:     #2e2e2e;    
-      --text:       #f0ede8;    
-      --text2:      #aaa;       
-      --text3:      #666;
-      --accent:     #e05a4a;    
-      
-      /* Synchronized Typography */
-      --serif:      'Literata', Georgia, serif;
-      --display:    'Playfair Display', serif;
-      --sans:       'IBM Plex Sans', system-ui, sans-serif;
-      --mono:       'DM Mono', monospace;
-      --nav-h:      64px;
-      --max:        1100px;
+:root {
+  /* BACKGROUND: Updated to match article charcoal (#111) */
+  --bg: #111;       
+  --bg-card: #1a1a1a; 
+  --rule: #2e2e2e;
+
+  /* TEXT: Light colors to ensure visibility on the new dark background */
+  --ink: #f0ede8;      /* Primary light text for headers and body */
+  --ink-muted: #aaa;    /* Muted secondary text */
+  --ink-faint: #666;    /* Small meta text */
+  
+  /* ACCENT: Signature orange used across all pages */
+  --accent: #e05a4a;   
+  
+  --nav-h: 64px;
+  --max: 1100px;
+}
+
+    @media(prefers-color-scheme: dark) {
+      :root {
+        --ink: #f0ede8;
+        --ink-muted: #aaa;
+        --ink-faint: #666;
+        --rule: #2e2e2e;
+        --bg: #111;
+        --bg-card: #1a1a1a;
+        --accent: #e05a4a;
+      }
     }
 
-    html { background: var(--bg); color: var(--text); font-family: var(--serif); font-size: 16px; line-height: 1.65; scroll-behavior: smooth; }
+    html { scroll-behavior: smooth; background: var(--bg); color: var(--ink); font-family: 'Literata', Georgia, serif; font-size: 16px; line-height: 1.6; }
 
-    /* NAV - Updated to match Homepage */
+    /* ── NAV ── */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: var(--bg); border-bottom: 1px solid var(--border);
-      padding: 0 2rem; height: var(--nav-h);
-      display: flex; align-items: center; justify-content: center;
+      background: var(--bg); border-bottom: 1px solid var(--rule);
+      height: 64px; display: flex; align-items: center;
     }
     .nav-inner {
-      width: 100%; max-width: var(--max);
-      display: flex; align-items: center; justify-content: space-between;
+      max-width: 1100px; margin: 0 auto; padding: 0 2rem;
+      width: 100%; display: flex; align-items: center; justify-content: space-between;
       gap: 2rem;
     }
     .wordmark {
-      font-family: var(--mono); font-weight: 500;
+      font-family: 'DM Mono', monospace; font-weight: 500;
       font-size: 15px; letter-spacing: .08em; text-transform: uppercase;
-      color: var(--text); text-decoration: none; cursor: pointer;
+      flex-shrink: 0;
     }
     .wordmark span { color: var(--accent); }
-    
-    .nav-links { display: flex; gap: 2rem; list-style: none; font-family: var(--mono); font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
-    .nav-links a { color: var(--text2); text-decoration: none; transition: color .15s; }
-    .nav-links a:hover { color: var(--text); }
+    .nav-links {
+      display: flex; gap: 2rem; list-style: none;
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: .12em; text-transform: uppercase; color: var(--ink-muted);
+    }
+    .nav-links a { cursor: pointer; transition: color .15s; border-bottom: 1px solid transparent; padding-bottom: 2px; }
+    .nav-links a:hover { color: var(--ink); }
+    .nav-links a:hover { color: var(--ink); }
 
-    /* Article Hero Section */
-    .hero { border-bottom: 1px solid var(--border); padding: 4rem 2rem 3rem; max-width: 780px; margin: 0 auto; }
-    .hero-meta { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: .1em; text-transform: uppercase; margin-bottom: 1.5rem; }
-    .tag { display: inline-block; font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); }
-    .hero h1 { font-family: var(--display); font-size: clamp(2rem, 4vw, 3rem); font-weight: 700; line-height: 1.1; color: var(--text); margin-bottom: 1rem; letter-spacing: -.01em; }
-    .hero-deck { font-family: var(--serif); font-size: 1rem; color: var(--text2); line-height: 1.7; max-width: 620px; margin-bottom: 1.75rem; }
-    .byline { font-family: var(--mono); font-size: 11px; color: var(--text3); letter-spacing: .1em; text-transform: uppercase; }
-    .byline strong { color: var(--text2); font-style: normal; }
+    /* ── HERO ── */
+    .hero { border-bottom: 1px solid var(--rule); padding: 4rem 2rem 3rem; max-width: 780px; margin: 0 auto; }
+    .hero-meta { display: flex; align-items: center; gap: .75rem; flex-wrap: wrap; font-family: var('DM Mono', monospace); font-size: .72rem; color: var(--ink-faint); letter-spacing: .06em; text-transform: uppercase; margin-bottom: 1.5rem; }
+    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--rule); }
+    .tag { display: inline-block; font-family: var('DM Mono', monospace); font-size: .68rem; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; padding: .25rem .6rem; border: 1px solid var(--rule); color: var(--ink-faint); }
+    .tag.original { border-color: var(--accent2); color: var(--accent); }
+    .hero h1 { font-family: var('Playfair Display', serif); font-size: clamp(1.8rem, 4vw, 2.8rem); font-weight: 700; line-height: 1.2; color: var(--ink); margin-bottom: 1rem; }
+    .hero-deck { font-family: var('Literata', Georgia, serif); font-size: 1.05rem; color: var(--ink-muted); line-height: 1.65; max-width: 620px; margin-bottom: 1.75rem; }
+    .byline { font-family: var('DM Mono', monospace); font-size: .75rem; color: var(--ink-faint); letter-spacing: .04em; }
+    .byline strong { color: var(--ink-muted); }
 
-    /* Layout */
-    .article-wrap { max-width: var(--max); margin: 0 auto; padding: 0 2rem 6rem; display: grid; grid-template-columns: 1fr 280px; gap: 0 4rem; align-items: start; }
+    /* ── ARTICLE ── */
+    .article-wrap { max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem; display: grid; grid-template-columns: 1fr 220px; gap: 0 4rem; align-items: start; }
     .article-body { min-width: 0; padding-top: 2.5rem; }
 
-    .article-body img { width: 100%; height: auto; display: block; margin: 2rem 0; border-radius: 2px; border: 1px solid var(--border); }
-    .img-caption { font-family: var(--mono); font-size: 10px; color: var(--text3); letter-spacing: .1em; text-transform: uppercase; margin: -1rem 0 2rem; padding: 0.5rem 0; text-align: center; }
+    .article-body img { width: 100%; object-fit: cover; display: block; margin: 2rem 0; border: 1px solid var(--rule); }
+    .img-caption { font-family: var('DM Mono', monospace); font-size: .68rem; color: var(--ink-faint); letter-spacing: .05em; text-transform: uppercase; margin: -.75rem 0 2rem; padding: .5rem .75rem; border: 1px solid var(--rule); border-top: none; background: var(--bg-card); }
 
-    .article-body h2 { font-family: var(--display); font-size: 1.5rem; font-weight: 700; color: var(--text); margin: 2.5rem 0 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-    .article-body h3 { font-family: var(--mono); font-size: 11px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin: 2rem 0 0.75rem; }
-    .article-body p { font-size: 1rem; color: var(--text2); line-height: 1.7; margin-bottom: 1.25rem; }
-    .article-body a { color: var(--accent); text-decoration: none; border-bottom: 1px solid var(--accent); transition: opacity .15s; }
-    .article-body a:hover { opacity: 0.7; }
-    .article-body ul { margin: 0.5rem 0 1.5rem 1.5rem; color: var(--text2); }
-    .article-body li { margin-bottom: 0.5rem; }
+    .article-body h2 { font-family: var('Playfair Display', serif); font-size: 1.3rem; font-weight: 700; color: var(--ink); margin: 2.5rem 0 .75rem; padding-bottom: .5rem; border-bottom: 1px solid var(--rule); }
+    .article-body h3 { font-family: var('DM Mono', monospace); font-size: .78rem; letter-spacing: .1em; text-transform: uppercase; color: var(--accent); margin: 1.75rem 0 .6rem; }
+    .article-body p { font-family: var('Literata', Georgia, serif); font-size: .975rem; color: var(--ink-muted); line-height: 1.8; margin-bottom: 1.1rem; }
+    .article-body ul { margin: .5rem 0 1.1rem 1.25rem; }
+    .article-body ul li { font-family: var('Literata', Georgia, serif); font-size: .975rem; color: var(--ink-muted); line-height: 1.8; margin-bottom: .3rem; }
 
-    .verdict { border: 1px solid var(--accent); background: var(--bg2); padding: 2rem; margin: 3rem 0; border-radius: 2px; }
-    .verdict-label { font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--accent); margin-bottom: 1rem; }
-    .verdict p { font-style: italic; color: var(--text); margin-bottom: 0; }
+    /* ── VERDICT ── */
+    .verdict { border: 1px solid var(--accent2); background: var(--bg-card); padding: 1.5rem 1.75rem; margin: 2.5rem 0 0; }
+    .verdict-label { font-family: var('DM Mono', monospace); font-size: .68rem; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); margin-bottom: .75rem; }
+    .verdict p { font-family: var('Playfair Display', serif); font-size: 1rem; color: var(--ink); line-height: 1.75; font-style: italic; margin-bottom: 0; }
 
-    /* Sidebar - Updated to match Homepage cards */
+    /* ── SIDEBAR ── */
     .sidebar { padding-top: 2.5rem; position: sticky; top: 80px; }
-    .sidebar-block { border: 1px solid var(--border); background: var(--bg2); padding: 1.5rem; margin-bottom: 1.5rem; border-radius: 2px; }
-    .sidebar-block h4 { font-family: var(--mono); font-size: 10px; letter-spacing: .2em; text-transform: uppercase; color: var(--text3); margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: 0.5rem; }
-    .spec-row { display: flex; justify-content: space-between; gap: 0.5rem; padding: 0.5rem 0; border-bottom: 1px solid var(--border); font-size: 11px; font-family: var(--mono); text-transform: uppercase; }
+    .sidebar-block { border: 1px solid var(--rule); background: var(--bg-card); padding: 1.25rem; margin-bottom: 1.25rem; }
+    .sidebar-block h4 { font-family: var('DM Mono', monospace); font-size: .68rem; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-faint); margin-bottom: 1rem; padding-bottom: .6rem; border-bottom: 1px solid var(--rule); }
+    .spec-row { display: flex; justify-content: space-between; align-items: baseline; gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--rule); }
     .spec-row:last-child { border-bottom: none; }
-    .spec-label { color: var(--text3); }
-    .spec-val { color: var(--text2); text-align: right; }
-    
-    .back-link { display: inline-flex; align-items: center; gap: 6px; font-family: var(--mono); font-size: 11px; color: var(--accent); text-decoration: none; letter-spacing: .12em; text-transform: uppercase; margin-bottom: 1.5rem; border-bottom: 1px solid var(--accent); }
+    .spec-label { font-family: var('Literata', Georgia, serif); font-size: .78rem; color: var(--ink-faint); }
+    .spec-val { font-family: var('DM Mono', monospace); font-size: .78rem; color: var(--ink-muted); text-align: right; }
+    .sidebar-block p { font-family: var('Literata', Georgia, serif); font-size: .82rem; color: var(--ink-muted); line-height: 1.6; margin: 0; }
+    .back-link { display: inline-flex; align-items: center; gap: .5rem; font-family: var('DM Mono', monospace); font-size: .72rem; color: var(--ink-faint); text-decoration: none; letter-spacing: .05em; text-transform: uppercase; transition: color .15s; margin-bottom: 1.25rem; }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: '←'; }
 
-    footer { border-top: 1px solid var(--border); padding: 2rem; font-family: var(--mono); font-size: 10px; color: var(--text3); letter-spacing: .15em; text-align: center; text-transform: uppercase; }
+    /* ── FOOTER ── */
+    footer { border-top: 1px solid var(--rule); padding: 2rem; font-family: var('DM Mono', monospace); font-size: .72rem; color: var(--ink-faint); letter-spacing: .04em; text-align: center; line-height: 1.8; }
 
-    @media (max-width: 768px) {
-      .article-wrap { grid-template-columns: 1fr; }
+    @media (max-width: 700px) {
+      .article-wrap { grid-template-columns: 1fr; gap: 0; }
       .sidebar { position: static; padding-top: 0; }
     }
   </style>
 </head>
 <body>
 
+  <!-- NAV -->
   <nav>
     <div class="nav-inner">
       <a class="wordmark" href="./index.html">Observe<span>/</span>Report</a>
-      <div class="nav-links">
-        <a href="./index.html">Home</a>
-        <a href="./index.html#browse">Browse</a>
-        <a href="./index.html#contact">Contact</a>
-      </div>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#browse">Browse</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
     </div>
   </nav>
 
+  <!-- HERO -->
   <header class="hero">
     <div class="hero-meta">
-      <span class="tag">Featured Review &mdash; Tech / Desk</span>
-      <span>&middot;</span>
+      <span class="tag">Tech</span>
+      <span class="tag">Desk</span>
+      <span class="dot"></span>
+      <span class="tag original">Original Review</span>
+      <span class="dot"></span>
       <span>2026</span>
     </div>
     <h1>Edifier M60 Speakers Review: Small Footprint, Serious Sound</h1>
-    <p class="hero-deck">The desk audio upgrade that just works. Clean design, balanced sound, and the kind of consistency you notice over time. Built for real-world use, not spec sheets.</p>
-    <div class="byline">By <strong>Brian J.</strong> &middot; Observe/Report Original &middot; 2026</div>
+    <p class="hero-deck">There's a point in every desk setup where the weak link becomes obvious — and it's usually audio. The M60s are the upgrade that quietly elevates your entire workspace. Clean design, balanced sound, and the kind of consistency you actually notice over time.</p>
+    <div class="byline">By <strong>Brian J.</strong> · Observe/Report Original · 2026</div>
   </header>
 
+  <!-- BODY + SIDEBAR -->
   <div class="article-wrap">
-    <article class="article-body">
-      <p>You can have a dialed-in keyboard, a clean monitor setup, and a workspace you actually enjoy sitting down at, but if your speakers sound like an afterthought, the whole experience takes a hit.</p>
-      <p>That's exactly where the <a href="https://www.edifier.com/us/en/speakers/m60" target="_blank" rel="noopener">Edifier M60s</a> come in.</p>
 
-      <h2>First Impressions: Clean, Minimal
+    <article class="article-body">
+
+      <p>You can have a dialed-in keyboard, a clean monitor setup, and a workspace you actually enjoy sitting down at, but if your speakers sound like an afterthought, the whole experience takes a hit.</p>
+      <p>That's exactly where the Edifier M60s come in.</p>
+      <p>I've had these on my desk for a while now, and they've turned into one of those upgrades you stop noticing — not because they're forgettable, but because they just work. They sound good, they look right, and they don't demand attention to do either.</p>
+
+      <h2>First Impressions: Clean, Minimal, Intentional</h2>
+      <p>Right out of the box, the M60s lean into a modern, understated design. They don't scream for attention, but they absolutely elevate the look of a desk. Compact without feeling cheap, and just enough weight to let you know they're built with purpose.</p>
+
+      <img src="images/edifier-m60-hero.jpg" alt="Edifier M60 speaker front view" style="aspect-ratio:3/5;" />
+      <div class="img-caption">Edifier M60 — Clean, minimal design that elevates any desk setup</div>
+
+      <p>They hit that sweet spot:</p>
+      <ul>
+        <li>Not bulky</li>
+        <li>Not toy-like</li>
+        <li>Just right for a clean, intentional setup</li>
+      </ul>
+      <p>If you're someone who cares about how your desk looks as much as how it performs, these fit in effortlessly.</p>
+
+      <img src="images/edifier-m60-connections.jpg" alt="Edifier M60 speakers rear connections" style="aspect-ratio:3/5;" />
+      <div class="img-caption">Rear panel connections — AUX IN and USB-C input</div>
+
+      <h2>Sound Profile: Balanced with a Bit of Punch</h2>
+      <p>Let's get to the part that actually matters.</p>
+      <p>For their size, these speakers punch above their weight. You're not getting room-shaking bass, but you're also not dealing with that thin, hollow sound most compact speakers fall into.</p>
+
+      <h3>What Stands Out</h3>
+      <ul>
+        <li>Clear mids and highs — vocals and dialogue come through crisp</li>
+        <li>Capable low end — enough warmth to make music enjoyable</li>
+        <li>No harshness at volume — they stay composed when pushed</li>
+      </ul>
+
+      <p>On the rare occasion my computer reroutes audio back to the laptop speakers, I'm instantly reminded how good these are. The drop-off is brutal. What was full and rich becomes tinny and flat fast, the kind of sound that exists purely to check a box.</p>
+
+      <p>They're tuned in a way that works across everything:</p>
+      <ul>
+        <li>Background music while working</li>
+        <li>YouTube and content consumption</li>
+        <li>Casual gaming</li>
+      </ul>
+      <p>They're not studio monitors, and they're not trying to be. They're built for real-world desk use, and they nail it.</p>
+
+      <h2>Daily Use: Where They Shine</h2>
+      <p>This is where the M60s really prove their value.</p>
+      <p>They're the kind of speakers you turn on in the morning and forget about. No constant tweaking, no fighting with settings. Just consistent, reliable audio.</p>
+
+      <img src="images/edifier-m60-controls.jpg" alt="Edifier M60 touch-sensitive controls" style="aspect-ratio:3/5;" />
+      <div class="img-caption">Touch-sensitive controls — volume and power buttons on top</div>
+
+      <p>The interface is simple and clean, easy to access without pulling attention away from your setup. You also get app control when connected via Bluetooth through the Edifier ConneX app. From there, you can adjust built-in EQ profiles and run firmware updates, which is a solid bonus at this level.</p>
+
+      <img src="images/edifier-m60-app.jpg" alt="Edifier ConneX app interface" style="aspect-ratio:9/19.5;" />
+      <div class="img-caption">Edifier ConneX app — EQ controls and firmware updates</div>
+
+      <h3>A Few Things I've Appreciated</h3>
+      <ul>
+        <li>They don't fatigue your ears during long sessions</li>
+        <li>They fill a desk space without overpowering it</li>
+        <li>They scale well with volume depending on what you're doing</li>
+      </ul>
+      <p>For a daily driver setup, that matters more than chasing perfect specs.</p>
+
+      <img src="images/edifier-m60-desk.jpg" alt="Edifier M60 on desk with included stand" style="aspect-ratio:3/5;" />
+      <div class="img-caption">On the desk — included stand provides angled positioning</div>
+
+      <h2>Who These Are For</h2>
+      <p>Let's be real — not everyone needs massive speakers or an audiophile setup.</p>
+      <p>The M60s are perfect if you:</p>
+      <ul>
+        <li>Want a clean, minimal desk aesthetic</li>
+        <li>Need better-than-average sound without going overboard</li>
+        <li>Spend a lot of time at your desk working, browsing, or creating</li>
+      </ul>
+      <p>They're especially strong for anyone building a setup that balances function and visual appeal.</p>
+
+      <h2>Where They Fall Short</h2>
+      <p>No gear is perfect, and these aren't pretending to be.</p>
+      <ul>
+        <li>If you're chasing deep, rumbling bass, you'll want a subwoofer</li>
+        <li>If you're doing critical audio work, look at studio monitors instead</li>
+        <li>They prioritize balance over extremes</li>
+      </ul>
+      <p>And honestly, that's by design.</p>
+
+      <!-- VERDICT -->
+      <div class="verdict">
+        <div class="verdict-label">Final Thoughts</div>
+        <p>The Edifier M60s aren't trying to be everything, and that's exactly why they work so well. They're built for real-world use. Clean design, solid performance, and the kind of consistency you actually notice over time. If your current speakers feel like an afterthought, this is one of those upgrades that quietly elevates your entire setup. And if you're building a desk that looks good and performs, this is the kind of gear that helps you get there without overcomplicating it.</p>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <a class="back-link" href="./index.html">All Reviews</a>
+
+      <div class="sidebar-block">
+        <h4>Specs</h4>
+        <div class="spec-row"><span class="spec-label">Brand</span><span class="spec-val">Edifier</span></div>
+        <div class="spec-row"><span class="spec-label">Model</span><span class="spec-val">M60</span></div>
+        <div class="spec-row"><span class="spec-label">Type</span><span class="spec-val">Desktop Speakers</span></div>
+        <div class="spec-row"><span class="spec-label">Connectivity</span><span class="spec-val">Bluetooth, USB-C, AUX</span></div>
+        <div class="spec-row"><span class="spec-label">App</span><span class="spec-val">Edifier ConneX</span></div>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Bottom Line</h4>
+        <p>Compact, balanced, and consistent. The desk audio upgrade that just works without demanding attention. Clean aesthetics meet solid performance.</p>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Filed Under</h4>
+        <div class="spec-row"><span class="spec-label">Section</span><span class="spec-val">Tech / Desk</span></div>
+        <div class="spec-row"><span class="spec-label">Type</span><span class="spec-val">Original Review</span></div>
+        <div class="spec-row"><span class="spec-label">Year</span><span class="spec-val">2026</span></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    © 2026 Observe/Report · Written by Brian J.<br>
+    Independent field testing — editorial standards are mine alone.
+  </footer>
+
+</body>
+</html>
