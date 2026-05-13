@@ -108,26 +108,39 @@
     }
 
 
-    /* ── PROMO BANNER ── */
-    .promo-banner {
-      background: var(--accent2);
-      border-bottom: 1px solid var(--accent);
-      padding: .55rem 2rem;
-      display: flex; align-items: center; justify-content: center; gap: .75rem;
-      flex-wrap: wrap;
+/* ── PROMO BANNER ── */
+.promo-banner {
+  background: var(--bg-card); /* Matches your article background */
+  border: 1px solid var(--accent); /* Adds a subtle border using your theme color */
+  padding: 1rem;
+  margin-bottom: 1rem; /* Creates space between the banner and the image below */
+  text-align: center;
+  font-family: 'DM Mono', monospace;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  border-radius: 2px; /* Matches your image/card styling [cite: 43, 45] */
+}
+.promo-code {
+  color: var(--accent);
+  font-weight: 700;
+  cursor: pointer;
+  border-bottom: 1px dashed var(--accent);
+  margin: 0 0.5rem;
+}
+    .promo-code:hover { opacity: 0.8; }
+    .promo-copied {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: #5a9e72;
+      letter-spacing: 0.08em; opacity: 0; transition: opacity 0.2s;
     }
-    .promo-banner span {
-      font-family: var(--sans); font-size: .8rem; color: var(--text2);
-      letter-spacing: .02em;
-    }
-    .promo-code {
-      font-family: var(--mono); font-size: .82rem; font-weight: 500;
-      color: var(--accent); background: var(--bg);
-      padding: .2rem .6rem; border: 1px solid var(--accent2);
-      letter-spacing: .1em; cursor: pointer; transition: background .15s;
-    }
-    .promo-code:hover { background: var(--bg3); }    
-      /* ── ARTICLE BODY ── */
+    .promo-copied.show { opacity: 1; }
+      
+    .hero {
+      max-width: var(--max); margin: 0 auto;
+      padding: 4rem 2rem 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }      /* ── ARTICLE BODY ── */
     .article-wrap {
       max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem;
       display: grid; grid-template-columns: 1fr 220px; gap: 0 4rem;
