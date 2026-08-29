@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-4YP6FSF0BM');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="description" content="The Keychron M6 wireless mouse joins the WFH Desk Upgrade series, going up against a longtime Logitech G604 daily driver on weight, controls, and value."/>
+<meta name="author" content="Brian J."/>
+<meta property="og:title" content="Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup — Observe/Report"/>
+<meta property="og:description" content="The Keychron M6 wireless mouse joins the WFH Desk Upgrade series, going up against a longtime Logitech G604 daily driver on weight, controls, and value."/>
+<meta property="og:type" content="article"/>
+<title>Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup — Observe/Report</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet"/>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:      #0f0f0f;
+  --bg2:     #161616;
+  --bg3:     #1e1e1e;
+  --border:  #2a2a2a;
+  --border2: #333;
+  --text:    #e8e4dc;
+  --text2:   #a09890;
+  --text3:   #6a6560;
+  --accent:  #e05a4a;
+  --accent2: #c0392b;
+  --serif:   'Libre Baskerville', Georgia, serif;
+  --sans:    'IBM Plex Sans', system-ui, sans-serif;
+  --mono:    'IBM Plex Mono', monospace;
+}
+
+html { background: var(--bg); color: var(--text); font-family: var(--sans); font-size: 16px; line-height: 1.6; }
+
+nav {
+  position: sticky; top: 0; z-index: 50;
+  background: var(--bg); border-bottom: 1px solid var(--border);
+  padding: 1rem 2rem;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 2rem;
+}
+.nav-logo {
+  font-family: var(--mono); font-size: .85rem; font-weight: 500;
+  color: var(--text); text-decoration: none; letter-spacing: .04em;
+}
+.nav-logo span { color: var(--accent); }
+.nav-links {
+  display: flex; gap: 2rem; list-style: none;
+  font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .08em; text-transform: uppercase;
+}
+.nav-links a {
+  color: var(--text3); text-decoration: none;
+  transition: color .15s; border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+.nav-links a:hover { color: var(--accent); }
+
+.hero {
+  max-width: 820px; margin: 0 auto; padding: 3rem 2rem 2.5rem;
+  border-bottom: 1px solid var(--border);
+}
+.eyebrow {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 1rem;
+}
+.hero h1 {
+  font-family: var(--serif); font-size: clamp(1.8rem, 4vw, 2.8rem);
+  font-weight: 700; line-height: 1.2; color: var(--text); margin-bottom: 1rem;
+}
+.hero-deck {
+  font-size: 1rem; color: var(--text2); line-height: 1.7;
+  margin-bottom: 1.5rem; max-width: 620px;
+}
+.hero-meta {
+  font-family: var(--mono); font-size: .72rem; color: var(--text3);
+  letter-spacing: .06em; display: flex; align-items: center; gap: .75rem;
+  flex-wrap: wrap; margin-bottom: 2rem;
+}
+.hero-meta em { color: var(--text2); font-style: normal; }
+.hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--border2); }
+.tag {
+  display: inline-block; font-family: var(--mono); font-size: .68rem;
+  font-weight: 500; letter-spacing: .08em; text-transform: uppercase;
+  padding: .25rem .6rem; border: 1px solid var(--border2); color: var(--text3);
+}
+.tag.original { border-color: var(--accent2); color: var(--accent); }
+.hero-img {
+  width: 100%; max-width: 780px; margin: 2rem auto 0;
+  border: 1px solid var(--border);
+}
+.back-link {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-family: var(--mono); font-size: .72rem; color: var(--text3);
+  text-decoration: none; letter-spacing: .05em; text-transform: uppercase;
+  transition: color .15s; margin-bottom: 1.25rem;
+}
+.back-link::before { content: '←'; }
+.back-link:hover { color: var(--accent); }
+
+.article-wrap {
+  max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem;
+  display: grid; grid-template-columns: 1fr 220px; gap: 0 4rem;
+  align-items: start;
+}
+.article-body { min-width: 0; padding-top: 2.5rem; }
+.article-body p {
+  font-family: var(--sans); font-size: .975rem; color: var(--text2);
+  line-height: 1.8; margin-bottom: 1.1rem;
+}
+.article-body h2 {
+  font-family: var(--serif); font-size: 1.3rem; font-weight: 700;
+  color: var(--text); margin: 2.5rem 0 .75rem; padding-bottom: .5rem;
+  border-bottom: 1px solid var(--border);
+}
+.article-body h3 {
+  font-family: var(--mono); font-size: .78rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--accent);
+  margin: 1.75rem 0 .6rem;
+}
+.article-body ul { margin: .5rem 0 1.1rem 1.25rem; }
+.article-body ul li {
+  font-family: var(--sans); font-size: .975rem; color: var(--text2);
+  line-height: 1.8; margin-bottom: .3rem;
+}
+.article-body img {
+  width: 100%; object-fit: cover; display: block;
+  margin: 2rem 0; border: 1px solid var(--border);
+}
+.img-caption {
+  font-family: var(--mono); font-size: .68rem; color: var(--text3);
+  letter-spacing: .05em; text-transform: uppercase;
+  margin: -.75rem 0 2rem; padding: .5rem .75rem;
+  border: 1px solid var(--border); border-top: none;
+  background: var(--bg2);
+}
+.article-body a {
+  color: var(--accent); text-decoration: none;
+  border-bottom: 1px solid transparent; transition: border-color .15s;
+}
+.article-body a:hover { border-bottom-color: var(--accent); }
+
+.sidebar { padding-top: 2.5rem; position: sticky; top: 72px; }
+.sidebar-block {
+  border: 1px solid var(--border); background: var(--bg2);
+  padding: 1.25rem; margin-bottom: 1.25rem;
+}
+.sidebar-block h4 {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .1em;
+  text-transform: uppercase; color: var(--text3);
+  margin-bottom: 1rem; padding-bottom: .6rem;
+  border-bottom: 1px solid var(--border);
+}
+.sidebar-block p {
+  font-family: var(--sans); font-size: .82rem; color: var(--text2);
+  line-height: 1.6; margin: 0;
+}
+.spec-row {
+  display: flex; justify-content: space-between; align-items: baseline;
+  gap: .5rem; padding: .35rem 0; border-bottom: 1px solid var(--border);
+}
+.spec-row:last-child { border-bottom: none; }
+.spec-label { font-family: var(--sans); font-size: .78rem; color: var(--text3); }
+.spec-val { font-family: var(--mono); font-size: .78rem; color: var(--text2); text-align: right; }
+.spec-val a { color: var(--accent); text-decoration: none; border-bottom: 1px solid transparent; transition: border-color .15s; }
+.spec-val a:hover { border-bottom-color: var(--accent); }
+
+.verdict {
+  border: 1px solid var(--accent2); background: var(--bg2);
+  padding: 1.5rem 1.75rem; margin: 2.5rem 0 0;
+}
+.verdict-label {
+  font-family: var(--mono); font-size: .68rem; letter-spacing: .12em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: .75rem;
+}
+.verdict p {
+  font-family: var(--serif); font-size: 1rem; color: var(--text);
+  line-height: 1.75; font-style: italic; margin-bottom: 0;
+}
+
+footer {
+  border-top: 1px solid var(--border); padding: 2rem;
+  text-align: center; font-family: var(--mono); font-size: .72rem;
+  letter-spacing: .04em; color: var(--text3); line-height: 1.8;
+}
+.footer-inner { display: flex; flex-direction: column; align-items: center; gap: .75rem; }
+.footer-ig {
+  display: inline-flex; align-items: center; gap: .5rem;
+  color: var(--text3); transition: color .15s;
+  font-size: 10px; letter-spacing: .12em; text-transform: uppercase; text-decoration: none;
+}
+.footer-ig:hover { color: var(--accent); }
+.footer-ig svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+@media (max-width: 700px) {
+  .article-wrap { grid-template-columns: 1fr; gap: 0; }
+  .sidebar { position: static; padding-top: 0; }
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html">OBSERVE<span>/</span>REPORT</a>
+  <ul class="nav-links">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#browse">Browse</a></li>
+  </ul>
+</nav>
+
+<div class="hero">
+  <a class="back-link" href="index.html">All Articles</a>
+  <div class="eyebrow">Tech &middot; Original Review</div>
+  <div class="hero-meta">
+    <span class="tag original">Original</span>
+    <span class="dot"></span>
+    <em>By Brian J.</em>
+    <span class="dot"></span>
+    <em>2026</em>
+  </div>
+  <h1>Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup</h1>
+  <p class="hero-deck">The latest piece of the WFH Desk Upgrade series: swapping a longtime Logitech G604 daily driver for Keychron's lighter, fully programmable M6 wireless mouse.</p>
+  <img class="hero-img" src="images/keychron-m6-review-hero.jpg" alt="Keychron M6 wireless mouse on a topographic desk mat"/>
+</div>
+
+<div class="article-wrap">
+  <div class="article-body">
+
+    <p>This review is part of my ongoing WFH Desk Upgrade series, where I'm working through my home office setup one piece at a time and looking at what actually makes a difference to the way I work.</p>
+
+    <p>So far, we've upgraded the speakers with <a href="edifier-m60-speakers-review.html">Edifier</a> and covered a <a href="keychron-k5-max.html">Keychron keyboard</a>. I've also got an upcoming review of the UPLIFT Desk standing desk that has become part of the setup, and I'm hoping the next piece of the puzzle will be a new monitor setup.</p>
+
+    <p>That leaves a lot of smaller pieces that can have a surprisingly big impact on how I use the desk every day.</p>
+
+    <p>One of those is the mouse.</p>
+
+    <p>For me, a mouse isn't just a device for moving a cursor around the screen. I spend enough time at my desk that I want the mouse to be an extension of my keyboard, giving me quick access to the functions I use throughout the day.</p>
+
+    <p>That's one of the reasons I've been using the <a href="logitech-g604-review.html">Logitech G604</a> for so long.</p>
+
+    <p>And it's also why the Keychron M6 caught my attention.</p>
+
+    <img src="images/keychron-m6-review-box.jpg" alt="Keychron M6 wireless mouse retail box"/>
+    <div class="img-caption">The M6 ships in Keychron's usual understated black box, 8K polling rate called out on the front.</div>
+
+    <h2>More Than Just Forward and Back</h2>
+
+    <p>The G604 wasn't my choice because it was a gaming mouse. It was my choice because it gave me something I value much more than RGB lighting or an absurdly high polling rate: programmable buttons.</p>
+
+    <p>I spend a lot of time at my computer, and I don't want every function I use throughout the day to require reaching back to the keyboard.</p>
+
+    <p>Screenshot. Copy. Paste. Mute the microphone. Go back. Show the desktop. Launch a particular function. Run a macro.</p>
+
+    <p>Those are the things I want my mouse to handle.</p>
+
+    <p>That's where the Keychron M6 immediately made sense to me.</p>
+
+    <h2>The G604 Comparison</h2>
+
+    <p>This is where my Logitech G604 comparison comes in.</p>
+
+    <p>The G604 and M6 aren't identical mice, and there are some obvious differences in shape and weight. The M6 is significantly lighter, while the G604 has a more substantial feel in the hand.</p>
+
+    <img src="images/keychron-m6-review-comparison.jpg" alt="Logitech G604 and Keychron M6 side by side on a desk mat"/>
+    <div class="img-caption">The G604 (left) next to the M6 (right). Similar ergonomic concept, noticeably different feel in hand.</div>
+
+    <p>The M6 also has a more pronounced hump across the top, so the shape feels different even though both mice are designed around a similar ergonomic concept.</p>
+
+    <p>But the important similarity isn't the thumb rest.</p>
+
+    <p>It's the additional controls.</p>
+
+    <p>That's the feature I care about most.</p>
+
+    <p>The thumb rest is something I appreciate on both mice, but the reason I gravitated toward the G604 in the first place was the ability to put functions beyond basic mouse navigation at my fingertips.</p>
+
+    <p>The M6 gives me that same general capability while allowing me to customize the controls to my current workflow.</p>
+
+    <p>And because Keychron's Launcher software makes changing those assignments relatively straightforward, I don't have to settle for whatever Keychron decided those buttons should do.</p>
+
+    <p>I can make them do what I need.</p>
+
+    <h2>The Thumb Rest Is Really Well Done</h2>
+
+    <p>The thumb rest on the M6 deserves some attention.</p>
+
+    <p>The surface is slick and smooth, which makes it easy to transition my thumb from the resting position up toward the buttons. There isn't a rough texture or rubberized surface trying to grip my thumb in place.</p>
+
+    <p>That matters because I'm constantly moving between the thumb rest and the controls above it.</p>
+
+    <img src="images/keychron-m6-review-thumb-wheel.jpg" alt="Close-up of the Keychron M6 thumb scroll wheel and side buttons"/>
+    <div class="img-caption">The dedicated thumb scroll wheel and side buttons, both fully remappable through Keychron Launcher.</div>
+
+    <p>The mouse also has a dedicated thumb scroll wheel, which gives you another input that can be assigned through Launcher.</p>
+
+    <p>I've found this particularly useful because I can turn that otherwise unusual control into something much more practical for my workflow.</p>
+
+    <p>For me, that ended up being copy and paste.</p>
+
+    <p>It's a perfect example of why I like programmable mice. Keychron doesn't have to decide what the thumb wheel is for. I can decide.</p>
+
+    <h2>A Very Good Scroll Wheel</h2>
+
+    <p>The primary scroll wheel is another place where the M6 feels more refined than its price would suggest.</p>
+
+    <p>Keychron uses a metal wheel with an aggressively knurled surface. The three rows of knurling give your finger plenty of traction, and I've found it particularly useful when working through large spreadsheets.</p>
+
+    <img src="images/keychron-m6-review-scroll-wheel.jpg" alt="Top-down view of the Keychron M6 metal scroll wheel"/>
+    <div class="img-caption">The knurled metal scroll wheel, with three rows of texture for grip during long spreadsheet sessions.</div>
+
+    <p>You can also click the button behind the wheel to switch into an infinite scroll mode.</p>
+
+    <p>At this point, I consider infinite scrolling almost mandatory on a productivity focused mouse. Once you've used it to move through a long spreadsheet, document or webpage, going back to a traditional scrolling experience can feel painfully slow.</p>
+
+    <p>I've also remapped the buttons around the scroll wheel.</p>
+
+    <p>On my setup, I've assigned them to back and desktop view functions for my Dell laptop.</p>
+
+    <p>Again, those aren't necessarily the functions everyone needs. That's why the ability to remap them matters.</p>
+
+    <h2>Lightweight Makes a Difference</h2>
+
+    <p>The first physical difference I noticed moving from the G604 to the M6 was the weight.</p>
+
+    <p>The M6 is considerably lighter.</p>
+
+    <img src="images/keychron-m6-review-side-profile.jpg" alt="Keychron M6 wireless mouse on a topographic desk mat next to a keyboard"/>
+    <div class="img-caption">At 86 grams, the M6 has a noticeably lighter feel in hand than the G604 it's replacing.</div>
+
+    <p>That's not something I expected to care about as much as I do, but after using it for a while, I appreciate how little effort it takes to move the mouse around my desk.</p>
+
+    <p>My primary display is a 34 inch monitor, with a separate 16 inch display positioned underneath it. I frequently move the cursor between the two, and the M6's sensor sensitivity allows me to cover that workspace without making large movements with my wrist.</p>
+
+    <p>I can tune the sensitivity to match my setup rather than constantly lifting and repositioning the mouse.</p>
+
+    <img src="images/keychron-m6-review-bottom-dpi.jpg" alt="Bottom of the Keychron M6 showing DPI, connectivity, and report rate switches"/>
+    <div class="img-caption">DPI, connectivity mode, and report rate switches on the underside, with status LEDs confirming the active setting.</div>
+
+    <p>That makes the lighter weight even more useful.</p>
+
+    <p>The mouse doesn't feel like it's fighting me as I move it around the desk.</p>
+
+    <h2>The Value Is the Part That Really Gets Me</h2>
+
+    <p>This might be my favorite part of the M6.</p>
+
+    <p>The feature set compared with the price is excellent.</p>
+
+    <p>The Logitech G604 was already an expensive mouse when it was available. Mine cost roughly twice what the M6 costs today.</p>
+
+    <p>But the G604 has since been discontinued, and that has done something strange to its pricing. Finding one today can cost several times what the mouse originally sold for.</p>
+
+    <p>That makes the M6's value proposition even more compelling.</p>
+
+    <p>I'm not saying the M6 is simply a replacement for the G604. The shape, weight, button layout and overall feel are different enough that someone who loves the G604 may still prefer it.</p>
+
+    <p>But when I look at what I'm actually getting from the M6, the amount of functionality Keychron has packed into this mouse for the price is impressive.</p>
+
+    <p>I'm getting a lightweight ergonomic mouse, multiple programmable controls, a dedicated thumb wheel, a metal scroll wheel with infinite scrolling, adjustable sensor sensitivity, multiple connectivity options and software that lets me configure the mouse around my workflow.</p>
+
+    <img src="images/keychron-m6-review-accessories.jpg" alt="Keychron M6 unboxed alongside its USB dongles and braided USB-C cable"/>
+    <div class="img-caption">Everything in the box: two USB dongles, a braided USB-C cable, and the mouse itself, good for three modes of connection.</div>
+
+    <img src="images/keychron-m6-review-usbc-port.jpg" alt="Close-up of the Keychron M6 USB-C charging port"/>
+    <div class="img-caption">USB-C charging and wired mode, tucked under the front lip of the mouse.</div>
+
+    <p>And I'm not paying a premium simply because the mouse has a bunch of buttons on it.</p>
+
+    <p>That's what makes the M6 such a compelling value.</p>
+
+    <h2>This Is the Kind of Mouse I Want</h2>
+
+    <p>I don't need my mouse to be complicated for the sake of being complicated.</p>
+
+    <p>I want it to make using my computer easier.</p>
+
+    <p>If I can hit a button with my thumb to mute my microphone, another to take a screenshot, use another for copy or paste, and have additional controls available for the functions I use regularly, that's useful.</p>
+
+    <p>That's productivity.</p>
+
+    <p>And that's ultimately what the WFH Desk Upgrade series is about.</p>
+
+    <p>I'm not trying to build a desk that simply looks good sitting in a photograph. I'm trying to build a workspace that makes spending eight or more hours at that desk easier and more efficient.</p>
+
+    <p>The speakers from Edifier improved the audio side of the setup. The Keychron keyboard changed the way I interact with the computer. The UPLIFT Desk is giving me the ability to change my working position throughout the day. If I can get the monitor setup upgraded as planned, that will address another major part of how I work.</p>
+
+    <p>The M6 fits into that same philosophy.</p>
+
+    <p>It is a relatively small upgrade, but it is something I interact with constantly.</p>
+
+    <p>And when I compare what it gives me with what I paid for it, the value is hard to ignore.</p>
+
+    <p>The Logitech G604 cost roughly twice as much when it was available, and with it now discontinued, current pricing can be several times higher. I'm not convinced the G604 offers enough of an advantage to justify that kind of money, especially when the M6 gives me the programmable controls and workflow customization that I actually care about.</p>
+
+    <p>That's the part of the M6 that has impressed me the most.</p>
+
+    <p>It isn't trying to be a $150 mouse.</p>
+
+    <p>It doesn't need to be.</p>
+
+    <p>It's giving me the controls I want, the ergonomics I need, the customization I expect and the performance necessary to run a multi monitor workspace, all at a price that makes sense for a work from home setup.</p>
+
+    <p>Keychron sent the <a href="https://www.keychron.com/products/keychron-m6-wireless-mouse?srsltid=AfmBOor28DTmQcKBoQHJX_wKZ-D4yGaV7_HkRQw1uc42S2y5X5gamy7o" target="_blank">M6</a> over for me to test, and I appreciate them continuing to trust me with their products. I've had the opportunity to spend time with several Keychron products now, and the M6 is another example of why I've enjoyed working with the company.</p>
+
+    <p>As the WFH Desk Upgrade continues, I'm looking forward to seeing what the next piece of the setup brings.</p>
+
+    <div class="verdict">
+      <div class="verdict-label">Verdict</div>
+      <p>Keychron didn't just build a lighter alternative to a discontinued favorite, they built a genuinely well thought out productivity mouse. The programmable thumb wheel, knurled infinite scroll, and Launcher software deliver most of what made the G604 worth owning, at a fraction of what that mouse now costs on the used market. For anyone building out a WFH setup, the M6 is an easy recommendation.</p>
+    </div>
+
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-block">
+      <h4>At a Glance</h4>
+      <div class="spec-row"><span class="spec-label">Product</span><span class="spec-val"><a href="https://www.keychron.com/products/keychron-m6-wireless-mouse?srsltid=AfmBOor28DTmQcKBoQHJX_wKZ-D4yGaV7_HkRQw1uc42S2y5X5gamy7o" target="_blank">M6 Wireless Mouse</a></span></div>
+      <div class="spec-row"><span class="spec-label">Brand</span><span class="spec-val">Keychron</span></div>
+      <div class="spec-row"><span class="spec-label">Sensor</span><span class="spec-val">PixArt 3950, 30K DPI</span></div>
+      <div class="spec-row"><span class="spec-label">Switches</span><span class="spec-val">Huano Silent, 20M clicks</span></div>
+      <div class="spec-row"><span class="spec-label">Weight</span><span class="spec-val">86g</span></div>
+      <div class="spec-row"><span class="spec-label">Polling Rate</span><span class="spec-val">Up to 8,000 Hz</span></div>
+      <div class="spec-row"><span class="spec-label">Battery Life</span><span class="spec-val">Up to 145 hrs</span></div>
+      <div class="spec-row"><span class="spec-label">Connectivity</span><span class="spec-val">2.4GHz / Bluetooth / Wired</span></div>
+      <div class="spec-row"><span class="spec-label">Cable</span><span class="spec-val">Paracord USB-C</span></div>
+      <div class="spec-row"><span class="spec-label">Software</span><span class="spec-val">Keychron Launcher</span></div>
+    </div>
+    <div class="sidebar-block">
+      <h4>Quick Take</h4>
+      <p>A lightweight, fully programmable wireless mouse that replicates what made the discontinued Logitech G604 worth owning, thumb wheel, remappable controls, infinite scroll, at a fraction of that mouse's current resale price.</p>
+    </div>
+  </aside>
+</div>
+
+<footer>
+  <div class="footer-inner">
+    <a class="footer-ig" href="https://www.instagram.com/observe.report/" target="_blank">
+      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+      @observe.report
+    </a>
+    <div>&copy; 2026 Observe/Report &nbsp;&middot;&nbsp; Written by Brian J.</div>
+  </div>
+</footer>
+
+</body>
+</html>
