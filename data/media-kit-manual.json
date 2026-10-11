@@ -1,0 +1,20 @@
+{
+  "period": "",
+  "updated": "2026-10-10",
+  "platforms": {
+    "reddit":    { "followers": null, "views": null, "engagements": null },
+    "instagram": { "followers": null, "views": null, "engagements": null },
+    "youtube":   { "followers": null, "views": null, "engagements": null },
+    "tiktok":    { "followers": null, "views": null, "engagements": null },
+    "threads":   { "followers": null, "views": null, "engagements": null },
+    "x":         { "followers": null, "views": null, "engagements": null }
+  },
+  "history": [
+    { "month": "2026-09", "reddit": null, "instagram": null, "tiktok": null, "threads": null, "x": null }
+  ],
+  "top": [
+    { "title": "Gear review (Reddit)", "platform": "reddit", "url": "", "views": 70000, "date": "" },
+    { "title": "Reddit post", "platform": "reddit", "url": "", "views": 27000, "date": "" }
+  ],
+  "audience": { "ages": "", "gender": "", "note": "" }
+}
