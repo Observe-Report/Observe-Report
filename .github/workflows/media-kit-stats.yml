@@ -1,0 +1,104 @@
+name: Media kit stats
+
+on:
+  schedule:
+    - cron: "17 10 * * *"   # every day around 6am Eastern
+  workflow_dispatch: {}      # lets you run it by hand from the Actions tab
+
+permissions:
+  contents: write
+  id-token: write
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - id: auth
+        uses: google-github-actions/auth@v2
+        with:
+          workload_identity_provider: projects/223493823698/locations/global/workloadIdentityPools/github/providers/observe-report
+          service_account: stats-reader@observe-report-stats.iam.gserviceaccount.com
+          token_format: access_token
+          access_token_scopes: https://www.googleapis.com/auth/analytics.readonly
+
+      - name: Pull Google Analytics and YouTube numbers
+        env:
+          ACCESS_TOKEN: ${{ steps.auth.outputs.access_token }}
+          GA4_PROPERTY_ID: ${{ vars.GA4_PROPERTY_ID }}
+          YT_API_KEY: ${{ secrets.YT_API_KEY }}
+          YT_HANDLE: "@Observe-Report"
+        run: |
+          python3 - <<'PY'
+          import json, os, urllib.request, urllib.parse, datetime
+
+          def call(url, body=None, headers=None):
+              data = json.dumps(body).encode() if body is not None else None
+              req = urllib.request.Request(url, data=data, headers=headers or {})
+              if data: req.add_header("Content-Type", "application/json")
+              with urllib.request.urlopen(req, timeout=60) as r:
+                  return json.load(r)
+
+          out = {"updated": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z"}
+
+          # ---- Google Analytics 4 ----
+          prop = os.environ.get("GA4_PROPERTY_ID", "").strip()
+          if prop:
+              url = f"https://analyticsdata.googleapis.com/v1beta/properties/{prop}:runReport"
+              h = {"Authorization": "Bearer " + os.environ["ACCESS_TOKEN"]}
+              last28 = [{"startDate": "28daysAgo", "endDate": "yesterday"}]
+              def rows(body):
+                  r = call(url, body, h)
+                  return [([d["value"] for d in x.get("dimensionValues", [])],
+                           [float(m["value"]) for m in x["metricValues"]]) for x in r.get("rows", [])]
+              t = rows({"dateRanges": last28, "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"},
+                        {"name": "sessions"}, {"name": "userEngagementDuration"}]})
+              users, views, sessions, eng = t[0][1] if t else (0, 0, 0, 0)
+              top = lambda dim, met, n: {"dateRanges": last28, "dimensions": [{"name": dim}], "metrics": [{"name": met}],
+                                          "orderBys": [{"metric": {"metricName": met}, "desc": True}], "limit": n}
+              out["ga4"] = {
+                  "window": "Last 28 days",
+                  "users": int(users), "views": int(views), "sessions": int(sessions),
+                  "avgEngagementSec": round(eng / users) if users else 0,
+                  "sources": [{"name": d[0], "value": int(m[0])} for d, m in rows(top("sessionSource", "sessions", 6))],
+                  "pages": [{"name": d[0].replace(" | Observe/Report", "").replace(" - Observe/Report", ""), "value": int(m[0])}
+                            for d, m in rows(top("pageTitle", "screenPageViews", 6))],
+                  "countries": [{"name": d[0], "value": int(m[0])} for d, m in rows(top("country", "activeUsers", 5))],
+                  "monthly": sorted([{"month": d[0][:4] + "-" + d[0][4:], "users": int(m[0]), "views": int(m[1])}
+                                     for d, m in rows({"dateRanges": [{"startDate": "365daysAgo", "endDate": "yesterday"}],
+                                                       "dimensions": [{"name": "yearMonth"}],
+                                                       "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"}]})],
+                                    key=lambda x: x["month"]),
+              }
+
+          # ---- YouTube (public channel totals) ----
+          key = os.environ.get("YT_API_KEY", "").strip()
+          if key:
+              q = urllib.parse.urlencode({"part": "statistics", "forHandle": os.environ["YT_HANDLE"], "key": key})
+              items = call("https://www.googleapis.com/youtube/v3/channels?" + q).get("items", [])
+              if items:
+                  s = items[0]["statistics"]
+                  out["youtube"] = {"subscribers": int(s.get("subscriberCount", 0)),
+                                    "totalViews": int(s.get("viewCount", 0)),
+                                    "videos": int(s.get("videoCount", 0))}
+
+          os.makedirs("data", exist_ok=True)
+          json.dump(out, open("data/stats-auto.json", "w"), indent=1)
+
+          # daily YouTube snapshot so the page can work out views per month
+          hist_path = "data/stats-history.json"
+          hist = json.load(open(hist_path)) if os.path.exists(hist_path) else {}
+          if "youtube" in out:
+              hist[datetime.date.today().isoformat()] = {"yt_subs": out["youtube"]["subscribers"],
+                                                         "yt_views": out["youtube"]["totalViews"]}
+          json.dump(dict(sorted(hist.items())), open(hist_path, "w"), indent=1)
+          print(json.dumps(out)[:600])
+          PY
+
+      - name: Save to the site
+        run: |
+          git config user.name "media-kit-bot"
+          git config user.email "media-kit-bot@users.noreply.github.com"
+          git add data/stats-auto.json data/stats-history.json
+          git diff --cached --quiet || (git commit -m "Refresh media kit stats" && git push)
