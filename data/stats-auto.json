@@ -1,8 +1,121 @@
 {
- "updated": "2026-10-11T16:18:31Z",
+ "updated": "2026-10-11T21:39:30Z",
+ "ga4": {
+  "window": "Last 28 days",
+  "users": 165,
+  "views": 215,
+  "sessions": 194,
+  "avgEngagementSec": 87,
+  "sources": [
+   {
+    "name": "(direct)",
+    "value": 125
+   },
+   {
+    "name": "reddit.com",
+    "value": 32
+   },
+   {
+    "name": "google",
+    "value": 8
+   },
+   {
+    "name": "secureserver.titan.email",
+    "value": 7
+   },
+   {
+    "name": "ig",
+    "value": 5
+   },
+   {
+    "name": "duckduckgo",
+    "value": 4
+   }
+  ],
+  "pages": [
+   {
+    "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At",
+    "value": 121
+   },
+   {
+    "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
+    "value": 72
+   },
+   {
+    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
+    "value": 7
+   },
+   {
+    "name": "Edifier M60 Speakers Review: Small Footprint, Serious Sound \u2014 Observe/Report",
+    "value": 3
+   },
+   {
+    "name": "Keychron K5 Max Review: The Keyboard I Didn't Expect to Stick With \u2014 Observe/Report",
+    "value": 3
+   },
+   {
+    "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
+    "value": 3
+   }
+  ],
+  "countries": [
+   {
+    "name": "United States",
+    "value": 135
+   },
+   {
+    "name": "Germany",
+    "value": 4
+   },
+   {
+    "name": "Spain",
+    "value": 3
+   },
+   {
+    "name": "United Kingdom",
+    "value": 3
+   },
+   {
+    "name": "Canada",
+    "value": 2
+   }
+  ],
+  "monthly": [
+   {
+    "month": "2026-05",
+    "users": 174,
+    "views": 385
+   },
+   {
+    "month": "2026-06",
+    "users": 112,
+    "views": 218
+   },
+   {
+    "month": "2026-07",
+    "users": 108,
+    "views": 168
+   },
+   {
+    "month": "2026-08",
+    "users": 92,
+    "views": 156
+   },
+   {
+    "month": "2026-09",
+    "users": 159,
+    "views": 240
+   },
+   {
+    "month": "2026-10",
+    "users": 33,
+    "views": 49
+   }
+  ]
+ },
  "youtube": {
   "subscribers": 2,
-  "totalViews": 4226,
-  "videos": 3
+  "totalViews": 4253,
+  "videos": 4
  }
 }
