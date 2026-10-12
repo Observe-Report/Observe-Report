@@ -177,20 +177,20 @@ footer a:hover{color:var(--accent)}
   function get(u){return fetch(u+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});}
 
   // YouTube views per month and last-30-day views, from the nightly snapshots
-  function ytFromHistory(h){
+  function ytFromHistory(h,W){W=W||90;
     var days=Object.keys(h||{}).sort(); if(days.length<2) return {months:{},last30:null};
     var lastOfMonth={}; days.forEach(function(d){lastOfMonth[d.slice(0,7)]=h[d].yt_views;});
     var ms=Object.keys(lastOfMonth).sort(), months={};
     for(var i=1;i<ms.length;i++) months[ms[i]]=lastOfMonth[ms[i]]-lastOfMonth[ms[i-1]];
-    var end=days[days.length-1], cutoff=new Date(new Date(end+'T12:00:00').getTime()-30*864e5).toISOString().slice(0,10), start=null;
+    var end=days[days.length-1], cutoff=new Date(new Date(end+'T12:00:00').getTime()-W*864e5).toISOString().slice(0,10), start=null;
     days.forEach(function(d){ if(d<=cutoff) start=d; });
-    var last30=start?h[end].yt_views-h[start].yt_views:null;  // null until 30 days of snapshots exist
+    var last30=start?h[end].yt_views-h[start].yt_views:null;  // null until a full reporting window of snapshots exists
     return {months:months,last30:last30};
   }
 
   Promise.all([get('data/media-kit-manual.json'),get('data/stats-auto.json'),get('data/stats-history.json')]).then(function(r){
     var M=r[0]||{platforms:{},history:[],top:[],audience:{}}, A=r[1]||{}, H=r[2]||{};
-    var yt=ytFromHistory(H);
+    var W=A.windowDays||90; var yt=ytFromHistory(H,W); M.windowDays=W;
     var P=PLAT.map(function(p){
       var m=(M.platforms||{})[p.id]||{}; var o={id:p.id,name:p.name,handle:p.handle,url:p.url,followers:m.followers,views:m.views,eng:m.engagements,auto:false};
       if(p.id==='youtube'&&A.youtube){o.followers=A.youtube.subscribers;o.auto=true;if(has(yt.last30))o.views=yt.last30;}
@@ -219,7 +219,7 @@ footer a:hover{color:var(--accent)}
     var h='<main>';
     h+='<header class="mast"><div class="mast-top"><div><div class="eyebrow">Media Kit &middot; Audience &amp; Reach</div><h1>Observe<span>/</span>Report</h1></div>';
     h+='<div class="credits-row">'+BRAND.categories.map(function(c){return '<span class="credit-pill">'+esc(c)+'</span>';}).join('')+'</div></div>';
-    h+='<div class="spec"><div><span class="label">Reporting period</span><b>'+(M.period?esc(M.period):'Last 30 days')+'</b></div><div><span class="label">Last updated</span><b class="mono">'+esc(niceDate(upd))+'</b></div><div><span class="label">Website</span><b><a href="'+BRAND.site+'" target="_blank" rel="noopener">observe-report.com</a></b></div><div><span class="label">Partnerships</span><b class="contact-line"><span id="email-text">'+BRAND.email+'</span><button class="btn small" type="button" id="copy-email">Copy</button></b></div></div></header>';
+    h+='<div class="spec"><div><span class="label">Reporting period</span><b>'+(M.period?esc(M.period):'Last '+(M.windowDays||90)+' days')+'</b></div><div><span class="label">Last updated</span><b class="mono">'+esc(niceDate(upd))+'</b></div><div><span class="label">Website</span><b><a href="'+BRAND.site+'" target="_blank" rel="noopener">observe-report.com</a></b></div><div><span class="label">Partnerships</span><b class="contact-line"><span id="email-text">'+BRAND.email+'</span><button class="btn small" type="button" id="copy-email">Copy</button></b></div></div></header>';
     h+='<section aria-label="Headline numbers"><div class="kpis">'
       +kpi(compact(totF),'Combined followers',(function(n){return 'Across '+n+(n===1?' platform':' platforms');})(P.filter(function(p){return has(p.followers);}).length))
       +kpi(compact(totV),'Social views','In the reporting period')
@@ -246,7 +246,7 @@ footer a:hover{color:var(--accent)}
       var loc=countries?countries.slice(0,3).map(function(c){return esc(c.name)+' '+(ga.users?Math.round(c.value/ga.users*100):0)+'%';}).join(', '):'—';
       h+='<section>'+secHead('Audience','Website and platform insights')+'<div class="boxes"><div class="box"><h3>Top locations</h3><p>'+loc+'</p></div><div class="box"><h3>Core age range</h3><p>'+esc(au.ages||'—')+'</p></div><div class="box"><h3>Gender split</h3><p>'+esc(au.gender||'—')+'</p></div></div>'+(au.note?'<p class="note" style="margin-top:1rem">'+esc(au.note)+'</p>':(A.instagram&&(A.instagram.age||A.instagram.gender)?'<p class="note" style="margin-top:1rem">Age and gender from Instagram followers. Locations from website readers.</p>':''))+'</section>';
     }
-    h+='</main><div class="method"><div class="label" style="margin-bottom:.5rem">How these numbers are collected</div><p class="note" style="margin:0">Website, YouTube and Instagram figures update automatically every day from Google Analytics 4, the YouTube Data API and the Instagram API. Other platforms come from each platform’s own analytics (Reddit post insights, Threads Insights, TikTok Studio, X Analytics). Instagram figures cover the last 30 days. Views count every time a post or page was shown. Engagement rate is engagements divided by views.</p></div>';
+    h+='</main><div class="method"><div class="label" style="margin-bottom:.5rem">How these numbers are collected</div><p class="note" style="margin:0">Website, YouTube and Instagram figures update automatically every day from Google Analytics 4, the YouTube Data API and the Instagram API. Other platforms come from each platform’s own analytics (Reddit post insights, Threads Insights, TikTok Studio, X Analytics). Platform figures cover the reporting period shown at the top. Top performing work shows each post’s total views. Views count every time a post or page was shown. Engagement rate is engagements divided by views.</p></div>';
     h+='<footer><div>&copy; '+new Date().getFullYear()+' Observe/Report &nbsp;&middot;&nbsp; Written by Brian J. &nbsp;&middot;&nbsp; Independent field testing</div><a href="https://www.instagram.com/observe.report.actual/" target="_blank" rel="noopener">Follow on Instagram &nbsp;@observe.report.actual</a></footer>';
     app.innerHTML=h;
     if(HIST.length) drawChart(HIST);
