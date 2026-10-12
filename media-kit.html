@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<meta name="robots" content="noindex"/>
+<title>Media Kit | Observe/Report</title>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
+<script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-4YP6FSF0BM');</script>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Literata:ital,opsz,wght@0,7..72,300;0,7..72,400;1,7..72,300&display=swap" rel="stylesheet"/>
+<style>body{margin:0}
+/* Layout: the observe-report.com system (sticky wordmark nav, Playfair headlines, Literata body, DM Mono labels, hairline rules, 2px corners) applied to a media kit: headline numbers, platform ledger, trend, top work, site, audience. */
+:root{
+  --ink:#111; --ink-muted:#555; --ink-faint:#999; --rule:#ddd;
+  --bg:#fafaf8; --bg-card:#fff; --accent:#c0392b; --on-accent:#fff; --tint:#f3eeec;
+  --nav-h:64px; --max:1100px;
+  --s1:#eb6834; --s2:#2a78d6; --s3:#1baf7a; --s4:#eda100; --s5:#e87ba4; --s6:#008300; --s7:#4a3aa7;
+  --f-display:'Playfair Display',Georgia,serif;
+  --f-body:'Literata',Georgia,serif;
+  --f-mono:'DM Mono',ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --ink:#f0ede8; --ink-muted:#aaa; --ink-faint:#666; --rule:#2e2e2e;
+  --bg:#111; --bg-card:#1a1a1a; --accent:#e05a4a; --on-accent:#fff; --tint:#241a19;
+  --s1:#d95926; --s2:#3987e5; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9;
+  color-scheme:dark}}
+:root[data-theme="dark"]{
+  --ink:#f0ede8; --ink-muted:#aaa; --ink-faint:#666; --rule:#2e2e2e;
+  --bg:#111; --bg-card:#1a1a1a; --accent:#e05a4a; --on-accent:#fff; --tint:#241a19;
+  --s1:#d95926; --s2:#3987e5; --s3:#199e70; --s4:#c98500; --s5:#d55181; --s6:#008300; --s7:#9085e9;
+  color-scheme:dark}
+*,*::before,*::after{box-sizing:border-box}
+body{font-family:var(--f-body);background:var(--bg);color:var(--ink);font-size:16px;line-height:1.65}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer}
+.mono,td.n{font-family:var(--f-mono);font-variant-numeric:tabular-nums}
+.muted{color:var(--ink-muted)}
+/* NAV (matches site) */
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:30;background:var(--bg);border-bottom:1px solid var(--rule);height:var(--nav-h);display:flex;align-items:center}
+.nav-inner{max-width:var(--max);margin:0 auto;padding:0 2rem;width:100%;display:flex;align-items:center;justify-content:space-between;gap:2rem}
+.wordmark{font-family:var(--f-mono);font-weight:500;font-size:15px;letter-spacing:.08em;text-transform:uppercase;flex-shrink:0}
+.wordmark span{color:var(--accent)}
+.nav-links{display:flex;gap:2rem;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-muted)}
+.nav-links a{border-bottom:1px solid transparent;padding-bottom:2px;transition:color .15s}
+.nav-links a:hover{color:var(--ink)}
+.nav-links a.active{color:var(--ink);border-bottom-color:var(--accent)}
+/* PAGE */
+main{max-width:var(--max);margin:0 auto;padding-inline:2rem;padding-block:0 3rem}
+.eyebrow{font-family:var(--f-mono);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent)}
+.label{font-family:var(--f-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted)}
+/* MASTHEAD */
+.mast{padding:2.75rem 0 0;display:grid;gap:1.5rem}
+.mast-top{display:flex;justify-content:space-between;align-items:flex-end;gap:1rem 2rem;flex-wrap:wrap}
+.mast h1{font-family:var(--f-display);font-weight:700;font-size:clamp(2.4rem,7vw,4.4rem);line-height:1;letter-spacing:-.01em;margin:.6rem 0 0;overflow-wrap:anywhere}
+.mast h1 span{color:var(--accent)}
+.spec{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));border-top:2px solid var(--ink);border-bottom:1px solid var(--rule)}
+.spec>div{padding:.8rem 1rem .8rem 0;display:grid;gap:.3rem;align-content:start;min-width:0}
+.spec .contact-line{font-size:12.5px;gap:.5rem;letter-spacing:.02em}
+.spec b{font-weight:400;font-size:.95rem;overflow-wrap:anywhere}
+.spec a{border-bottom:1px solid var(--accent)}
+/* HERO */
+.hero{padding:3.5rem 0 2.25rem;border-bottom:1px solid var(--rule);display:grid;gap:1rem}
+.hero-meta{font-family:var(--f-mono);font-size:11px;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase}
+.hero-meta em{color:var(--ink-muted);font-style:normal}
+.hero h1{font-family:var(--f-display);font-size:clamp(2rem,5vw,2.9rem);font-weight:700;line-height:1.1;letter-spacing:-.01em;margin:0;text-wrap:balance}
+.hero-excerpt{font-size:1rem;color:var(--ink-muted);line-height:1.7;max-width:560px;margin:0}
+.credits-row{display:flex;gap:.5rem;flex-wrap:wrap}
+.credit-pill{font-family:var(--f-mono);font-size:10px;letter-spacing:.08em;padding:4px 10px;border:1px solid var(--rule);border-radius:2px;color:var(--ink-muted)}
+.contact-line{display:flex;align-items:center;gap:.75rem;flex-wrap:wrap;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em}
+.read-link{display:inline-flex;align-items:center;gap:6px;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);border-bottom:1px solid var(--accent);padding-bottom:1px;transition:opacity .15s}
+.read-link:hover{opacity:.7}
+/* SECTION HEADER (matches site) */
+section{min-width:0}
+.sec-head{margin:3rem 0 1.5rem;display:flex;align-items:baseline;gap:1rem;border-bottom:1px solid var(--rule);padding-bottom:.75rem}
+.sec-head h2{font-family:var(--f-mono);font-size:11px;font-weight:400;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-muted);white-space:nowrap;margin:0}
+.sec-line{flex:1;height:1px;background:var(--rule)}
+.sec-note{font-family:var(--f-mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);text-align:right;min-width:0;max-width:50%}
+/* KPIs */
+.kpis{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:2rem;padding-top:2rem}
+.kpi{display:grid;gap:.35rem;border-top:2px solid var(--ink);padding-top:.9rem;min-width:0}
+.kpi .v{font-family:var(--f-display);font-weight:700;font-size:clamp(2.2rem,5vw,3.1rem);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.kpi .d{font-size:.85rem;color:var(--ink-muted);line-height:1.5}
+@media (max-width:768px){.kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:1.5rem}}
+/* LEDGER */
+.scroll{overflow-x:auto;min-width:0}
+table{border-collapse:collapse;width:100%;font-size:.95rem}
+th{font-family:var(--f-mono);font-size:10px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-muted);text-align:left;padding:0 .75rem .6rem;border-bottom:1px solid var(--rule);white-space:nowrap}
+td{padding:.9rem .75rem;border-bottom:1px solid var(--rule);vertical-align:middle}
+th:first-child,td:first-child{padding-left:0}
+th.n,td.n{text-align:right;white-space:nowrap}
+td.n{font-size:13px}
+.pname{display:flex;align-items:center;gap:.75rem}
+.pname b{font-family:var(--f-display);font-weight:700;font-size:1.05rem;display:block;line-height:1.2}
+.sw{width:10px;height:10px;border-radius:2px;flex:none;display:inline-block}
+.handle{font-family:var(--f-mono);font-size:11px;letter-spacing:.04em;color:var(--ink-faint)}
+.handle:hover{color:var(--accent)}
+.share{display:flex;align-items:center;gap:8px;min-width:120px}
+.share i{display:block;height:6px;border-radius:0 2px 2px 0;background:var(--accent);min-width:2px}
+.share span{font-family:var(--f-mono);font-size:11px;color:var(--ink-muted)}
+tfoot td{border-bottom:0;border-top:2px solid var(--ink);font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+tfoot td.n{font-size:13px;letter-spacing:0;font-weight:500}
+/* CHART */
+.chart-wrap{background:var(--bg-card);border:1px solid var(--rule);border-radius:2px;padding:1.25rem;display:grid;gap:.9rem;min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:6px 18px;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+svg text{font-family:'DM Mono',ui-monospace,monospace;font-size:10.5px;fill:var(--ink-faint)}
+.chart svg{display:block;width:100%;height:auto}
+details summary{cursor:pointer;font-family:var(--f-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-muted)}
+#tip{position:fixed;pointer-events:none;background:var(--ink);color:var(--bg);font-family:var(--f-mono);font-size:11.5px;padding:8px 10px;border-radius:2px;z-index:50;max-width:240px;line-height:1.5}
+/* TOP WORK (site card language) */
+.top{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:2rem}
+@media (max-width:768px){.top{grid-template-columns:1fr}}
+.card{display:grid;gap:.5rem;align-content:start;min-width:0}
+.card-cat{font-family:var(--f-mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);display:flex;align-items:center;gap:6px}
+.score-badge{justify-self:start;background:var(--accent);color:var(--on-accent);font-family:var(--f-mono);font-size:11px;font-weight:500;padding:2px 8px;border-radius:2px}
+.card-title{font-family:var(--f-display);font-size:1.1rem;line-height:1.25;font-weight:700;margin:0;overflow-wrap:anywhere;transition:color .15s}
+a.card:hover .card-title{color:var(--accent)}
+.card-meta{font-family:var(--f-mono);font-size:10px;letter-spacing:.1em;color:var(--ink-faint);text-transform:uppercase;border-top:1px solid var(--rule);padding-top:.75rem;display:flex;justify-content:space-between;gap:1rem}
+/* SITE + AUDIENCE */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin-top:2rem}
+@media (max-width:768px){.two{grid-template-columns:1fr}}
+.row{display:flex;justify-content:space-between;gap:12px;padding:.6rem 0;border-bottom:1px solid var(--rule);font-size:.95rem}
+.row span:first-child{min-width:0;overflow-wrap:anywhere}
+.row .mono{font-size:13px;white-space:nowrap}
+.boxes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:1.5rem}
+.box{border:1px solid var(--rule);border-radius:2px;padding:1.25rem;background:var(--bg-card);min-width:0}
+.box h3{font-family:var(--f-mono);font-size:10px;font-weight:400;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);margin:0 0 .5rem}
+.box b{display:block;font-family:var(--f-display);font-weight:700;font-size:1.9rem;line-height:1.1;font-variant-numeric:lining-nums tabular-nums}
+.box p{margin:0;font-size:.95rem;color:var(--ink-muted)}
+.boxes.contact{grid-template-columns:minmax(0,2fr) minmax(0,1fr)}
+#email-text{overflow-wrap:anywhere}
+@media (max-width:640px){.boxes,.boxes.contact{grid-template-columns:1fr}}
+.note{font-size:.875rem;color:var(--ink-muted);max-width:70ch;line-height:1.6}
+.empty{border:1px dashed var(--rule);border-radius:2px;padding:1.25rem;color:var(--ink-muted);font-size:.95rem;background:var(--bg-card)}
+.owner-bar{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;align-items:center;background:var(--tint);border-bottom:1px solid var(--rule);padding:.75rem 2rem;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;color:var(--ink-muted)}
+/* BUTTONS (site filter-btn / submit-btn) */
+.btn{font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 14px;border:1px solid var(--rule);border-radius:2px;background:transparent;color:var(--ink-muted);transition:all .15s}
+.btn:hover{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--on-accent);letter-spacing:.18em;padding:10px 22px}
+.btn.primary:hover{opacity:.85;background:var(--accent);color:var(--on-accent)}
+.btn.small{padding:4px 10px;font-size:10px}
+.btn:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible,a:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+/* FOOTER (matches site) */
+footer{border-top:1px solid var(--rule);padding:1.5rem 2rem;text-align:center;font-family:var(--f-mono);font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:var(--ink-faint);display:grid;gap:.75rem;justify-items:center}
+footer a:hover{color:var(--accent)}
+.method{max-width:var(--max);margin:3rem auto 0;padding:0 2rem 2.5rem}
+</style>
+</head>
+<body>
+<div id="app"><main><p class="muted" style="padding-top:3rem">Loading the media kit…</p></main></div>
+<div id="tip" hidden></div>
+<script>
+(function(){
+  var BRAND={site:'https://observe-report.com',email:'bdjacksonx@gmail.com',categories:['EDC','Outdoor','Coffee','Workspace & tech']};
+  var PLAT=[
+    {id:'reddit',name:'Reddit',handle:'u/ObserveReportActual',url:'https://www.reddit.com/u/ObserveReportActual'},
+    {id:'instagram',name:'Instagram',handle:'@observe.report.actual',url:'https://www.instagram.com/observe.report.actual'},
+    {id:'youtube',name:'YouTube',handle:'@Observe-Report',url:'https://www.youtube.com/@Observe-Report'},
+    {id:'tiktok',name:'TikTok',handle:'@observe.report.actual',url:'https://www.tiktok.com/@observe.report.actual'},
+    {id:'threads',name:'Threads',handle:'@observe.report.actual',url:'https://www.threads.com/@observe.report.actual'},
+    {id:'x',name:'X',handle:'@observereportx',url:'https://x.com/observereportx'}];
+  var COLORS={reddit:'--s1',instagram:'--s2',youtube:'--s3',tiktok:'--s4',threads:'--s5',x:'--s6'};
+  var app=document.getElementById('app'), tip=document.getElementById('tip');
+  function esc(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+  function has(v){return v!==null&&v!==''&&v!==undefined&&!isNaN(v);}
+  function full(v){return has(v)?Number(v).toLocaleString('en-US'):'—';}
+  function compact(v){if(!has(v))return '—';v=Number(v);if(v>=1e6)return (v/1e6).toFixed(1).replace(/\.0$/,'')+'M';if(v>=1e4)return Math.round(v/1e3)+'K';if(v>=1e3)return (v/1e3).toFixed(1).replace(/\.0$/,'')+'K';return String(v);}
+  function pct(a,b){return has(a)&&has(b)&&Number(b)>0?(Number(a)/Number(b)*100).toFixed(1)+'%':'—';}
+  function sum(a){var t=0,any=false;a.forEach(function(v){if(has(v)){t+=Number(v);any=true;}});return any?t:null;}
+  function col(id){return 'var('+(COLORS[id]||'--s7')+')';}
+  function pName(id){for(var i=0;i<PLAT.length;i++)if(PLAT[i].id===id)return PLAT[i].name;return id==='site'?'Website':id;}
+  function monthLabel(m){var p=m.split('-');return new Date(+p[0],+p[1]-1,1).toLocaleString('en-US',{month:'short'})+' ’'+p[0].slice(2);}
+  function niceDate(d){if(!d)return '';var x=new Date(d.length===10?d+'T12:00:00':d);return isNaN(x)?d:x.toLocaleDateString('en-US',{month:'short',day:'numeric',year:'numeric'});}
+  function mmss(s){if(!has(s))return '—';s=Math.round(s);return Math.floor(s/60)+'m '+(s%60)+'s';}
+  function get(u){return fetch(u+'?t='+Date.now(),{cache:'no-store'}).then(function(r){return r.ok?r.json():null;}).catch(function(){return null;});}
+
+  // YouTube views per month and last-30-day views, from the nightly snapshots
+  function ytFromHistory(h){
+    var days=Object.keys(h||{}).sort(); if(days.length<2) return {months:{},last30:null};
+    var lastOfMonth={}; days.forEach(function(d){lastOfMonth[d.slice(0,7)]=h[d].yt_views;});
+    var ms=Object.keys(lastOfMonth).sort(), months={};
+    for(var i=1;i<ms.length;i++) months[ms[i]]=lastOfMonth[ms[i]]-lastOfMonth[ms[i-1]];
+    var end=days[days.length-1], cutoff=new Date(new Date(end+'T12:00:00').getTime()-30*864e5).toISOString().slice(0,10), start=null;
+    days.forEach(function(d){ if(d<=cutoff) start=d; });
+    var last30=start?h[end].yt_views-h[start].yt_views:null;  // null until 30 days of snapshots exist
+    return {months:months,last30:last30};
+  }
+
+  Promise.all([get('data/media-kit-manual.json'),get('data/stats-auto.json'),get('data/stats-history.json')]).then(function(r){
+    var M=r[0]||{platforms:{},history:[],top:[],audience:{}}, A=r[1]||{}, H=r[2]||{};
+    var yt=ytFromHistory(H);
+    var P=PLAT.map(function(p){
+      var m=(M.platforms||{})[p.id]||{}; var o={id:p.id,name:p.name,handle:p.handle,url:p.url,followers:m.followers,views:m.views,eng:m.engagements,auto:false};
+      if(p.id==='youtube'&&A.youtube){o.followers=A.youtube.subscribers;o.auto=true;if(has(yt.last30))o.views=yt.last30;}
+      if(p.id==='instagram'&&A.instagram){var I=A.instagram;if(has(I.followers))o.followers=I.followers;if(has(I.views))o.views=I.views;if(has(I.engagements))o.eng=I.engagements;o.auto=true;}
+      return o;});
+    var hist=(M.history||[]).map(function(x){var c={};for(var k in x)c[k]=x[k];return c;});
+    var thisMonth=new Date().toISOString().slice(0,7);
+    Object.keys(yt.months).filter(function(m){return m<thisMonth;}).forEach(function(m){var row=hist.filter(function(x){return x.month===m;})[0];if(!row){row={month:m};hist.push(row);}if(!has(row.youtube))row.youtube=yt.months[m];});
+    ((A.instagram&&A.instagram.monthly)||[]).forEach(function(r){var row=hist.filter(function(x){return x.month===r.month;})[0];if(!row){row={month:r.month};hist.push(row);}if(!has(row.instagram))row.instagram=r.views;});
+    hist.sort(function(a,b){return a.month<b.month?-1:1;});
+    hist=hist.filter(function(x){return PLAT.some(function(p){return has(x[p.id]);});});
+    var seen={};M.top=(M.top||[]).concat(((A.instagram&&A.instagram.top)||[]).map(function(t){return {title:t.title,platform:'instagram',url:t.url,views:t.views,date:t.date};})).filter(function(t){if(t.url&&seen[t.url])return false;if(t.url)seen[t.url]=1;return true;});
+    var I=A.instagram||{};M.audience=M.audience||{};
+    function split(arr){var tot=arr.reduce(function(t,x){return t+x.value;},0);return tot?arr:null;}
+    if(!M.audience.ages&&I.age&&split(I.age)){var tA=I.age.reduce(function(t,x){return t+x.value;},0);M.audience.ages=I.age[0].name+' ('+Math.round(I.age[0].value/tA*100)+'%)';}
+    if(!M.audience.gender&&I.gender&&split(I.gender)){var tG=I.gender.reduce(function(t,x){return t+x.value;},0),G={M:'men',F:'women',U:'unspecified'};M.audience.gender=I.gender.filter(function(x){return x.name!=='U';}).map(function(x){return Math.round(x.value/tG*100)+'% '+(G[x.name]||x.name);}).join(', ');}
+    render(P,hist,M,A);
+  });
+
+  function render(P,HIST,M,A){
+    var active=P.filter(function(p){return has(p.followers)||has(p.views)||has(p.eng);});
+    var totF=sum(P.map(function(p){return p.followers;})),totV=sum(P.map(function(p){return p.views;})),totE=sum(P.map(function(p){return p.eng;}));
+    var maxV=Math.max.apply(null,P.map(function(p){return has(p.views)?Number(p.views):0;}).concat([1]));
+    var ga=A.ga4||null, upd=A.updated||M.updated;
+    var h='<main>';
+    h+='<header class="mast"><div class="mast-top"><div><div class="eyebrow">Media Kit &middot; Audience &amp; Reach</div><h1>Observe<span>/</span>Report</h1></div>';
+    h+='<div class="credits-row">'+BRAND.categories.map(function(c){return '<span class="credit-pill">'+esc(c)+'</span>';}).join('')+'</div></div>';
+    h+='<div class="spec"><div><span class="label">Reporting period</span><b>'+(M.period?esc(M.period):'Last 30 days')+'</b></div><div><span class="label">Last updated</span><b class="mono">'+esc(niceDate(upd))+'</b></div><div><span class="label">Website</span><b><a href="'+BRAND.site+'" target="_blank" rel="noopener">observe-report.com</a></b></div><div><span class="label">Partnerships</span><b class="contact-line"><span id="email-text">'+BRAND.email+'</span><button class="btn small" type="button" id="copy-email">Copy</button></b></div></div></header>';
+    h+='<section aria-label="Headline numbers"><div class="kpis">'
+      +kpi(compact(totF),'Combined followers',(function(n){return 'Across '+n+(n===1?' platform':' platforms');})(P.filter(function(p){return has(p.followers);}).length))
+      +kpi(compact(totV),'Social views','In the reporting period')
+      +kpi(compact(ga&&ga.users),'Website readers',ga?'Active users, '+esc(ga.window.toLowerCase()):'Google Analytics')
+      +kpi(compact(totE),'Engagements','Likes, comments, shares, saves')+'</div></section>';
+    if(active.length){
+      h+='<section>'+secHead('By Platform',M.period||'')+'<div class="scroll"><table><thead><tr><th>Platform</th><th class="n">Followers</th><th class="n">Views</th><th class="n">Engagements</th><th class="n">Eng. rate</th><th>Share of views</th></tr></thead><tbody>';
+      active.forEach(function(p){var w=has(p.views)?Math.max(2,Number(p.views)/maxV*100):0;
+        h+='<tr><td><div class="pname"><span class="sw" style="background:'+col(p.id)+'"></span><span><b>'+esc(p.name)+'</b><a class="handle" href="'+esc(p.url)+'" target="_blank" rel="noopener">'+esc(p.handle)+'</a></span></div></td><td class="n">'+full(p.followers)+'</td><td class="n">'+full(p.views)+'</td><td class="n">'+full(p.eng)+'</td><td class="n">'+pct(p.eng,p.views)+'</td><td><div class="share">'+(w?'<i style="width:'+(w*0.7).toFixed(1)+'%"></i><span>'+pct(p.views,totV)+'</span>':'<span>—</span>')+'</div></td></tr>';});
+      h+='</tbody><tfoot><tr><td>Total</td><td class="n">'+full(totF)+'</td><td class="n">'+full(totV)+'</td><td class="n">'+full(totE)+'</td><td class="n">'+pct(totE,totV)+'</td><td></td></tr></tfoot></table></div></section>';
+    }
+    if(HIST.length){h+='<section>'+secHead('Views by Month','All social platforms')+'<div class="chart-wrap"><div class="legend" id="legend"></div><div class="chart" id="chart"></div><details><summary>View as table</summary><div class="scroll" id="htable"></div></details></div></section>';}
+    var top=(M.top||[]).filter(function(t){return t.title||has(t.views);}).sort(function(a,b){return (Number(b.views)||0)-(Number(a.views)||0);});
+    if(top.length){h+='<section>'+secHead('Top Performing Work','Views per post')+'<div class="top">';
+      top.forEach(function(t){var tag=t.url?'a':'div';h+='<'+tag+' class="card"'+(t.url?' href="'+esc(t.url)+'" target="_blank" rel="noopener"':'')+'><div class="card-cat"><span class="sw" style="background:'+col(t.platform)+'"></span>'+esc(pName(t.platform))+'</div><span class="score-badge">'+full(t.views)+' views</span><h3 class="card-title">'+esc(t.title)+'</h3><div class="card-meta"><span>Brian J.</span><span>'+(t.date?esc(niceDate(t.date)):'')+'</span></div></'+tag+'>';});
+      h+='</div></section>';}
+    if(ga){
+      h+='<section>'+secHead('Website','observe-report.com · '+ga.window)+'<div class="boxes"><div class="box"><h3>Active users</h3><b>'+full(ga.users)+'</b></div><div class="box"><h3>Page views</h3><b>'+full(ga.views)+'</b></div><div class="box"><h3>Avg. engagement time</h3><b>'+mmss(ga.avgEngagementSec)+'</b></div></div>';
+      h+='<div class="two">'+listBlock('Where readers come from',mergeRows(ga.sources,cleanSource),'sessions')+listBlock('Most-read pages',mergeRows(ga.pages,cleanPage),'views')+'</div></section>';
+    }
+    var au=M.audience||{}, countries=ga&&ga.countries&&ga.countries.length?ga.countries:null;
+    if(countries||au.ages||au.gender){
+      var tot=countries?countries.reduce(function(t,c){return t+c.value;},0):0;
+      var loc=countries?countries.slice(0,3).map(function(c){return esc(c.name)+' '+(ga.users?Math.round(c.value/ga.users*100):0)+'%';}).join(', '):'—';
+      h+='<section>'+secHead('Audience','Website and platform insights')+'<div class="boxes"><div class="box"><h3>Top locations</h3><p>'+loc+'</p></div><div class="box"><h3>Core age range</h3><p>'+esc(au.ages||'—')+'</p></div><div class="box"><h3>Gender split</h3><p>'+esc(au.gender||'—')+'</p></div></div>'+(au.note?'<p class="note" style="margin-top:1rem">'+esc(au.note)+'</p>':'')+'</section>';
+    }
+    h+='</main><div class="method"><div class="label" style="margin-bottom:.5rem">How these numbers are collected</div><p class="note" style="margin:0">Website, YouTube and Instagram figures update automatically every day from Google Analytics 4, the YouTube Data API and the Instagram API. Other platforms come from each platform’s own analytics (Reddit post insights, Threads Insights, TikTok Studio, X Analytics). Instagram figures cover the last 30 days. Views count every time a post or page was shown. Engagement rate is engagements divided by views.</p></div>';
+    h+='<footer><div>&copy; '+new Date().getFullYear()+' Observe/Report &nbsp;&middot;&nbsp; Written by Brian J. &nbsp;&middot;&nbsp; Independent field testing</div><a href="https://www.instagram.com/observe.report.actual/" target="_blank" rel="noopener">Follow on Instagram &nbsp;@observe.report.actual</a></footer>';
+    app.innerHTML=h;
+    if(HIST.length) drawChart(HIST);
+    var ce=document.getElementById('copy-email');
+    ce.onclick=function(){var et=document.getElementById('email-text');try{navigator.clipboard.writeText(BRAND.email).then(function(){ce.textContent='Copied';setTimeout(function(){ce.textContent='Copy';},1500);},function(){sel(et);});}catch(e){sel(et);}};
+    var rz;window.onresize=function(){clearTimeout(rz);rz=setTimeout(function(){if(HIST.length)drawChart(HIST);},150);};
+  }
+  function sel(el){try{var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);}catch(e){}}
+  function cleanPage(n){if(/^Observe\/Report:/.test(n))return 'Homepage';return n.replace(/\s*[\u2014\u2013|:-]\s*Observe\/Report\s*$/,'').replace(/^Observe\/Report\s*[\u2014\u2013|:-]\s*/,'');}
+  var SRC={'(direct)':'Direct and bookmarks','ig':'Instagram','instagram.com':'Instagram','l.instagram.com':'Instagram','google':'Google Search','bing':'Bing','duckduckgo':'DuckDuckGo','reddit.com':'Reddit','out.reddit.com':'Reddit','youtube.com':'YouTube','t.co':'X','threads.net':'Threads','threads.com':'Threads','tiktok.com':'TikTok','facebook.com':'Facebook','m.facebook.com':'Facebook','(not set)':'Other'};
+  function cleanSource(n){if(SRC[n])return SRC[n];if(/mail/i.test(n))return 'Email';return n;}
+  function mergeRows(rows,fn){var o={},order=[];(rows||[]).forEach(function(r){var k=fn(r.name);if(!(k in o)){o[k]=0;order.push(k);}o[k]+=r.value;});return order.map(function(k){return {name:k,value:o[k]};}).sort(function(a,b){return b.value-a.value;}).slice(0,5);}
+  function secHead(t,n){return '<div class="sec-head"><h2>'+esc(t)+'</h2><div class="sec-line"></div>'+(n?'<span class="sec-note">'+esc(n)+'</span>':'')+'</div>';}
+  function kpi(v,l,d){return '<div class="kpi"><span class="label">'+l+'</span><span class="v">'+v+'</span><span class="d">'+d+'</span></div>';}
+  function listBlock(t,rows,unit){var s='<div><div class="label" style="margin-bottom:.4rem;color:var(--accent)">'+t+'</div><div>';if(!rows||!rows.length)s+='<div class="row"><span class="muted">—</span></div>';(rows||[]).forEach(function(r){s+='<div class="row"><span>'+esc(r.name)+'</span><span class="mono">'+full(r.value)+' <span class="muted" style="font-size:10px">'+unit+'</span></span></div>';});return s+'</div></div>';}
+  function drawChart(HIST){
+    var el=document.getElementById('chart'); if(!el) return;
+    var H=HIST.slice().sort(function(a,b){return a.month<b.month?-1:1;}).slice(-12);
+    var ids=PLAT.map(function(p){return p.id;}).filter(function(id){return H.some(function(m){return has(m[id]);});});
+    document.getElementById('legend').innerHTML=ids.map(function(id){return '<span><span class="sw" style="background:'+col(id)+'"></span>'+esc(pName(id))+'</span>';}).join('');
+    var W=Math.max(300,el.clientWidth||640), Ht=Math.round(Math.min(300,Math.max(200,W*0.38)));
+    var ml=48,mr=8,mt=10,mb=26, iw=W-ml-mr, ih=Ht-mt-mb;
+    var totals=H.map(function(m){return ids.reduce(function(t,id){return t+(has(m[id])?Number(m[id]):0);},0);});
+    var mx=Math.max.apply(null,totals.concat([1]));
+    var step=Math.pow(10,Math.floor(Math.log10(mx))); var nice=[1,2,2.5,5,10].map(function(k){return k*step;}).filter(function(v){return v*4>=mx;})[0]||step*10;
+    var top=nice*Math.ceil(mx/nice); var ticks=[]; for(var t=0;t<=top+1e-9;t+=nice) ticks.push(t);
+    var y=function(v){return mt+ih-(v/top)*ih;};
+    var band=iw/H.length, bw=Math.min(56,band*0.62);
+    var s='<svg viewBox="0 0 '+W+' '+Ht+'" role="img" aria-label="Monthly social views stacked by platform">';
+    ticks.forEach(function(t){s+='<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+y(t)+'" y2="'+y(t)+'" stroke="var(--line)" stroke-width="1"/><text x="'+(ml-8)+'" y="'+(y(t)+4)+'" text-anchor="end">'+compact(t)+'</text>';});
+    H.forEach(function(m,i){
+      var x=ml+band*i+(band-bw)/2, base=0, segs=ids.filter(function(id){return has(m[id])&&Number(m[id])>0;});
+      segs.forEach(function(id,j){
+        var v=Number(m[id]), y0=y(base), y1=y(base+v), last=j===segs.length-1;
+        var hgt=Math.max(0,y0-y1-(j>0?2:0)); var yt=y0-(j>0?2:0)-hgt;
+        if(hgt<=0){base+=v;return;}
+        var r=last?Math.min(4,hgt,bw/2):0;
+        var d='M'+x+','+(yt+hgt)+'V'+(yt+r)+(r?'Q'+x+','+yt+' '+(x+r)+','+yt:'')+'H'+(x+bw-r)+(r?'Q'+(x+bw)+','+yt+' '+(x+bw)+','+(yt+r):'')+'V'+(yt+hgt)+'Z';
+        s+='<path d="'+d+'" fill="'+col(id)+'" data-tip="'+esc(pName(id))+'|'+esc(monthLabel(m.month))+'|'+v+'|'+totals[i]+'"/>';
+        base+=v;
+      });
+      s+='<rect x="'+(ml+band*i)+'" y="'+mt+'" width="'+band+'" height="'+ih+'" fill="transparent" data-col="'+i+'"/>';
+      s+='<text x="'+(ml+band*i+band/2)+'" y="'+(Ht-8)+'" text-anchor="middle">'+esc(monthLabel(m.month))+'</text>';
+    });
+    s+='<line x1="'+ml+'" x2="'+(W-mr)+'" y1="'+y(0)+'" y2="'+y(0)+'" stroke="var(--faint)" stroke-width="1"/></svg>';
+    el.innerHTML=s;
+    // tooltip: hovering a column shows the whole month
+    var svg=el.querySelector('svg');
+    function show(e,i){
+      var m=H[i]; var rows=ids.filter(function(id){return has(m[id]);}).map(function(id){return '<div style="display:flex;justify-content:space-between;gap:14px"><span><span class="sw" style="display:inline-block;background:'+col(id)+';margin-right:6px"></span>'+esc(pName(id))+'</span><b>'+full(m[id])+'</b></div>';}).join('');
+      tip.innerHTML='<div style="margin-bottom:4px;font-weight:600">'+esc(monthLabel(m.month))+' · <b>'+full(totals[i])+'</b> total</div>'+rows;
+      tip.hidden=false; var tx=Math.min(e.clientX+14,window.innerWidth-tip.offsetWidth-8), ty=Math.max(8,e.clientY-tip.offsetHeight-12);
+      tip.style.left=tx+'px'; tip.style.top=ty+'px';
+    }
+    svg.querySelectorAll('rect[data-col]').forEach(function(r){
+      var i=+r.getAttribute('data-col');
+      r.addEventListener('pointermove',function(e){show(e,i);});
+      r.addEventListener('pointerdown',function(e){show(e,i);});
+      r.addEventListener('pointerleave',function(){tip.hidden=true;});
+    });
+    // table view
+    var tb='<table><thead><tr><th>Month</th>'+ids.map(function(id){return '<th class="n">'+esc(pName(id))+'</th>';}).join('')+'<th class="n">Total</th></tr></thead><tbody>';
+    H.forEach(function(m,i){tb+='<tr><td>'+esc(monthLabel(m.month))+'</td>'+ids.map(function(id){return '<td class="n">'+full(m[id])+'</td>';}).join('')+'<td class="n">'+full(totals[i])+'</td></tr>';});
+    document.getElementById('htable').innerHTML=tb+'</tbody></table>';
+  }
+})();
+</script>
+</body>
+</html>
