@@ -3,7 +3,8 @@ import json, os, urllib.request, urllib.parse, urllib.error, datetime as dt
 
 problems, notes = [], []
 now = dt.datetime.now(dt.timezone.utc)
-out = {"updated": now.replace(microsecond=0).isoformat().replace("+00:00", "Z")}
+WINDOW_DAYS = int(os.environ.get("WINDOW_DAYS", "90"))  # reporting window for every platform
+out = {"updated": now.replace(microsecond=0).isoformat().replace("+00:00", "Z"), "windowDays": WINDOW_DAYS}
 
 
 def call(url, body=None, headers=None):
@@ -40,7 +41,7 @@ try:
         raise RuntimeError("the GA4_PROPERTY_ID variable is empty")
     url = f"https://analyticsdata.googleapis.com/v1beta/properties/{prop}:runReport"
     h = {"Authorization": "Bearer " + os.environ["ACCESS_TOKEN"]}
-    last28 = [{"startDate": "28daysAgo", "endDate": "yesterday"}]
+    window = [{"startDate": f"{WINDOW_DAYS}daysAgo", "endDate": "yesterday"}]
 
     def rows(body):
         r = call(url, body, h)
@@ -48,14 +49,14 @@ try:
                  [float(m["value"]) for m in x["metricValues"]]) for x in r.get("rows", [])]
 
     def top(dim, met, n):
-        return {"dateRanges": last28, "dimensions": [{"name": dim}], "metrics": [{"name": met}],
+        return {"dateRanges": window, "dimensions": [{"name": dim}], "metrics": [{"name": met}],
                 "orderBys": [{"metric": {"metricName": met}, "desc": True}], "limit": n}
 
-    t = rows({"dateRanges": last28, "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"},
+    t = rows({"dateRanges": window, "metrics": [{"name": "activeUsers"}, {"name": "screenPageViews"},
                                                  {"name": "sessions"}, {"name": "userEngagementDuration"}]})
     users, views, sessions, eng = t[0][1] if t else (0, 0, 0, 0)
     out["ga4"] = {
-        "window": "Last 28 days",
+        "window": f"Last {WINDOW_DAYS} days",
         "users": int(users), "views": int(views), "sessions": int(sessions),
         "avgEngagementSec": round(eng / users) if users else 0,
         "sources": [{"name": d[0], "value": int(m[0])} for d, m in rows(top("sessionSource", "sessions", 8))],
@@ -110,10 +111,10 @@ if ig_token:
                 s = e
             return tot
 
-        start30 = now - dt.timedelta(days=30)
+        start = now - dt.timedelta(days=WINDOW_DAYS)
         for name, metric in [("views", "views"), ("reach", "reach"), ("engagements", "total_interactions")]:
             try:
-                res[name] = total(metric, start30, now)
+                res[name] = total(metric, start, now)
             except Exception as e:
                 notes.append(f"Instagram {metric}: {e}")
 
@@ -125,12 +126,12 @@ if ig_token:
                 notes.append(f"Instagram {ms:%Y-%m}: {e}")
         res["monthly"] = monthly
 
-        # top posts from the last 90 days, ranked by views
+        # top posts from the reporting window, ranked by views
         posts = []
-        media = ig("me/media", fields="id,caption,permalink,timestamp", limit=30).get("data", [])
+        media = ig("me/media", fields="id,caption,permalink,timestamp", limit=60).get("data", [])
         for m in media:
             ts = dt.datetime.fromisoformat(m["timestamp"].replace("+0000", "+00:00"))
-            if ts < now - dt.timedelta(days=90):
+            if ts < now - dt.timedelta(days=WINDOW_DAYS):
                 continue
             try:
                 r = ig(f"{m['id']}/insights", metric="views")
