@@ -1,99 +1,100 @@
 {
- "updated": "2026-10-12T01:19:48Z",
+ "updated": "2026-10-12T17:45:23Z",
+ "windowDays": 90,
  "ga4": {
-  "window": "Last 28 days",
-  "users": 165,
-  "views": 215,
-  "sessions": 194,
-  "avgEngagementSec": 87,
+  "window": "Last 90 days",
+  "users": 344,
+  "views": 530,
+  "sessions": 413,
+  "avgEngagementSec": 57,
   "sources": [
    {
     "name": "(direct)",
-    "value": 125
+    "value": 266
    },
    {
     "name": "reddit.com",
-    "value": 32
+    "value": 42
    },
    {
     "name": "google",
-    "value": 8
+    "value": 17
+   },
+   {
+    "name": "m.facebook.com",
+    "value": 17
+   },
+   {
+    "name": "ig",
+    "value": 16
+   },
+   {
+    "name": "facebook.com",
+    "value": 14
+   },
+   {
+    "name": "linkedin.com",
+    "value": 12
    },
    {
     "name": "secureserver.titan.email",
     "value": 7
-   },
-   {
-    "name": "ig",
-    "value": 5
-   },
-   {
-    "name": "duckduckgo",
-    "value": 4
-   },
-   {
-    "name": "facebook.com",
-    "value": 4
-   },
-   {
-    "name": "m.facebook.com",
-    "value": 3
    }
   ],
   "pages": [
    {
-    "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 121
-   },
-   {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 72
+    "value": 256
    },
    {
-    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 7
-   },
-   {
-    "name": "Edifier M60 Speakers Review: Small Footprint, Serious Sound \u2014 Observe/Report",
-    "value": 3
-   },
-   {
-    "name": "Keychron K5 Max Review: The Keyboard I Didn't Expect to Stick With \u2014 Observe/Report",
-    "value": 3
+    "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
+    "value": 138
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
-    "value": 3
+    "value": 27
    },
    {
-    "name": "Eclipse Sirius Holster Review: Glock 19 + TLR-7 Series \u2014 Observe/Report",
-    "value": 1
+    "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
+    "value": 19
    },
    {
-    "name": "Helikon-Tex Level 7 Jacket \u2014 Observe/Report",
-    "value": 1
+    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
+    "value": 16
+   },
+   {
+    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "value": 15
+   },
+   {
+    "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
+    "value": 14
+   },
+   {
+    "name": "Kore Essentials R1 Leather Belt Review: Serious EDC Capability Without the Tactical Look - Observe/Report",
+    "value": 11
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 135
+    "value": 281
    },
    {
     "name": "Germany",
-    "value": 4
+    "value": 8
    },
    {
-    "name": "Spain",
-    "value": 3
+    "name": "Singapore",
+    "value": 7
+   },
+   {
+    "name": "Sweden",
+    "value": 5
    },
    {
     "name": "United Kingdom",
-    "value": 3
-   },
-   {
-    "name": "Canada",
-    "value": 2
+    "value": 5
    }
   ],
   "monthly": [
@@ -124,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 33,
-    "views": 49
+    "users": 36,
+    "views": 53
    }
   ]
  },
  "youtube": {
   "subscribers": 2,
-  "totalViews": 4253,
-  "videos": 4
+  "totalViews": 4274,
+  "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 2411,
-  "reach": 1974,
-  "engagements": 93,
+  "views": 4228,
+  "reach": 3498,
+  "engagements": 148,
   "monthly": [
    {
     "month": "2026-04",
