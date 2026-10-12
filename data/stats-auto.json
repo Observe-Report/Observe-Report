@@ -1,5 +1,5 @@
 {
- "updated": "2026-10-12T01:14:14Z",
+ "updated": "2026-10-12T01:19:48Z",
  "ga4": {
   "window": "Last 28 days",
   "users": 165,
@@ -133,5 +133,99 @@
   "subscribers": 2,
   "totalViews": 4253,
   "videos": 4
+ },
+ "instagram": {
+  "username": "observe.report.actual",
+  "followers": 134,
+  "views": 2411,
+  "reach": 1974,
+  "engagements": 93,
+  "monthly": [
+   {
+    "month": "2026-04",
+    "views": 1269
+   },
+   {
+    "month": "2026-05",
+    "views": 9793
+   },
+   {
+    "month": "2026-06",
+    "views": 5154
+   },
+   {
+    "month": "2026-07",
+    "views": 3375
+   },
+   {
+    "month": "2026-08",
+    "views": 1410
+   },
+   {
+    "month": "2026-09",
+    "views": 2438
+   }
+  ],
+  "top": [
+   {
+    "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
+    "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
+    "views": 1252,
+    "date": "2026-09-16"
+   },
+   {
+    "title": "@koreessentials sent this over and the comfort from the adjustability on this belt is unma",
+    "url": "https://www.instagram.com/reel/Db5zGSmhtBH/",
+    "views": 994,
+    "date": "2026-08-11"
+   },
+   {
+    "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
+    "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
+    "views": 853,
+    "date": "2026-09-15"
+   }
+  ],
+  "age": [
+   {
+    "name": "35-44",
+    "value": 42
+   },
+   {
+    "name": "25-34",
+    "value": 32
+   },
+   {
+    "name": "45-54",
+    "value": 24
+   },
+   {
+    "name": "55-64",
+    "value": 19
+   },
+   {
+    "name": "18-24",
+    "value": 17
+   },
+   {
+    "name": "65+",
+    "value": 3
+   }
+  ],
+  "gender": [
+   {
+    "name": "M",
+    "value": 91
+   },
+   {
+    "name": "U",
+    "value": 32
+   },
+   {
+    "name": "F",
+    "value": 14
+   }
+  ],
+  "tokenRefreshed": "2026-10-12"
  }
 }
