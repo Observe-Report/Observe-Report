@@ -202,11 +202,12 @@ footer a:hover{color:var(--accent)}
     ((A.instagram&&A.instagram.monthly)||[]).forEach(function(r){var row=hist.filter(function(x){return x.month===r.month;})[0];if(!row){row={month:r.month};hist.push(row);}if(!has(row.instagram))row.instagram=r.views;});
     hist.sort(function(a,b){return a.month<b.month?-1:1;});
     hist=hist.filter(function(x){return PLAT.some(function(p){return has(x[p.id]);});});
-    var seen={};M.top=(M.top||[]).concat(((A.instagram&&A.instagram.top)||[]).map(function(t){return {title:t.title,platform:'instagram',url:t.url,views:t.views,date:t.date};})).filter(function(t){if(t.url&&seen[t.url])return false;if(t.url)seen[t.url]=1;return true;});
+    function trimTitle(t){t=String(t||'').replace(/\s+/g,' ').trim();if(t.length<=70)return t;t=t.slice(0,70);return t.slice(0,t.lastIndexOf(' ')).replace(/[,.;:!?\u2014-]+$/,'')+'\u2026';}
+    var seen={};M.top=(M.top||[]).concat(((A.instagram&&A.instagram.top)||[]).map(function(t){return {title:trimTitle(t.title),platform:'instagram',url:t.url,views:t.views,date:t.date};})).filter(function(t){if(t.url&&seen[t.url])return false;if(t.url)seen[t.url]=1;return true;});
     var I=A.instagram||{};M.audience=M.audience||{};
     function split(arr){var tot=arr.reduce(function(t,x){return t+x.value;},0);return tot?arr:null;}
-    if(!M.audience.ages&&I.age&&split(I.age)){var tA=I.age.reduce(function(t,x){return t+x.value;},0);M.audience.ages=I.age[0].name+' ('+Math.round(I.age[0].value/tA*100)+'%)';}
-    if(!M.audience.gender&&I.gender&&split(I.gender)){var tG=I.gender.reduce(function(t,x){return t+x.value;},0),G={M:'men',F:'women',U:'unspecified'};M.audience.gender=I.gender.filter(function(x){return x.name!=='U';}).map(function(x){return Math.round(x.value/tG*100)+'% '+(G[x.name]||x.name);}).join(', ');}
+    if(!M.audience.ages&&I.age&&split(I.age)){var tA=I.age.reduce(function(t,x){return t+x.value;},0);M.audience.ages=I.age.slice(0,2).map(function(x){return x.name+' ('+Math.round(x.value/tA*100)+'%)';}).join(', ');}
+    if(!M.audience.gender&&I.gender&&split(I.gender)){var tG=I.gender.filter(function(x){return x.name!=='U';}).reduce(function(t,x){return t+x.value;},0),G={M:'men',F:'women',U:'unspecified'};M.audience.gender=I.gender.filter(function(x){return x.name!=='U';}).map(function(x){return Math.round(x.value/tG*100)+'% '+(G[x.name]||x.name);}).join(', ');}
     render(P,hist,M,A);
   });
 
@@ -243,7 +244,7 @@ footer a:hover{color:var(--accent)}
     if(countries||au.ages||au.gender){
       var tot=countries?countries.reduce(function(t,c){return t+c.value;},0):0;
       var loc=countries?countries.slice(0,3).map(function(c){return esc(c.name)+' '+(ga.users?Math.round(c.value/ga.users*100):0)+'%';}).join(', '):'—';
-      h+='<section>'+secHead('Audience','Website and platform insights')+'<div class="boxes"><div class="box"><h3>Top locations</h3><p>'+loc+'</p></div><div class="box"><h3>Core age range</h3><p>'+esc(au.ages||'—')+'</p></div><div class="box"><h3>Gender split</h3><p>'+esc(au.gender||'—')+'</p></div></div>'+(au.note?'<p class="note" style="margin-top:1rem">'+esc(au.note)+'</p>':'')+'</section>';
+      h+='<section>'+secHead('Audience','Website and platform insights')+'<div class="boxes"><div class="box"><h3>Top locations</h3><p>'+loc+'</p></div><div class="box"><h3>Core age range</h3><p>'+esc(au.ages||'—')+'</p></div><div class="box"><h3>Gender split</h3><p>'+esc(au.gender||'—')+'</p></div></div>'+(au.note?'<p class="note" style="margin-top:1rem">'+esc(au.note)+'</p>':(A.instagram&&(A.instagram.age||A.instagram.gender)?'<p class="note" style="margin-top:1rem">Age and gender from Instagram followers. Locations from website readers.</p>':''))+'</section>';
     }
     h+='</main><div class="method"><div class="label" style="margin-bottom:.5rem">How these numbers are collected</div><p class="note" style="margin:0">Website, YouTube and Instagram figures update automatically every day from Google Analytics 4, the YouTube Data API and the Instagram API. Other platforms come from each platform’s own analytics (Reddit post insights, Threads Insights, TikTok Studio, X Analytics). Instagram figures cover the last 30 days. Views count every time a post or page was shown. Engagement rate is engagements divided by views.</p></div>';
     h+='<footer><div>&copy; '+new Date().getFullYear()+' Observe/Report &nbsp;&middot;&nbsp; Written by Brian J. &nbsp;&middot;&nbsp; Independent field testing</div><a href="https://www.instagram.com/observe.report.actual/" target="_blank" rel="noopener">Follow on Instagram &nbsp;@observe.report.actual</a></footer>';
