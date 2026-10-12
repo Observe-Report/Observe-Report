@@ -1,20 +1,19 @@
 {
   "period": "",
-  "updated": "2026-10-10",
+  "updated": "2026-10-12",
   "platforms": {
-    "reddit":    { "followers": null, "views": null, "engagements": null },
-    "instagram": { "followers": null, "views": null, "engagements": null },
-    "youtube":   { "followers": null, "views": null, "engagements": null },
-    "tiktok":    { "followers": null, "views": null, "engagements": null },
-    "threads":   { "followers": null, "views": null, "engagements": null },
-    "x":         { "followers": null, "views": null, "engagements": null }
+    "reddit":    { "followers": 2,    "views": 115400, "engagements": 528 },
+    "instagram": { "followers": null, "views": null,  "engagements": null },
+    "youtube":   { "followers": null, "views": null,  "engagements": null },
+    "tiktok":    { "followers": null, "views": null,  "engagements": null },
+    "threads":   { "followers": null, "views": null,  "engagements": null },
+    "x":         { "followers": null, "views": null,  "engagements": null }
   },
-  "history": [
-    { "month": "2026-09", "reddit": null, "instagram": null, "tiktok": null, "threads": null, "x": null }
-  ],
+  "history": [],
   "top": [
-    { "title": "Gear review (Reddit)", "platform": "reddit", "url": "", "views": 70000, "date": "" },
-    { "title": "Reddit post", "platform": "reddit", "url": "", "views": 27000, "date": "" }
+    { "title": "I Finally Joined the Movement (UPLIFT V3 standing desk)", "platform": "reddit", "url": "", "views": 71000, "date": "" },
+    { "title": "My Thoughts on the Keychron K5 Max", "platform": "reddit", "url": "", "views": 29000, "date": "" },
+    { "title": "We Cool with Counting Trays? (UPLIFT cable management)", "platform": "reddit", "url": "", "views": 12000, "date": "" }
   ],
   "audience": { "ages": "", "gender": "", "note": "" }
 }
