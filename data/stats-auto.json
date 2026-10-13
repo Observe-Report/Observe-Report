@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-12T19:47:34Z",
+ "updated": "2026-10-13T17:34:49Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 344,
-  "views": 530,
-  "sessions": 413,
+  "users": 343,
+  "views": 528,
+  "sessions": 417,
   "avgEngagementSec": 57,
   "sources": [
    {
     "name": "(direct)",
-    "value": 266
+    "value": 269
    },
    {
     "name": "reddit.com",
@@ -18,23 +18,23 @@
    },
    {
     "name": "google",
-    "value": 17
-   },
-   {
-    "name": "m.facebook.com",
-    "value": 17
+    "value": 16
    },
    {
     "name": "ig",
     "value": 16
    },
    {
+    "name": "m.facebook.com",
+    "value": 16
+   },
+   {
     "name": "facebook.com",
-    "value": 14
+    "value": 15
    },
    {
     "name": "linkedin.com",
-    "value": 12
+    "value": 11
    },
    {
     "name": "secureserver.titan.email",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 256
+    "value": 241
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 138
+    "value": 139
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -59,8 +59,12 @@
     "value": 19
    },
    {
+    "name": "Media Kit | Observe/Report",
+    "value": 18
+   },
+   {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 16
+    "value": 17
    },
    {
     "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
@@ -69,32 +73,28 @@
    {
     "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
     "value": 14
-   },
-   {
-    "name": "Kore Essentials R1 Leather Belt Review: Serious EDC Capability Without the Tactical Look - Observe/Report",
-    "value": 11
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 281
-   },
-   {
-    "name": "Germany",
-    "value": 8
+    "value": 282
    },
    {
     "name": "Singapore",
-    "value": 7
+    "value": 8
    },
    {
-    "name": "Sweden",
-    "value": 5
+    "name": "Germany",
+    "value": 7
    },
    {
     "name": "United Kingdom",
     "value": 5
+   },
+   {
+    "name": "China",
+    "value": 4
    }
   ],
   "monthly": [
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 36,
-    "views": 53
+    "users": 51,
+    "views": 74
    }
   ]
  },
  "youtube": {
-  "subscribers": 2,
+  "subscribers": 3,
   "totalViews": 4274,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4230,
-  "reach": 3498,
-  "engagements": 148,
+  "views": 4206,
+  "reach": 3475,
+  "engagements": 149,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1254,
+    "views": 1255,
     "date": "2026-09-16"
    },
    {
@@ -226,7 +226,6 @@
     "name": "F",
     "value": 14
    }
-  ],
-  "tokenRefreshed": "2026-10-12"
+  ]
  }
 }
