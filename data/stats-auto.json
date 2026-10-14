@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-13T17:34:49Z",
+ "updated": "2026-10-14T15:06:02Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 343,
-  "views": 528,
-  "sessions": 417,
+  "users": 345,
+  "views": 530,
+  "sessions": 419,
   "avgEngagementSec": 57,
   "sources": [
    {
     "name": "(direct)",
-    "value": 269
+    "value": 272
    },
    {
     "name": "reddit.com",
@@ -34,7 +34,7 @@
    },
    {
     "name": "linkedin.com",
-    "value": 11
+    "value": 10
    },
    {
     "name": "secureserver.titan.email",
@@ -44,27 +44,27 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 241
+    "value": 239
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 139
+    "value": 140
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
     "value": 27
    },
    {
+    "name": "Media Kit | Observe/Report",
+    "value": 22
+   },
+   {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
     "value": 19
    },
    {
-    "name": "Media Kit | Observe/Report",
-    "value": 18
-   },
-   {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 17
+    "value": 16
    },
    {
     "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 282
+    "value": 283
    },
    {
     "name": "Singapore",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 51,
-    "views": 74
+    "users": 57,
+    "views": 81
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 4274,
+  "totalViews": 8242,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4206,
-  "reach": 3475,
-  "engagements": 149,
+  "views": 4166,
+  "reach": 3441,
+  "engagements": 150,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1255,
+    "views": 1256,
     "date": "2026-09-16"
    },
    {
