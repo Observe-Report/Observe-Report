@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-14T15:06:02Z",
+ "updated": "2026-10-15T14:58:54Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 345,
-  "views": 530,
-  "sessions": 419,
-  "avgEngagementSec": 57,
+  "users": 348,
+  "views": 533,
+  "sessions": 422,
+  "avgEngagementSec": 56,
   "sources": [
    {
     "name": "(direct)",
-    "value": 272
+    "value": 273
    },
    {
     "name": "reddit.com",
@@ -37,14 +37,14 @@
     "value": 10
    },
    {
-    "name": "secureserver.titan.email",
+    "name": "duckduckgo",
     "value": 7
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 239
+    "value": 240
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -64,7 +64,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 16
+    "value": 18
    },
    {
     "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 283
+    "value": 286
    },
    {
     "name": "Singapore",
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 57,
-    "views": 81
+    "users": 60,
+    "views": 84
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 8242,
+  "totalViews": 8696,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4166,
-  "reach": 3441,
+  "views": 4120,
+  "reach": 3424,
   "engagements": 150,
   "monthly": [
    {
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1256,
+    "views": 1257,
     "date": "2026-09-16"
    },
    {
