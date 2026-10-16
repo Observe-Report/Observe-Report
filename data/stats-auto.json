@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-15T14:58:54Z",
+ "updated": "2026-10-16T14:48:52Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 348,
-  "views": 533,
-  "sessions": 422,
+  "users": 349,
+  "views": 532,
+  "sessions": 421,
   "avgEngagementSec": 56,
   "sources": [
    {
     "name": "(direct)",
-    "value": 273
+    "value": 271
    },
    {
     "name": "reddit.com",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 240
+    "value": 238
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 140
+    "value": 141
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -78,15 +78,15 @@
   "countries": [
    {
     "name": "United States",
-    "value": 286
-   },
-   {
-    "name": "Singapore",
-    "value": 8
+    "value": 288
    },
    {
     "name": "Germany",
     "value": 7
+   },
+   {
+    "name": "Singapore",
+    "value": 6
    },
    {
     "name": "United Kingdom",
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 60,
-    "views": 84
+    "users": 63,
+    "views": 87
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 8696,
+  "totalViews": 8709,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4120,
-  "reach": 3424,
+  "views": 4099,
+  "reach": 3362,
   "engagements": 150,
   "monthly": [
    {
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1257,
+    "views": 1259,
     "date": "2026-09-16"
    },
    {
