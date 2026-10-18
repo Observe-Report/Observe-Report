@@ -1,20 +1,20 @@
 {
- "updated": "2026-10-17T13:42:17Z",
+ "updated": "2026-10-18T13:59:10Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 352,
-  "views": 537,
-  "sessions": 425,
-  "avgEngagementSec": 56,
+  "users": 355,
+  "views": 541,
+  "sessions": 430,
+  "avgEngagementSec": 55,
   "sources": [
    {
     "name": "(direct)",
-    "value": 272
+    "value": 274
    },
    {
     "name": "reddit.com",
-    "value": 43
+    "value": 44
    },
    {
     "name": "google",
@@ -38,17 +38,17 @@
    },
    {
     "name": "duckduckgo",
-    "value": 8
+    "value": 9
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 239
+    "value": 240
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 145
+    "value": 146
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -59,11 +59,11 @@
     "value": 22
    },
    {
-    "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
-    "value": 19
+    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
+    "value": 20
    },
    {
-    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
+    "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
     "value": 19
    },
    {
@@ -78,23 +78,23 @@
   "countries": [
    {
     "name": "United States",
-    "value": 291
+    "value": 292
    },
    {
     "name": "Germany",
-    "value": 7
+    "value": 8
    },
    {
     "name": "Singapore",
     "value": 6
    },
    {
-    "name": "United Kingdom",
+    "name": "China",
     "value": 5
    },
    {
-    "name": "China",
-    "value": 4
+    "name": "United Kingdom",
+    "value": 5
    }
   ],
   "monthly": [
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 67,
-    "views": 93
+    "users": 70,
+    "views": 97
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 8872,
+  "totalViews": 8907,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4056,
-  "reach": 3333,
-  "engagements": 146,
+  "views": 4044,
+  "reach": 3295,
+  "engagements": 149,
   "monthly": [
    {
     "month": "2026-04",
