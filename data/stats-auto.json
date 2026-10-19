@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-18T13:59:10Z",
+ "updated": "2026-10-19T16:58:23Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 355,
-  "views": 541,
-  "sessions": 430,
+  "users": 359,
+  "views": 545,
+  "sessions": 434,
   "avgEngagementSec": 55,
   "sources": [
    {
     "name": "(direct)",
-    "value": 274
+    "value": 278
    },
    {
     "name": "reddit.com",
@@ -48,7 +48,7 @@
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 146
+    "value": 150
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 292
+    "value": 296
    },
    {
     "name": "Germany",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 70,
-    "views": 97
+    "users": 74,
+    "views": 101
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 8907,
+  "totalViews": 9040,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4044,
-  "reach": 3295,
-  "engagements": 149,
+  "views": 4030,
+  "reach": 3283,
+  "engagements": 151,
   "monthly": [
    {
     "month": "2026-04",
@@ -177,7 +177,7 @@
    {
     "title": "@koreessentials sent this over and the comfort from the adjustability on this belt is unma",
     "url": "https://www.instagram.com/reel/Db5zGSmhtBH/",
-    "views": 994,
+    "views": 995,
     "date": "2026-08-11"
    },
    {
@@ -226,6 +226,7 @@
     "name": "F",
     "value": 14
    }
-  ]
+  ],
+  "tokenRefreshed": "2026-10-19"
  }
 }
