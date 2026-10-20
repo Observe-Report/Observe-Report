@@ -1,31 +1,31 @@
 {
- "updated": "2026-10-19T16:58:23Z",
+ "updated": "2026-10-20T15:01:52Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 359,
-  "views": 545,
-  "sessions": 434,
-  "avgEngagementSec": 55,
+  "users": 363,
+  "views": 547,
+  "sessions": 437,
+  "avgEngagementSec": 54,
   "sources": [
    {
     "name": "(direct)",
-    "value": 278
+    "value": 280
    },
    {
     "name": "reddit.com",
-    "value": 44
+    "value": 43
    },
    {
     "name": "google",
     "value": 18
    },
    {
-    "name": "ig",
-    "value": 16
+    "name": "m.facebook.com",
+    "value": 18
    },
    {
-    "name": "m.facebook.com",
+    "name": "ig",
     "value": 16
    },
    {
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 240
+    "value": 242
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 150
+    "value": 152
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -67,33 +67,33 @@
     "value": 19
    },
    {
-    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
     "value": 14
    },
    {
-    "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 14
+    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "value": 13
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 296
+    "value": 301
    },
    {
     "name": "Germany",
-    "value": 8
-   },
-   {
-    "name": "Singapore",
-    "value": 6
+    "value": 7
    },
    {
     "name": "China",
     "value": 5
    },
    {
-    "name": "United Kingdom",
+    "name": "Singapore",
+    "value": 5
+   },
+   {
+    "name": "Sweden",
     "value": 5
    }
   ],
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 74,
-    "views": 101
+    "users": 82,
+    "views": 109
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9040,
+  "totalViews": 9121,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 134,
-  "views": 4030,
-  "reach": 3283,
+  "views": 4024,
+  "reach": 3281,
   "engagements": 151,
   "monthly": [
    {
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1260,
+    "views": 1262,
     "date": "2026-09-16"
    },
    {
@@ -183,7 +183,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 853,
+    "views": 854,
     "date": "2026-09-15"
    }
   ],
@@ -226,7 +226,6 @@
     "name": "F",
     "value": 14
    }
-  ],
-  "tokenRefreshed": "2026-10-19"
+  ]
  }
 }
