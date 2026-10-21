@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-20T15:01:52Z",
+ "updated": "2026-10-21T15:12:36Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 363,
-  "views": 547,
-  "sessions": 437,
-  "avgEngagementSec": 54,
+  "users": 364,
+  "views": 549,
+  "sessions": 438,
+  "avgEngagementSec": 55,
   "sources": [
    {
     "name": "(direct)",
-    "value": 280
+    "value": 281
    },
    {
     "name": "reddit.com",
@@ -52,7 +52,7 @@
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
-    "value": 27
+    "value": 29
    },
    {
     "name": "Media Kit | Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 301
+    "value": 302
    },
    {
     "name": "Germany",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 82,
-    "views": 109
+    "users": 88,
+    "views": 118
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9121,
+  "totalViews": 9167,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
-  "followers": 134,
-  "views": 4024,
-  "reach": 3281,
-  "engagements": 151,
+  "followers": 133,
+  "views": 4012,
+  "reach": 3264,
+  "engagements": 152,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1262,
+    "views": 1264,
     "date": "2026-09-16"
    },
    {
@@ -183,7 +183,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 854,
+    "views": 856,
     "date": "2026-09-15"
    }
   ],
