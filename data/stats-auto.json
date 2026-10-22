@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-21T15:12:36Z",
+ "updated": "2026-10-22T15:14:09Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 364,
-  "views": 549,
-  "sessions": 438,
+  "users": 367,
+  "views": 552,
+  "sessions": 441,
   "avgEngagementSec": 55,
   "sources": [
    {
     "name": "(direct)",
-    "value": 281
+    "value": 284
    },
    {
     "name": "reddit.com",
@@ -48,7 +48,7 @@
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 152
+    "value": 153
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -60,7 +60,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 20
+    "value": 21
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 302
+    "value": 305
    },
    {
     "name": "Germany",
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 88,
-    "views": 118
+    "users": 91,
+    "views": 122
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9167,
+  "totalViews": 9267,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
-  "followers": 133,
-  "views": 4012,
-  "reach": 3264,
+  "followers": 132,
+  "views": 4006,
+  "reach": 3256,
   "engagements": 152,
   "monthly": [
    {
@@ -194,11 +194,11 @@
    },
    {
     "name": "25-34",
-    "value": 32
+    "value": 31
    },
    {
     "name": "45-54",
-    "value": 24
+    "value": 23
    },
    {
     "name": "55-64",
@@ -206,7 +206,7 @@
    },
    {
     "name": "18-24",
-    "value": 17
+    "value": 15
    },
    {
     "name": "65+",
@@ -216,11 +216,11 @@
   "gender": [
    {
     "name": "M",
-    "value": 91
+    "value": 90
    },
    {
     "name": "U",
-    "value": 32
+    "value": 29
    },
    {
     "name": "F",
