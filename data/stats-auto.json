@@ -1,20 +1,20 @@
 {
- "updated": "2026-10-22T15:14:09Z",
+ "updated": "2026-10-23T15:02:02Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 367,
-  "views": 552,
-  "sessions": 441,
-  "avgEngagementSec": 55,
+  "users": 365,
+  "views": 554,
+  "sessions": 440,
+  "avgEngagementSec": 57,
   "sources": [
    {
     "name": "(direct)",
-    "value": 284
+    "value": 281
    },
    {
     "name": "reddit.com",
-    "value": 43
+    "value": 44
    },
    {
     "name": "google",
@@ -34,33 +34,33 @@
    },
    {
     "name": "linkedin.com",
-    "value": 10
+    "value": 11
    },
    {
     "name": "duckduckgo",
-    "value": 9
+    "value": 10
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 242
+    "value": 240
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 153
+    "value": 155
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
     "value": 29
    },
    {
-    "name": "Media Kit | Observe/Report",
-    "value": 22
+    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
+    "value": 24
    },
    {
-    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 21
+    "name": "Media Kit | Observe/Report",
+    "value": 22
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -71,14 +71,14 @@
     "value": 14
    },
    {
-    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
-    "value": 13
+    "name": "Kore Essentials R1 Leather Belt Review: Serious EDC Capability Without the Tactical Look - Observe/Report",
+    "value": 12
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 305
+    "value": 304
    },
    {
     "name": "Germany",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 91,
-    "views": 122
+    "users": 94,
+    "views": 129
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9267,
+  "totalViews": 9306,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 132,
-  "views": 4006,
-  "reach": 3256,
-  "engagements": 152,
+  "views": 4004,
+  "reach": 3251,
+  "engagements": 153,
   "monthly": [
    {
     "month": "2026-04",
@@ -194,7 +194,7 @@
    },
    {
     "name": "25-34",
-    "value": 31
+    "value": 30
    },
    {
     "name": "45-54",
@@ -216,7 +216,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 90
+    "value": 89
    },
    {
     "name": "U",
