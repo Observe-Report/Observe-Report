@@ -1,20 +1,20 @@
 {
- "updated": "2026-10-23T15:02:02Z",
+ "updated": "2026-10-24T13:59:29Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 365,
-  "views": 554,
-  "sessions": 440,
-  "avgEngagementSec": 57,
+  "users": 369,
+  "views": 559,
+  "sessions": 444,
+  "avgEngagementSec": 56,
   "sources": [
    {
     "name": "(direct)",
-    "value": 281
+    "value": 284
    },
    {
     "name": "reddit.com",
-    "value": 44
+    "value": 45
    },
    {
     "name": "google",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 240
+    "value": 243
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 155
+    "value": 157
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 304
+    "value": 306
    },
    {
     "name": "Germany",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 94,
-    "views": 129
+    "users": 99,
+    "views": 135
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9306,
+  "totalViews": 9410,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 132,
-  "views": 4004,
-  "reach": 3251,
-  "engagements": 153,
+  "views": 3996,
+  "reach": 3249,
+  "engagements": 151,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1264,
+    "views": 1265,
     "date": "2026-09-16"
    },
    {
@@ -183,7 +183,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 856,
+    "views": 857,
     "date": "2026-09-15"
    }
   ],
