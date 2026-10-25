@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-24T13:59:29Z",
+ "updated": "2026-10-25T14:20:52Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 369,
-  "views": 559,
-  "sessions": 444,
-  "avgEngagementSec": 56,
+  "users": 368,
+  "views": 558,
+  "sessions": 441,
+  "avgEngagementSec": 57,
   "sources": [
    {
     "name": "(direct)",
-    "value": 284
+    "value": 281
    },
    {
     "name": "reddit.com",
@@ -138,8 +138,8 @@
  "instagram": {
   "username": "observe.report.actual",
   "followers": 132,
-  "views": 3996,
-  "reach": 3249,
+  "views": 3991,
+  "reach": 3246,
   "engagements": 151,
   "monthly": [
    {
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1265,
+    "views": 1267,
     "date": "2026-09-16"
    },
    {
