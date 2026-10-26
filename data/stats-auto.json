@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-25T14:20:52Z",
+ "updated": "2026-10-26T16:46:45Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 368,
-  "views": 558,
-  "sessions": 441,
+  "users": 369,
+  "views": 559,
+  "sessions": 442,
   "avgEngagementSec": 57,
   "sources": [
    {
     "name": "(direct)",
-    "value": 281
+    "value": 283
    },
    {
     "name": "reddit.com",
@@ -33,22 +33,22 @@
     "value": 15
    },
    {
-    "name": "linkedin.com",
-    "value": 11
+    "name": "duckduckgo",
+    "value": 10
    },
    {
-    "name": "duckduckgo",
+    "name": "linkedin.com",
     "value": 10
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 243
+    "value": 242
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 157
+    "value": 158
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 99,
-    "views": 135
+    "users": 102,
+    "views": 138
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9410,
+  "totalViews": 9541,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
-  "followers": 132,
-  "views": 3991,
+  "followers": 131,
+  "views": 4004,
   "reach": 3246,
-  "engagements": 151,
+  "engagements": 153,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1267,
+    "views": 1269,
     "date": "2026-09-16"
    },
    {
@@ -183,7 +183,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 857,
+    "views": 863,
     "date": "2026-09-15"
    }
   ],
@@ -226,6 +226,7 @@
     "name": "F",
     "value": 14
    }
-  ]
+  ],
+  "tokenRefreshed": "2026-10-26"
  }
 }
