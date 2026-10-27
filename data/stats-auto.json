@@ -1,20 +1,20 @@
 {
- "updated": "2026-10-26T16:46:45Z",
+ "updated": "2026-10-27T15:51:43Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 369,
-  "views": 559,
-  "sessions": 442,
-  "avgEngagementSec": 57,
+  "users": 361,
+  "views": 551,
+  "sessions": 434,
+  "avgEngagementSec": 58,
   "sources": [
    {
     "name": "(direct)",
-    "value": 283
+    "value": 273
    },
    {
     "name": "reddit.com",
-    "value": 45
+    "value": 47
    },
    {
     "name": "google",
@@ -44,15 +44,15 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 242
+    "value": 231
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 158
+    "value": 160
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
-    "value": 29
+    "value": 30
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
@@ -78,11 +78,11 @@
   "countries": [
    {
     "name": "United States",
-    "value": 306
+    "value": 300
    },
    {
     "name": "Germany",
-    "value": 7
+    "value": 6
    },
    {
     "name": "China",
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 102,
-    "views": 138
+    "users": 105,
+    "views": 142
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9541,
+  "totalViews": 9574,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4004,
-  "reach": 3246,
+  "views": 4007,
+  "reach": 3251,
   "engagements": 153,
   "monthly": [
    {
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1269,
+    "views": 1270,
     "date": "2026-09-16"
    },
    {
@@ -206,7 +206,7 @@
    },
    {
     "name": "18-24",
-    "value": 15
+    "value": 14
    },
    {
     "name": "65+",
@@ -216,7 +216,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 89
+    "value": 88
    },
    {
     "name": "U",
@@ -226,7 +226,6 @@
     "name": "F",
     "value": 14
    }
-  ],
-  "tokenRefreshed": "2026-10-26"
+  ]
  }
 }
