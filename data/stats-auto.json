@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-27T15:51:43Z",
+ "updated": "2026-10-28T16:36:30Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 361,
-  "views": 551,
-  "sessions": 434,
-  "avgEngagementSec": 58,
+  "users": 355,
+  "views": 543,
+  "sessions": 427,
+  "avgEngagementSec": 59,
   "sources": [
    {
     "name": "(direct)",
-    "value": 273
+    "value": 266
    },
    {
     "name": "reddit.com",
@@ -34,21 +34,21 @@
    },
    {
     "name": "duckduckgo",
-    "value": 10
+    "value": 11
    },
    {
     "name": "linkedin.com",
-    "value": 10
+    "value": 9
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 231
+    "value": 222
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 160
+    "value": 161
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -56,7 +56,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 24
+    "value": 25
    },
    {
     "name": "Media Kit | Observe/Report",
@@ -78,10 +78,14 @@
   "countries": [
    {
     "name": "United States",
-    "value": 300
+    "value": 293
    },
    {
     "name": "Germany",
+    "value": 6
+   },
+   {
+    "name": "United Kingdom",
     "value": 6
    },
    {
@@ -90,10 +94,6 @@
    },
    {
     "name": "Singapore",
-    "value": 5
-   },
-   {
-    "name": "Sweden",
     "value": 5
    }
   ],
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 105,
-    "views": 142
+    "users": 106,
+    "views": 144
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9574,
+  "totalViews": 9650,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4007,
-  "reach": 3251,
+  "views": 4009,
+  "reach": 3247,
   "engagements": 153,
   "monthly": [
    {
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1270,
+    "views": 1271,
     "date": "2026-09-16"
    },
    {
