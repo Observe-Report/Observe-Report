@@ -1,20 +1,20 @@
 {
- "updated": "2026-10-28T16:36:30Z",
+ "updated": "2026-10-29T16:54:09Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 355,
-  "views": 543,
-  "sessions": 427,
+  "users": 357,
+  "views": 547,
+  "sessions": 430,
   "avgEngagementSec": 59,
   "sources": [
    {
     "name": "(direct)",
-    "value": 266
+    "value": 267
    },
    {
     "name": "reddit.com",
-    "value": 47
+    "value": 48
    },
    {
     "name": "google",
@@ -44,7 +44,7 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 222
+    "value": 223
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -52,7 +52,7 @@
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
-    "value": 30
+    "value": 31
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
@@ -71,8 +71,8 @@
     "value": 14
    },
    {
-    "name": "Kore Essentials R1 Leather Belt Review: Serious EDC Capability Without the Tactical Look - Observe/Report",
-    "value": 12
+    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "value": 13
    }
   ],
   "countries": [
@@ -82,15 +82,15 @@
    },
    {
     "name": "Germany",
+    "value": 7
+   },
+   {
+    "name": "China",
     "value": 6
    },
    {
     "name": "United Kingdom",
     "value": 6
-   },
-   {
-    "name": "China",
-    "value": 5
    },
    {
     "name": "Singapore",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 106,
-    "views": 144
+    "users": 109,
+    "views": 149
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9650,
+  "totalViews": 9767,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4009,
+  "views": 4018,
   "reach": 3247,
-  "engagements": 153,
+  "engagements": 154,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,13 +171,13 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1271,
+    "views": 1272,
     "date": "2026-09-16"
    },
    {
     "title": "@koreessentials sent this over and the comfort from the adjustability on this belt is unma",
     "url": "https://www.instagram.com/reel/Db5zGSmhtBH/",
-    "views": 995,
+    "views": 997,
     "date": "2026-08-11"
    },
    {
