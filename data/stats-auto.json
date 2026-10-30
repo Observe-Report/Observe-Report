@@ -1,24 +1,24 @@
 {
- "updated": "2026-10-29T16:54:09Z",
+ "updated": "2026-10-30T16:41:07Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
   "users": 357,
-  "views": 547,
-  "sessions": 430,
-  "avgEngagementSec": 59,
+  "views": 558,
+  "sessions": 432,
+  "avgEngagementSec": 60,
   "sources": [
    {
     "name": "(direct)",
-    "value": 267
+    "value": 268
    },
    {
     "name": "reddit.com",
-    "value": 48
+    "value": 49
    },
    {
     "name": "google",
-    "value": 18
+    "value": 19
    },
    {
     "name": "m.facebook.com",
@@ -26,7 +26,7 @@
    },
    {
     "name": "ig",
-    "value": 16
+    "value": 17
    },
    {
     "name": "facebook.com",
@@ -38,13 +38,13 @@
    },
    {
     "name": "linkedin.com",
-    "value": 9
+    "value": 7
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 223
+    "value": 228
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -52,7 +52,7 @@
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
-    "value": 31
+    "value": 34
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
@@ -64,15 +64,15 @@
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
-    "value": 19
+    "value": 20
+   },
+   {
+    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "value": 14
    },
    {
     "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
     "value": 14
-   },
-   {
-    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
-    "value": 13
    }
   ],
   "countries": [
@@ -125,21 +125,21 @@
    },
    {
     "month": "2026-10",
-    "users": 109,
-    "views": 149
+    "users": 111,
+    "views": 162
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9767,
+  "totalViews": 9802,
   "videos": 11
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4018,
-  "reach": 3247,
+  "views": 4023,
+  "reach": 3253,
   "engagements": 154,
   "monthly": [
    {
@@ -171,13 +171,13 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1272,
+    "views": 1273,
     "date": "2026-09-16"
    },
    {
     "title": "@koreessentials sent this over and the comfort from the adjustability on this belt is unma",
     "url": "https://www.instagram.com/reel/Db5zGSmhtBH/",
-    "views": 997,
+    "views": 998,
     "date": "2026-08-11"
    },
    {
