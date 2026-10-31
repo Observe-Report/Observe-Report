@@ -1,24 +1,24 @@
 {
- "updated": "2026-10-30T16:41:07Z",
+ "updated": "2026-10-31T15:42:51Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 357,
-  "views": 558,
-  "sessions": 432,
-  "avgEngagementSec": 60,
+  "users": 360,
+  "views": 592,
+  "sessions": 438,
+  "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 268
+    "value": 270
    },
    {
     "name": "reddit.com",
-    "value": 49
+    "value": 51
    },
    {
     "name": "google",
-    "value": 19
+    "value": 20
    },
    {
     "name": "m.facebook.com",
@@ -37,52 +37,52 @@
     "value": 11
    },
    {
-    "name": "linkedin.com",
+    "name": "bing",
     "value": 7
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 228
+    "value": 252
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 161
+    "value": 163
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
     "value": 34
    },
    {
-    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 25
+    "name": "Media Kit | Observe/Report",
+    "value": 29
    },
    {
-    "name": "Media Kit | Observe/Report",
-    "value": 22
+    "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
+    "value": 25
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
     "value": 20
    },
    {
-    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
     "value": 14
    },
    {
-    "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 14
+    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "value": 13
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 293
+    "value": 295
    },
    {
     "name": "Germany",
-    "value": 7
+    "value": 8
    },
    {
     "name": "China",
@@ -125,22 +125,22 @@
    },
    {
     "month": "2026-10",
-    "users": 111,
-    "views": 162
+    "users": 116,
+    "views": 198
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9802,
-  "videos": 11
+  "totalViews": 9866,
+  "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4023,
-  "reach": 3253,
-  "engagements": 154,
+  "views": 4317,
+  "reach": 3490,
+  "engagements": 172,
   "monthly": [
    {
     "month": "2026-04",
@@ -171,7 +171,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1273,
+    "views": 1282,
     "date": "2026-09-16"
    },
    {
@@ -183,7 +183,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 863,
+    "views": 864,
     "date": "2026-09-15"
    }
   ],
