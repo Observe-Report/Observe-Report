@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-4YP6FSF0BM"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-4YP6FSF0BM');
+  </script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UPLIFT QuadZen Standing Desk Review: A Standing Desk That Actually Looks Like a Table…In a Good Way | Observe/Report</title>
+  <meta name="description" content="A hands-on look at the UPLIFT QuadZen, a minimalist four-leg standing desk that looks like furniture, compared against the UPLIFT V3 four-leg desk." />
+  <meta name="author" content="Brian J." />
+  <meta property="og:title" content="UPLIFT QuadZen Standing Desk Review: A Standing Desk That Actually Looks Like a Table…In a Good Way | Observe/Report" />
+  <meta property="og:description" content="A hands-on look at the UPLIFT QuadZen, a minimalist four-leg standing desk that looks like furniture, compared against the UPLIFT V3 four-leg desk." />
+  <meta property="og:type" content="article" />
+  <meta property="og:image" content="https://observe-report.github.io/Observe-Report/images/uplift-quadzen-standing-desk-hero.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Literata:ital,wght@0,400;0,700;1,400&family=DM+Mono:wght@400;500&family=Playfair+Display:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --ink: #111;
+      --ink-muted: #555;
+      --ink-faint: #999;
+      --rule: #ddd;
+      --bg: #fafaf8;
+      --bg-card: #fff;
+      --accent: #c0392b;
+      --nav-h: 64px;
+      --max: 1100px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --ink: #f0ede8;
+        --ink-muted: #aaa;
+        --ink-faint: #666;
+        --rule: #2e2e2e;
+        --bg: #111;
+        --bg-card: #1a1a1a;
+        --accent: #e05a4a;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Literata', Georgia, serif; background: var(--bg); color: var(--ink); font-size: 16px; line-height: 1.65; }
+
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: var(--bg); border-bottom: 1px solid var(--rule);
+      height: var(--nav-h); display: flex; align-items: center;
+    }
+    .nav-inner {
+      max-width: var(--max); margin: 0 auto; padding: 0 2rem;
+      width: 100%; display: flex; align-items: center;
+      justify-content: space-between; gap: 2rem;
+    }
+    .wordmark {
+      font-family: 'DM Mono', monospace; font-weight: 500;
+      font-size: 15px; letter-spacing: 0.08em;
+      text-transform: uppercase; cursor: pointer;
+      flex-shrink: 0; text-decoration: none; color: var(--ink);
+    }
+    .wordmark span { color: var(--accent); }
+    .nav-links {
+      display: flex; gap: 2rem; font-family: 'DM Mono', monospace;
+      font-size: 11px; letter-spacing: 0.12em;
+      text-transform: uppercase; color: var(--ink-muted);
+      list-style: none;
+    }
+    .nav-links a {
+      cursor: pointer; transition: color 0.15s;
+      border-bottom: 1px solid transparent; padding-bottom: 2px;
+      text-decoration: none; color: inherit;
+    }
+    .nav-links a:hover { color: var(--ink); }
+
+    .hero {
+      max-width: var(--max); margin: 0 auto;
+      padding: 4rem 2rem 2.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .hero-meta {
+      display: flex; align-items: center; gap: 0.75rem; flex-wrap: wrap;
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 0.1em; color: var(--ink-faint);
+      text-transform: uppercase; margin-bottom: 1.25rem;
+    }
+    .hero-meta .dot { width: 3px; height: 3px; border-radius: 50%; background: var(--rule); }
+    .tag {
+      display: inline-block; font-family: 'DM Mono', monospace;
+      font-size: 10px; font-weight: 500; letter-spacing: 0.12em;
+      text-transform: uppercase; padding: 0.25rem 0.6rem;
+      border: 1px solid var(--rule); color: var(--ink-faint);
+    }
+    .tag.original { border-color: var(--accent); color: var(--accent); }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700; line-height: 1.1;
+      letter-spacing: -0.01em; margin-bottom: 1rem;
+    }
+    .hero-deck {
+      font-size: 1rem; color: var(--ink-muted);
+      line-height: 1.7; margin-bottom: 1.5rem; max-width: 620px;
+    }
+    .byline {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      color: var(--ink-faint); letter-spacing: 0.1em;
+      text-transform: uppercase;
+    }
+    .byline em { color: var(--ink-muted); font-style: normal; }
+
+    .article-wrap {
+      max-width: 780px; margin: 0 auto; padding: 0 2rem 6rem;
+      display: grid; grid-template-columns: 1fr 220px;
+      gap: 0 4rem; align-items: start;
+    }
+    .article-body { min-width: 0; padding-top: 2.5rem; }
+
+    .article-body img {
+      width: 100%; object-fit: cover; display: block;
+      margin: 2rem 0; border: 1px solid var(--rule);
+    }
+    .img-caption {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: var(--ink-faint); letter-spacing: 0.1em;
+      text-transform: uppercase; margin: -0.75rem 0 2rem;
+      padding: 0.5rem 0.75rem; border: 1px solid var(--rule);
+      border-top: none; background: var(--bg-card);
+    }
+
+    .article-body h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem; font-weight: 700; color: var(--ink);
+      margin: 2.5rem 0 0.75rem; padding-bottom: 0.5rem;
+      border-bottom: 1px solid var(--rule);
+    }
+    .article-body h3 {
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--accent); margin: 1.75rem 0 0.6rem;
+    }
+    .article-body p {
+      font-size: 1rem; color: var(--ink-muted);
+      line-height: 1.8; margin-bottom: 1.1rem;
+    }
+    .article-body a {
+      color: var(--accent); text-decoration: none;
+      border-bottom: 1px solid var(--accent);
+      transition: opacity 0.15s;
+    }
+    .article-body a:hover { opacity: 0.7; }
+    .article-body ul { margin: 0.5rem 0 1.1rem 1.25rem; }
+    .article-body ul li {
+      font-size: 1rem; color: var(--ink-muted);
+      line-height: 1.8; margin-bottom: 0.3rem;
+    }
+
+    .verdict {
+      border: 1px solid var(--accent);
+      background: var(--bg-card);
+      padding: 1.5rem 1.75rem; margin: 2.5rem 0 0;
+    }
+    .verdict-label {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.15em; text-transform: uppercase;
+      color: var(--accent); margin-bottom: 0.75rem;
+    }
+    .verdict p {
+      font-family: 'Playfair Display', serif; font-size: 1.05rem;
+      color: var(--ink); line-height: 1.75; font-style: italic;
+      margin-bottom: 0;
+    }
+
+    .disclosure {
+      margin: 2rem 0 0; padding: 1rem 1.25rem;
+      border: 1px solid var(--rule); background: var(--bg-card);
+      font-family: 'DM Mono', monospace; font-size: 11px;
+      color: var(--ink-faint); letter-spacing: 0.02em;
+      line-height: 1.7;
+    }
+
+    .sidebar { padding-top: 2.5rem; position: sticky; top: calc(var(--nav-h) + 16px); }
+    .sidebar-block {
+      border: 1px solid var(--rule); background: var(--bg-card);
+      padding: 1.25rem; margin-bottom: 1.25rem;
+    }
+    .sidebar-block h4 {
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      color: var(--ink-faint); margin-bottom: 1rem;
+      padding-bottom: 0.6rem; border-bottom: 1px solid var(--rule);
+    }
+    .spec-row {
+      display: flex; justify-content: space-between;
+      align-items: baseline; gap: 0.5rem; padding: 0.35rem 0;
+      border-bottom: 1px solid var(--rule);
+    }
+    .spec-row:last-child { border-bottom: none; }
+    .spec-label { font-size: 0.85rem; color: var(--ink-faint); }
+    .spec-val {
+      font-family: 'DM Mono', monospace; font-size: 0.85rem;
+      color: var(--ink-muted); text-align: right;
+    }
+    .sidebar-block p {
+      font-size: 0.9rem; color: var(--ink-muted);
+      line-height: 1.6; margin: 0;
+    }
+    .back-link {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      font-family: 'DM Mono', monospace; font-size: 10px;
+      color: var(--ink-faint); text-decoration: none;
+      letter-spacing: 0.12em; text-transform: uppercase;
+      transition: color 0.15s; margin-bottom: 1.25rem;
+    }
+    .back-link:hover { color: var(--accent); }
+    .back-link::before { content: '←'; }
+
+    footer {
+      border-top: 1px solid var(--rule); padding: 1.5rem 2rem;
+      text-align: center; font-family: 'DM Mono', monospace;
+      font-size: 10px; letter-spacing: 0.15em;
+      text-transform: uppercase; color: var(--ink-faint);
+      line-height: 1.8;
+    }
+
+    @media (max-width: 700px) {
+      .article-wrap { grid-template-columns: 1fr; gap: 0; }
+      .sidebar { position: static; padding-top: 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="wordmark" href="./index.html">Observe<span>/</span>Report</a>
+      <ul class="nav-links">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./index.html#browse">Browse</a></li>
+        <li><a href="./index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-meta">
+      <span class="tag">Tech</span>
+      <span class="tag">Desk</span>
+      <span class="dot"></span>
+      <span class="tag original">Original Review</span>
+      <span class="dot"></span>
+      <span>2026</span>
+    </div>
+    <h1>UPLIFT QuadZen Standing Desk Review: A Standing Desk That Actually Looks Like a Table…In a Good Way</h1>
+    <p class="hero-deck">After living with the UPLIFT V3 four-leg desk, I set up the lighter, more minimalist QuadZen. Here's how it compares on assembly, design, stability, and noise.</p>
+    <div class="byline"><em>By Brian J.</em> &nbsp;·&nbsp; <em>Original Review</em> &nbsp;·&nbsp; <em>2026</em></div>
+  </header>
+
+  <div class="article-wrap">
+
+    <article class="article-body">
+
+      <p>I’ve been using an <a href="uplift-v3-4leg-standing-desk-review.html">UPLIFT V3 four-leg standing desk</a>, so I already had a pretty good idea of what to expect when UPLIFT sent me the QuadZen. What I wasn’t expecting was just how different the two desks would feel in terms of design.</p>
+      <p>The QuadZen is lighter, more minimalist, and a lot less industrial looking than many standing desks I’ve seen. It looks like a normal four-legged table, which I mean as a compliment. Not everyone wants their desk to look like it belongs in a commercial office or a machine shop.</p>
+      <p>After putting it together and spending time using it, I can see why someone might choose the QuadZen over a more heavily equipped desk like my V3. There are some tradeoffs, particularly when it comes to stability at full height, but depending on how you use your desk, those tradeoffs might not matter much.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-hero.jpg" alt="UPLIFT QuadZen standing desk with walnut laminate top, laptop, and portable monitor beside a window" style="aspect-ratio:3/4;" />
+
+
+      <h2>Assembly Was Surprisingly Easy</h2>
+      <p>I thought assembly would be pretty straightforward because I’d already put together my V3. The QuadZen was even easier.</p>
+      <p>That’s not something I take for granted with furniture, especially a standing desk with multiple motors and moving parts. Getting everything together without turning the process into an afternoon project was a welcome surprise.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-unboxing.jpg" alt="UPLIFT QuadZen components laid out on the carpet before assembly: four motorized legs, frame rails, hardware, and desktop sections" style="aspect-ratio:9/16;" />
+
+      <p>The QuadZen has a simpler overall design than the V3, and that comes through during assembly. You aren’t dealing with the same feeling of building out a more substantial workstation. It’s a more straightforward process, and I appreciated that.</p>
+
+      <h2>It Looks Like a Table, Not a Piece of Office Equipment</h2>
+      <p>This is probably my favorite thing about the QuadZen.</p>
+      <p>A lot of standing desks have a pretty industrial appearance. There’s nothing inherently wrong with that, and some people probably prefer it. But if your desk is in a bedroom, living room, or home office that doubles as another space, you might not want the furniture to look like it was pulled out of a corporate office.</p>
+      <p>The QuadZen looks much more like a traditional four-legged table. It’s clean, simple, and stylish without trying too hard.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-front.jpg" alt="Front view of the UPLIFT QuadZen in a home office, showing its slim four-leg table profile" style="aspect-ratio:3/4;" />
+
+      <p>That minimalist design also makes it a good fit for a setup that doesn’t need a ton of equipment. If you primarily work from a laptop and use a portable monitor when you need more screen space, the QuadZen makes a lot of sense. You get the benefits of an adjustable desk without making the desk itself the centerpiece of your entire setup.</p>
+
+      <h2>Do You Need Everything the V3 Offers?</h2>
+      <p>My V3 has a lot going on, and once you start adding accessories and customizing the setup, the cost climbs quickly. A fully spec’d-out UPLIFT V3 four-leg desk can cost over $2,000.</p>
+      <p>That’s a substantial investment, and not everyone needs that much desk.</p>
+      <p>The QuadZen that UPLIFT sent me takes a simpler approach. It gives you the height adjustment and a clean, functional workspace without requiring you to build out a more elaborate workstation. If you don’t need a pile of accessories or a setup designed around multiple pieces of equipment, I can see the appeal.</p>
+      <p>I wouldn’t automatically call it a replacement for the V3, because they serve slightly different needs. My V3 feels like a more substantial workstation, while the QuadZen is a more minimalist option that doesn’t take up as much visual space.</p>
+      <p>For someone who wants a standing desk that looks good in the room and gets the job done without a lot of extra fuss, the QuadZen is worth a look.</p>
+
+      <h2>The Desktop Is Made of Three Sections, but You Wouldn’t Know It at First Glance</h2>
+      <p>The QuadZen desktop is made from three sections of laminated wood. I’ll admit that I paid attention to how those sections came together because a desktop with multiple pieces can sometimes look like exactly what it is: several pieces joined together.</p>
+      <p>That hasn’t been my experience here. The sections line up exceptionally well, both across the surface and where the pieces meet. Once the desk is assembled, the desktop looks and feels cohesive rather than like three separate pieces of wood.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-top-seam.jpg" alt="Close-up of the seam between two QuadZen desktop sections, showing a flush, even joint" style="aspect-ratio:3/4;" />
+
+      <p>It’s a small detail, but it matters when the desk has such a simple design. There isn’t much else to distract your eye, so the fit and finish have to hold up.</p>
+
+      <h2>Cable Management Is One of Those Details You Appreciate After Setup</h2>
+      <p>I’m a fan of the way UPLIFT handles cable routing, particularly with the control cables for the four independent motors housed in the desk’s legs.</p>
+      <p>With a standing desk, you have to account for more than just the power cable running to the wall. You also have the connections that make the desk work, and keeping those organized makes a difference in how clean the finished setup looks.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-leg-cable-spine.jpg" alt="Control cable routed along the inside of a QuadZen leg" style="aspect-ratio:3/4;" />
+
+      <p>The QuadZen also comes with a cable management tray. My V3 has one, too, and I’ve found it useful for keeping the underside of the desk from turning into a mess of wires.</p>
+      <p>You can spend time putting together a clean setup on top of the desk, but if you look underneath and see cables hanging everywhere, it takes away from the whole thing. The included tray helps keep that under control.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-underside-cable-tray.jpg" alt="Underside of the UPLIFT QuadZen showing the frame rail and included cable management tray" style="aspect-ratio:3/4;" />
+
+
+      <h2>The Height Controller Doesn't Stick Out</h2>
+      <p>Another detail I like is how UPLIFT incorporated the height controller into the frame.</p>
+      <p>The vertical section of the frame gives UPLIFT a place to mount the controller flush, so it doesn’t stick out awkwardly from the desk. It’s a small design choice, but it fits the overall look of the QuadZen.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-keypad.jpg" alt="UPLIFT QuadZen height keypad mounted flush in the front of the frame with up, down, and three memory preset buttons" style="aspect-ratio:3/4;" />
+
+      <p>The desk is simple by design, and the controller doesn’t interrupt that.</p>
+
+      <h2>Stability Is Where I Notice the Biggest Difference</h2>
+      <p>This is the part where I think it’s important to be honest about the differences between the QuadZen and my V3.</p>
+      <p>If I were rating the stability of my V3 at full height, I’d give it a 9 out of 10. The QuadZen would be around a 7 out of 10 by comparison.</p>
+      <p>That’s my subjective assessment, not a measured test, but I noticed the difference. The V3 feels more planted when it’s raised all the way up. The QuadZen is lighter and has a more minimalist design, and that comes with a tradeoff in how solid it feels at maximum height.</p>
+      <p>Whether that matters to you depends on what you’re doing at the desk.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-underside-leg.jpg" alt="Looking up at a QuadZen leg and corner bracket from beneath the walnut laminate desktop" style="aspect-ratio:3/4;" />
+
+      <p>My setup is primarily a laptop and portable monitor, so I don’t need the desk to support a huge collection of heavy equipment. In that kind of setup, I’m comfortable with the QuadZen’s stability.</p>
+      <p>If you’re planning to load your desk up with heavy equipment or you’re particularly sensitive to movement while typing, I’d give this more consideration before buying.</p>
+      <p>I wouldn’t pretend the two desks feel identical, because they don’t. The V3 is the more stable desk in my experience. The QuadZen still makes sense for a lighter, simpler workstation.</p>
+
+      <h2>It's Quiet, Too</h2>
+      <p>Noise is another area where the QuadZen holds its own.</p>
+      <p>The motors are just as quiet as the ones on my V3, if not a little quieter. I don’t have to think twice about raising or lowering the desk while I’m working, and the adjustment doesn’t become a distraction.</p>
+      <p>That might sound like a minor point, but if you’re changing positions throughout the day, it’s something you’ll notice. A desk that moves smoothly and quietly makes it easier to actually use the feature instead of leaving the desk at one height all day.</p>
+
+      <h2>A Good Fit for a Laptop and Portable Monitor Setup</h2>
+      <p>I’ve found the QuadZen particularly well suited to a more portable, minimalist workstation.</p>
+      <p>A laptop and portable monitor give me the flexibility to work across multiple windows without needing a huge desk covered in equipment. The QuadZen complements that setup instead of competing with it. There’s enough room to work comfortably, but the desk doesn’t feel oversized for what I’m doing.</p>
+
+      <img src="images/uplift-quadzen-standing-desk-night.jpg" alt="Evening view of the QuadZen with a laptop, portable monitor, keyboard, and notebook under a desk lamp" style="aspect-ratio:3/4;" />
+
+      <p>You can certainly build a more elaborate setup on it. I just think the QuadZen’s design makes the most sense when you want a clean desk without a lot of extra hardware.</p>
+      <p>It also helps that the desk looks good when you’re not sitting at it. Since it resembles a regular table, it doesn’t dominate the room in the way some standing desks can.</p>
+
+      <h2>Being Able to Change Positions Is the Point</h2>
+      <p>One of the reasons I like standing desks is that I don’t feel tied to one position all day.</p>
+      <p>I can sit when I want to sit, stand when I want to stand, and change things up when I start getting uncomfortable. I’m not going to claim that standing all day is somehow better than sitting all day. The benefit for me is having the option to move around and adjust my workspace to what feels comfortable at the time.</p>
+      <p>The QuadZen gives me that flexibility without requiring a large, heavy-looking workstation. For someone who wants the option to switch between sitting and standing but doesn’t need a desk packed with accessories, that’s a pretty compelling combination.</p>
+
+      <h2>Who Should Consider the UPLIFT QuadZen?</h2>
+      <p>I think the QuadZen is a good fit for someone who wants a standing desk but doesn't necessarily want a standing desk aesthetic.</p>
+      <p>It makes sense for a minimalist home office, a laptop-based workstation, or anyone who wants a desk that looks more like furniture than office equipment. The straightforward assembly, quiet motors, included cable management tray, and unobtrusive controller all add to that appeal.</p>
+      <p>The biggest question is how much stability you need at full height. If your priority is a substantial workstation loaded with equipment, my V3 is the desk I’d lean toward. If your setup is lighter and you care about having something that looks good without taking over the room, the QuadZen deserves consideration.</p>
+
+      <h2>My Take</h2>
+      <p>Having used both the QuadZen and the V3 four-leg desk, I see the QuadZen as a simpler alternative rather than a direct replacement.</p>
+      <p>It was easier to assemble than I expected, the desktop sections fit together well, the cable management is useful, and the motors are impressively quiet. Most importantly, I like the way it looks. It has the functionality of a standing desk without looking like a piece of industrial office equipment.</p>
+      <p>The tradeoff is stability at full height. My V3 feels more solid, and I’d choose it for a heavier workstation. But for the laptop and portable monitor setup I’m using, the QuadZen does what I need it to do.</p>
+      <p>If you want a standing desk that looks like a normal table, keeps your workspace simple, and lets you change positions throughout the day, the QuadZen makes a strong case for itself.</p>
+
+      <div class="verdict">
+        <div class="verdict-label">Final Thoughts</div>
+        <p>The UPLIFT QuadZen trades some full-height stability for a desk that looks like real furniture. Assembly is easy, the three-piece top fits together cleanly, the motors are quiet, and the cable routing and flush keypad keep the whole thing tidy. For a laptop and portable monitor setup, it's a simple, good-looking way to get a sit-stand desk. For a heavy, fully loaded workstation, the V3 is still the pick.</p>
+      </div>
+
+      <div class="disclosure">UPLIFT Desk sent me the QuadZen for this review. These are my own observations after assembling and using it.</div>
+
+    </article>
+
+    <aside class="sidebar">
+      <a class="back-link" href="./index.html">All Reviews</a>
+
+      <div class="sidebar-block">
+        <h4>Specs</h4>
+        <div class="spec-row"><span class="spec-label">Brand</span><span class="spec-val">UPLIFT Desk</span></div>
+        <div class="spec-row"><span class="spec-label">Model</span><span class="spec-val">QuadZen Standing Desk</span></div>
+        <div class="spec-row"><span class="spec-label">Motors</span><span class="spec-val">4 (one per leg)</span></div>
+        <div class="spec-row"><span class="spec-label">Height Range</span><span class="spec-val">27.4" to 44.7"</span></div>
+        <div class="spec-row"><span class="spec-label">Lift Capacity</span><span class="spec-val">220 lbs</span></div>
+        <div class="spec-row"><span class="spec-label">Desktop</span><span class="spec-val">60" x 30" Walnut Laminate</span></div>
+        <div class="spec-row"><span class="spec-label">Presets</span><span class="spec-val">3 Memory</span></div>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Bottom Line</h4>
+        <p>A minimalist four leg standing desk that looks like a table. Easy assembly, quiet motors, and clean cable routing, with a little less stability at full height than the V3.</p>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Related</h4>
+        <p><a href="uplift-v3-4leg-standing-desk-review.html">UPLIFT Desk V3 4 Leg Standing Desk Review</a></p>
+      </div>
+
+      <div class="sidebar-block">
+        <h4>Filed Under</h4>
+        <div class="spec-row"><span class="spec-label">Section</span><span class="spec-val">Tech / Desk</span></div>
+        <div class="spec-row"><span class="spec-label">Type</span><span class="spec-val">Original Review</span></div>
+        <div class="spec-row"><span class="spec-label">Year</span><span class="spec-val">2026</span></div>
+      </div>
+    </aside>
+
+  </div>
+
+  <footer>
+    © 2026 Observe/Report · Written by Brian J.<br>
+    Independent field testing, editorial standards are mine alone.
+  </footer>
+
+</body>
+</html>
