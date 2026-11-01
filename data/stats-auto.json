@@ -1,16 +1,16 @@
 {
- "updated": "2026-10-31T15:42:51Z",
+ "updated": "2026-11-01T16:47:46Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 360,
-  "views": 592,
-  "sessions": 438,
-  "avgEngagementSec": 61,
+  "users": 359,
+  "views": 593,
+  "sessions": 439,
+  "avgEngagementSec": 62,
   "sources": [
    {
     "name": "(direct)",
-    "value": 270
+    "value": 271
    },
    {
     "name": "reddit.com",
@@ -21,11 +21,11 @@
     "value": 20
    },
    {
-    "name": "m.facebook.com",
-    "value": 18
+    "name": "ig",
+    "value": 17
    },
    {
-    "name": "ig",
+    "name": "m.facebook.com",
     "value": 17
    },
    {
@@ -34,21 +34,21 @@
    },
    {
     "name": "duckduckgo",
-    "value": 11
+    "value": 13
    },
    {
-    "name": "bing",
+    "name": "linkedin.com",
     "value": 7
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 252
+    "value": 250
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 163
+    "value": 164
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -60,7 +60,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 25
+    "value": 27
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -125,27 +125,23 @@
    },
    {
     "month": "2026-10",
-    "users": 116,
-    "views": 198
+    "users": 118,
+    "views": 202
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 9866,
+  "totalViews": 10470,
   "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4317,
-  "reach": 3490,
-  "engagements": 172,
+  "views": 4465,
+  "reach": 3646,
+  "engagements": 175,
   "monthly": [
-   {
-    "month": "2026-04",
-    "views": 1269
-   },
    {
     "month": "2026-05",
     "views": 9793
@@ -165,6 +161,10 @@
    {
     "month": "2026-09",
     "views": 2438
+   },
+   {
+    "month": "2026-10",
+    "views": 642
    }
   ],
   "top": [
