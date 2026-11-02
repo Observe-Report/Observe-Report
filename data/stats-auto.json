@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-01T16:47:46Z",
+ "updated": "2026-11-02T20:20:08Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 359,
-  "views": 593,
-  "sessions": 439,
+  "users": 361,
+  "views": 595,
+  "sessions": 442,
   "avgEngagementSec": 62,
   "sources": [
    {
     "name": "(direct)",
-    "value": 271
+    "value": 272
    },
    {
     "name": "reddit.com",
-    "value": 51
+    "value": 53
    },
    {
     "name": "google",
-    "value": 20
-   },
-   {
-    "name": "ig",
-    "value": 17
+    "value": 21
    },
    {
     "name": "m.facebook.com",
     "value": 17
+   },
+   {
+    "name": "ig",
+    "value": 16
    },
    {
     "name": "facebook.com",
@@ -48,7 +48,7 @@
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 164
+    "value": 166
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -127,20 +127,25 @@
     "month": "2026-10",
     "users": 118,
     "views": 202
+   },
+   {
+    "month": "2026-11",
+    "users": 3,
+    "views": 3
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 10470,
+  "totalViews": 10759,
   "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4465,
+  "views": 4469,
   "reach": 3646,
-  "engagements": 175,
+  "engagements": 176,
   "monthly": [
    {
     "month": "2026-05",
@@ -171,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1282,
+    "views": 1283,
     "date": "2026-09-16"
    },
    {
@@ -226,6 +231,7 @@
     "name": "F",
     "value": 14
    }
-  ]
+  ],
+  "tokenRefreshed": "2026-11-02"
  }
 }
