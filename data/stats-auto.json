@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-04T17:58:26Z",
+ "updated": "2026-11-05T17:59:04Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
   "users": 369,
-  "views": 612,
-  "sessions": 454,
-  "avgEngagementSec": 62,
+  "views": 620,
+  "sessions": 458,
+  "avgEngagementSec": 63,
   "sources": [
    {
     "name": "(direct)",
-    "value": 276
+    "value": 273
    },
    {
     "name": "reddit.com",
-    "value": 54
+    "value": 57
    },
    {
     "name": "google",
-    "value": 22
+    "value": 26
    },
    {
     "name": "ig",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 254
+    "value": 257
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 173
+    "value": 177
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -60,7 +60,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 29
+    "value": 27
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -89,12 +89,12 @@
     "value": 7
    },
    {
-    "name": "United Kingdom",
+    "name": "Canada",
     "value": 6
    },
    {
-    "name": "Canada",
-    "value": 5
+    "name": "United Kingdom",
+    "value": 6
    }
   ],
   "monthly": [
@@ -130,21 +130,21 @@
    },
    {
     "month": "2026-11",
-    "users": 18,
-    "views": 27
+    "users": 24,
+    "views": 40
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 10994,
+  "totalViews": 11098,
   "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4486,
-  "reach": 3651,
+  "views": 4474,
+  "reach": 3648,
   "engagements": 177,
   "monthly": [
    {
@@ -176,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1289,
+    "views": 1291,
     "date": "2026-09-16"
    },
    {
@@ -188,7 +188,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 865,
+    "views": 866,
     "date": "2026-09-15"
    }
   ],
