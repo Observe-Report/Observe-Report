@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-06T17:27:56Z",
+ "updated": "2026-11-07T16:23:52Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 371,
-  "views": 617,
-  "sessions": 464,
-  "avgEngagementSec": 62,
+  "users": 375,
+  "views": 621,
+  "sessions": 468,
+  "avgEngagementSec": 63,
   "sources": [
    {
     "name": "(direct)",
-    "value": 272
+    "value": 273
    },
    {
     "name": "reddit.com",
-    "value": 58
+    "value": 59
    },
    {
     "name": "google",
-    "value": 29
+    "value": 30
    },
    {
     "name": "facebook.com",
@@ -38,17 +38,17 @@
    },
    {
     "name": "bing",
-    "value": 7
+    "value": 8
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 252
+    "value": 253
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 178
+    "value": 179
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -60,7 +60,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 27
+    "value": 28
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 297
+    "value": 301
    },
    {
     "name": "China",
@@ -130,20 +130,20 @@
    },
    {
     "month": "2026-11",
-    "users": 34,
-    "views": 52
+    "users": 38,
+    "views": 56
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 11223,
+  "totalViews": 11424,
   "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 4478,
+  "views": 4476,
   "reach": 3653,
   "engagements": 177,
   "monthly": [
