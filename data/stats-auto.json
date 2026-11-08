@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-07T16:23:52Z",
+ "updated": "2026-11-08T16:38:51Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
   "users": 375,
-  "views": 621,
+  "views": 619,
   "sessions": 468,
-  "avgEngagementSec": 63,
+  "avgEngagementSec": 62,
   "sources": [
    {
     "name": "(direct)",
@@ -14,7 +14,7 @@
    },
    {
     "name": "reddit.com",
-    "value": 59
+    "value": 58
    },
    {
     "name": "google",
@@ -34,7 +34,7 @@
    },
    {
     "name": "duckduckgo",
-    "value": 14
+    "value": 15
    },
    {
     "name": "bing",
@@ -60,7 +60,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 28
+    "value": 29
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -72,13 +72,13 @@
    },
    {
     "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
-    "value": 13
+    "value": 12
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 301
+    "value": 302
    },
    {
     "name": "China",
@@ -93,8 +93,8 @@
     "value": 6
    },
    {
-    "name": "United Kingdom",
-    "value": 6
+    "name": "Singapore",
+    "value": 5
    }
   ],
   "monthly": [
@@ -130,21 +130,21 @@
    },
    {
     "month": "2026-11",
-    "users": 38,
-    "views": 56
+    "users": 39,
+    "views": 57
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 11424,
+  "totalViews": 11480,
   "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
   "views": 4476,
-  "reach": 3653,
+  "reach": 3656,
   "engagements": 177,
   "monthly": [
    {
