@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-10T17:46:15Z",
+ "updated": "2026-11-11T17:52:31Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 387,
-  "views": 626,
-  "sessions": 481,
-  "avgEngagementSec": 61,
+  "users": 395,
+  "views": 634,
+  "sessions": 489,
+  "avgEngagementSec": 60,
   "sources": [
    {
     "name": "(direct)",
-    "value": 282
+    "value": 292
    },
    {
     "name": "reddit.com",
@@ -18,11 +18,7 @@
    },
    {
     "name": "google",
-    "value": 33
-   },
-   {
-    "name": "m.facebook.com",
-    "value": 19
+    "value": 35
    },
    {
     "name": "facebook.com",
@@ -31,6 +27,10 @@
    {
     "name": "ig",
     "value": 18
+   },
+   {
+    "name": "m.facebook.com",
+    "value": 17
    },
    {
     "name": "duckduckgo",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 254
+    "value": 259
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 184
+    "value": 186
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -72,13 +72,13 @@
    },
    {
     "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
-    "value": 12
+    "value": 10
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 309
+    "value": 317
    },
    {
     "name": "China",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 53,
-    "views": 71
+    "users": 67,
+    "views": 87
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 11729,
+  "totalViews": 11836,
   "videos": 12
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 3516,
-  "reach": 2766,
-  "engagements": 159,
+  "views": 3301,
+  "reach": 2610,
+  "engagements": 146,
   "monthly": [
    {
     "month": "2026-05",
@@ -188,7 +188,7 @@
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 404,
+    "views": 405,
     "date": "2026-10-31"
    }
   ],
