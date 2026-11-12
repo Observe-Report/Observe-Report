@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-11T17:52:31Z",
+ "updated": "2026-11-12T18:14:48Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 395,
-  "views": 634,
-  "sessions": 489,
+  "users": 394,
+  "views": 630,
+  "sessions": 487,
   "avgEngagementSec": 60,
   "sources": [
    {
     "name": "(direct)",
-    "value": 292
+    "value": 293
    },
    {
     "name": "reddit.com",
@@ -26,7 +26,7 @@
    },
    {
     "name": "ig",
-    "value": 18
+    "value": 17
    },
    {
     "name": "m.facebook.com",
@@ -44,7 +44,7 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 259
+    "value": 256
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -78,15 +78,15 @@
   "countries": [
    {
     "name": "United States",
-    "value": 317
+    "value": 314
    },
    {
     "name": "China",
-    "value": 10
+    "value": 11
    },
    {
     "name": "Germany",
-    "value": 9
+    "value": 10
    },
    {
     "name": "United Kingdom",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 67,
-    "views": 87
+    "users": 69,
+    "views": 89
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 11836,
-  "videos": 12
+  "totalViews": 11975,
+  "videos": 13
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 3301,
-  "reach": 2610,
-  "engagements": 146,
+  "views": 3323,
+  "reach": 2624,
+  "engagements": 137,
   "monthly": [
    {
     "month": "2026-05",
@@ -182,7 +182,7 @@
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 868,
+    "views": 869,
     "date": "2026-09-15"
    },
    {
