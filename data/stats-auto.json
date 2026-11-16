@@ -1,24 +1,24 @@
 {
- "updated": "2026-11-15T17:03:45Z",
+ "updated": "2026-11-16T20:24:53Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 393,
-  "views": 628,
-  "sessions": 487,
+  "users": 395,
+  "views": 632,
+  "sessions": 490,
   "avgEngagementSec": 60,
   "sources": [
    {
     "name": "(direct)",
-    "value": 291
+    "value": 292
    },
    {
     "name": "reddit.com",
-    "value": 58
+    "value": 59
    },
    {
     "name": "google",
-    "value": 37
+    "value": 39
    },
    {
     "name": "facebook.com",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 253
+    "value": 254
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 187
+    "value": 190
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 313
+    "value": 315
    },
    {
     "name": "China",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 74,
-    "views": 98
+    "users": 79,
+    "views": 105
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 13467,
+  "totalViews": 13515,
   "videos": 13
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 130,
-  "views": 3304,
-  "reach": 2626,
-  "engagements": 139,
+  "views": 3310,
+  "reach": 2625,
+  "engagements": 138,
   "monthly": [
    {
     "month": "2026-05",
@@ -176,19 +176,19 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1303,
+    "views": 1306,
     "date": "2026-09-16"
    },
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 869,
+    "views": 871,
     "date": "2026-09-15"
    },
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 409,
+    "views": 413,
     "date": "2026-10-31"
    }
   ],
@@ -199,7 +199,7 @@
    },
    {
     "name": "25-34",
-    "value": 30
+    "value": 29
    },
    {
     "name": "45-54",
@@ -221,7 +221,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 88
+    "value": 87
    },
    {
     "name": "U",
@@ -231,6 +231,7 @@
     "name": "F",
     "value": 14
    }
-  ]
+  ],
+  "tokenRefreshed": "2026-11-16"
  }
 }
