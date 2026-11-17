@@ -1,12 +1,12 @@
 {
- "updated": "2026-11-16T20:24:53Z",
+ "updated": "2026-11-17T19:09:42Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 395,
-  "views": 632,
-  "sessions": 490,
-  "avgEngagementSec": 60,
+  "users": 397,
+  "views": 635,
+  "sessions": 491,
+  "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
@@ -14,7 +14,7 @@
    },
    {
     "name": "reddit.com",
-    "value": 59
+    "value": 60
    },
    {
     "name": "google",
@@ -30,7 +30,7 @@
    },
    {
     "name": "ig",
-    "value": 16
+    "value": 17
    },
    {
     "name": "m.facebook.com",
@@ -48,7 +48,7 @@
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 190
+    "value": 193
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -71,18 +71,18 @@
     "value": 14
    },
    {
-    "name": "Logitech G604 Review: The Mouse Logitech Should Never Have Discontinued \u2014 Observe/Report",
+    "name": "UPLIFT QuadZen Standing Desk Review: A Standing Desk That Actually Looks Like a Table\u2026In a Good Way | Observe/Report",
     "value": 10
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 315
+    "value": 316
    },
    {
     "name": "China",
-    "value": 11
+    "value": 12
    },
    {
     "name": "Germany",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 79,
-    "views": 105
+    "users": 84,
+    "views": 111
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 13515,
+  "totalViews": 13610,
   "videos": 13
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 130,
-  "views": 3310,
-  "reach": 2625,
-  "engagements": 138,
+  "views": 3314,
+  "reach": 2598,
+  "engagements": 139,
   "monthly": [
    {
     "month": "2026-05",
@@ -176,19 +176,19 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1306,
+    "views": 1307,
     "date": "2026-09-16"
    },
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 871,
+    "views": 873,
     "date": "2026-09-15"
    },
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 413,
+    "views": 414,
     "date": "2026-10-31"
    }
   ],
@@ -231,7 +231,6 @@
     "name": "F",
     "value": 14
    }
-  ],
-  "tokenRefreshed": "2026-11-16"
+  ]
  }
 }
