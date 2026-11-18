@@ -1,32 +1,32 @@
 {
- "updated": "2026-11-17T19:09:42Z",
+ "updated": "2026-11-18T18:49:42Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 397,
-  "views": 635,
-  "sessions": 491,
+  "users": 398,
+  "views": 644,
+  "sessions": 493,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 292
+    "value": 294
    },
    {
     "name": "reddit.com",
-    "value": 60
+    "value": 59
    },
    {
     "name": "google",
     "value": 39
    },
    {
-    "name": "facebook.com",
+    "name": "duckduckgo",
     "value": 18
    },
    {
-    "name": "duckduckgo",
-    "value": 17
+    "name": "facebook.com",
+    "value": 18
    },
    {
     "name": "ig",
@@ -44,7 +44,7 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 254
+    "value": 257
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -56,7 +56,7 @@
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 31
+    "value": 33
    },
    {
     "name": "Media Kit | Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 316
+    "value": 317
    },
    {
     "name": "China",
@@ -130,21 +130,21 @@
    },
    {
     "month": "2026-11",
-    "users": 84,
-    "views": 111
+    "users": 87,
+    "views": 122
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 13610,
+  "totalViews": 13717,
   "videos": 13
  },
  "instagram": {
   "username": "observe.report.actual",
-  "followers": 130,
-  "views": 3314,
-  "reach": 2598,
+  "followers": 129,
+  "views": 3309,
+  "reach": 2596,
   "engagements": 139,
   "monthly": [
    {
@@ -176,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1307,
+    "views": 1308,
     "date": "2026-09-16"
    },
    {
@@ -188,7 +188,7 @@
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 414,
+    "views": 415,
     "date": "2026-10-31"
    }
   ],
@@ -199,7 +199,7 @@
    },
    {
     "name": "25-34",
-    "value": 29
+    "value": 28
    },
    {
     "name": "45-54",
@@ -221,7 +221,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 87
+    "value": 86
    },
    {
     "name": "U",
