@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-18T18:49:42Z",
+ "updated": "2026-11-19T18:58:02Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 398,
-  "views": 644,
-  "sessions": 493,
+  "users": 395,
+  "views": 645,
+  "sessions": 492,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 294
+    "value": 290
    },
    {
     "name": "reddit.com",
@@ -37,18 +37,18 @@
     "value": 16
    },
    {
-    "name": "bing",
-    "value": 8
+    "name": "chatgpt.com",
+    "value": 9
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 257
+    "value": 253
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 193
+    "value": 198
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 317
+    "value": 314
    },
    {
     "name": "China",
@@ -90,7 +90,7 @@
    },
    {
     "name": "United Kingdom",
-    "value": 8
+    "value": 9
    },
    {
     "name": "Canada",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 87,
-    "views": 122
+    "users": 89,
+    "views": 128
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 13717,
+  "totalViews": 13805,
   "videos": 13
  },
  "instagram": {
   "username": "observe.report.actual",
-  "followers": 129,
-  "views": 3309,
-  "reach": 2596,
-  "engagements": 139,
+  "followers": 132,
+  "views": 3323,
+  "reach": 2597,
+  "engagements": 141,
   "monthly": [
    {
     "month": "2026-05",
@@ -176,19 +176,19 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1308,
+    "views": 1313,
     "date": "2026-09-16"
    },
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 873,
+    "views": 874,
     "date": "2026-09-15"
    },
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 415,
+    "views": 422,
     "date": "2026-10-31"
    }
   ],
@@ -199,7 +199,7 @@
    },
    {
     "name": "25-34",
-    "value": 28
+    "value": 27
    },
    {
     "name": "45-54",
@@ -221,7 +221,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 86
+    "value": 85
    },
    {
     "name": "U",
