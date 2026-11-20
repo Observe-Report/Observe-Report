@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-19T18:58:02Z",
+ "updated": "2026-11-20T18:35:15Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 395,
-  "views": 645,
-  "sessions": 492,
+  "users": 398,
+  "views": 654,
+  "sessions": 497,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 290
+    "value": 294
    },
    {
     "name": "reddit.com",
@@ -34,7 +34,7 @@
    },
    {
     "name": "m.facebook.com",
-    "value": 16
+    "value": 17
    },
    {
     "name": "chatgpt.com",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 253
+    "value": 259
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 198
+    "value": 199
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -60,7 +60,7 @@
    },
    {
     "name": "Media Kit | Observe/Report",
-    "value": 29
+    "value": 30
    },
    {
     "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
@@ -78,11 +78,11 @@
   "countries": [
    {
     "name": "United States",
-    "value": 314
+    "value": 316
    },
    {
     "name": "China",
-    "value": 12
+    "value": 13
    },
    {
     "name": "Germany",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 89,
-    "views": 128
+    "users": 92,
+    "views": 138
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 13805,
-  "videos": 13
+  "totalViews": 13909,
+  "videos": 14
  },
  "instagram": {
   "username": "observe.report.actual",
-  "followers": 132,
-  "views": 3323,
-  "reach": 2597,
-  "engagements": 141,
+  "followers": 131,
+  "views": 3470,
+  "reach": 2719,
+  "engagements": 149,
   "monthly": [
    {
     "month": "2026-05",
@@ -176,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1313,
+    "views": 1316,
     "date": "2026-09-16"
    },
    {
@@ -199,7 +199,7 @@
    },
    {
     "name": "25-34",
-    "value": 27
+    "value": 31
    },
    {
     "name": "45-54",
@@ -211,7 +211,7 @@
    },
    {
     "name": "18-24",
-    "value": 14
+    "value": 13
    },
    {
     "name": "65+",
@@ -221,7 +221,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 85
+    "value": 88
    },
    {
     "name": "U",
