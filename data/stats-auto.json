@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-21T17:26:51Z",
+ "updated": "2026-11-22T17:47:51Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 402,
-  "views": 659,
-  "sessions": 501,
+  "users": 401,
+  "views": 657,
+  "sessions": 500,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 297
+    "value": 295
    },
    {
     "name": "reddit.com",
@@ -44,7 +44,7 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 261
+    "value": 259
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -78,15 +78,15 @@
   "countries": [
    {
     "name": "United States",
-    "value": 319
-   },
-   {
-    "name": "China",
-    "value": 13
+    "value": 320
    },
    {
     "name": "Germany",
     "value": 11
+   },
+   {
+    "name": "China",
+    "value": 10
    },
    {
     "name": "United Kingdom",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 97,
-    "views": 144
+    "users": 99,
+    "views": 145
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 14511,
+  "totalViews": 14662,
   "videos": 14
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 131,
-  "views": 3479,
-  "reach": 2733,
-  "engagements": 149,
+  "views": 3470,
+  "reach": 2734,
+  "engagements": 150,
   "monthly": [
    {
     "month": "2026-05",
@@ -176,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1316,
+    "views": 1317,
     "date": "2026-09-16"
    },
    {
