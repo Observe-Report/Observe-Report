@@ -1,20 +1,20 @@
 {
- "updated": "2026-11-24T20:38:38Z",
+ "updated": "2026-11-25T19:54:59Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 399,
-  "views": 654,
-  "sessions": 497,
+  "users": 401,
+  "views": 659,
+  "sessions": 502,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 290
+    "value": 292
    },
    {
     "name": "reddit.com",
-    "value": 61
+    "value": 62
    },
    {
     "name": "google",
@@ -29,26 +29,26 @@
     "value": 18
    },
    {
-    "name": "ig",
-    "value": 17
-   },
-   {
     "name": "m.facebook.com",
     "value": 17
    },
    {
+    "name": "ig",
+    "value": 16
+   },
+   {
     "name": "chatgpt.com",
-    "value": 9
+    "value": 12
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 255
+    "value": 259
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 203
+    "value": 204
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -82,15 +82,15 @@
    },
    {
     "name": "Germany",
-    "value": 11
+    "value": 12
    },
    {
     "name": "China",
-    "value": 10
+    "value": 11
    },
    {
     "name": "United Kingdom",
-    "value": 9
+    "value": 10
    },
    {
     "name": "Canada",
@@ -130,21 +130,21 @@
    },
    {
     "month": "2026-11",
-    "users": 104,
-    "views": 151
+    "users": 107,
+    "views": 157
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 14941,
+  "totalViews": 15077,
   "videos": 14
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 130,
-  "views": 3469,
-  "reach": 2734,
+  "views": 3472,
+  "reach": 2739,
   "engagements": 150,
   "monthly": [
    {
@@ -176,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1319,
+    "views": 1322,
     "date": "2026-09-16"
    },
    {
