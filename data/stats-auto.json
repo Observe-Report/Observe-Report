@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-25T19:54:59Z",
+ "updated": "2026-11-26T19:35:39Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
   "users": 401,
-  "views": 659,
+  "views": 661,
   "sessions": 502,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 292
+    "value": 293
    },
    {
     "name": "reddit.com",
@@ -44,7 +44,7 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 259
+    "value": 260
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -130,22 +130,22 @@
    },
    {
     "month": "2026-11",
-    "users": 107,
-    "views": 157
+    "users": 108,
+    "views": 160
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 15077,
-  "videos": 14
+  "totalViews": 15144,
+  "videos": 15
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 130,
-  "views": 3472,
-  "reach": 2739,
-  "engagements": 150,
+  "views": 3657,
+  "reach": 2890,
+  "engagements": 156,
   "monthly": [
    {
     "month": "2026-05",
@@ -176,19 +176,19 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1322,
+    "views": 1325,
     "date": "2026-09-16"
    },
    {
     "title": "I tried to make this desk wobble, no light taps here. Full height, carpet underneath, full",
     "url": "https://www.instagram.com/reel/DdSsVAlhXqb/",
-    "views": 874,
+    "views": 875,
     "date": "2026-09-15"
    },
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 425,
+    "views": 427,
     "date": "2026-10-31"
    }
   ],
@@ -211,7 +211,7 @@
    },
    {
     "name": "18-24",
-    "value": 12
+    "value": 11
    },
    {
     "name": "65+",
@@ -221,7 +221,7 @@
   "gender": [
    {
     "name": "M",
-    "value": 89
+    "value": 88
    },
    {
     "name": "U",
