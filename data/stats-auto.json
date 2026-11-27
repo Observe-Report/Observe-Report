@@ -1,16 +1,16 @@
 {
- "updated": "2026-11-26T19:35:39Z",
+ "updated": "2026-11-27T19:27:01Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 401,
-  "views": 661,
-  "sessions": 502,
+  "users": 403,
+  "views": 664,
+  "sessions": 505,
   "avgEngagementSec": 61,
   "sources": [
    {
     "name": "(direct)",
-    "value": 293
+    "value": 296
    },
    {
     "name": "reddit.com",
@@ -44,11 +44,11 @@
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 260
+    "value": 261
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 204
+    "value": 206
    },
    {
     "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
@@ -78,7 +78,7 @@
   "countries": [
    {
     "name": "United States",
-    "value": 318
+    "value": 320
    },
    {
     "name": "Germany",
@@ -130,21 +130,21 @@
    },
    {
     "month": "2026-11",
-    "users": 108,
-    "views": 160
+    "users": 110,
+    "views": 163
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 15144,
+  "totalViews": 15759,
   "videos": 15
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 130,
-  "views": 3657,
-  "reach": 2890,
+  "views": 3666,
+  "reach": 2891,
   "engagements": 156,
   "monthly": [
    {
