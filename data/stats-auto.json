@@ -1,36 +1,28 @@
 {
- "updated": "2026-11-27T19:27:01Z",
+ "updated": "2026-11-28T18:13:36Z",
  "windowDays": 90,
  "ga4": {
   "window": "Last 90 days",
-  "users": 403,
-  "views": 664,
-  "sessions": 505,
-  "avgEngagementSec": 61,
+  "users": 388,
+  "views": 618,
+  "sessions": 488,
+  "avgEngagementSec": 60,
   "sources": [
    {
     "name": "(direct)",
-    "value": 296
+    "value": 294
    },
    {
     "name": "reddit.com",
-    "value": 62
+    "value": 64
    },
    {
     "name": "google",
-    "value": 39
+    "value": 38
    },
    {
     "name": "duckduckgo",
     "value": 18
-   },
-   {
-    "name": "facebook.com",
-    "value": 18
-   },
-   {
-    "name": "m.facebook.com",
-    "value": 17
    },
    {
     "name": "ig",
@@ -38,33 +30,37 @@
    },
    {
     "name": "chatgpt.com",
-    "value": 12
+    "value": 14
+   },
+   {
+    "name": "facebook.com",
+    "value": 10
+   },
+   {
+    "name": "m.facebook.com",
+    "value": 9
    }
   ],
   "pages": [
    {
     "name": "Observe/Report: Independent Field Testing of EDC, Tech, Tactical Gear, and Firearms",
-    "value": 261
+    "value": 249
    },
    {
     "name": "UPLIFT Desk V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
-    "value": 206
-   },
-   {
-    "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
-    "value": 34
+    "value": 208
    },
    {
     "name": "Streamlight TLR-1 HL vs HLX vs TLR-7 HLX \u2014 Observe/Report",
-    "value": 34
+    "value": 32
    },
    {
     "name": "Media Kit | Observe/Report",
     "value": 30
    },
    {
-    "name": "Keychron M6 Review: Upgrading the Mouse in My WFH Desk Setup \u2014 Observe/Report",
-    "value": 21
+    "name": "Lead & Steel Pandora PB-K Micro Red Dot Sight Review: Observe/Report",
+    "value": 14
    },
    {
     "name": "UPLIFT V3 4 Leg Standing Desk Review: I Finally Have a Desk I Actually Want to Work At | Observe/Report",
@@ -73,12 +69,16 @@
    {
     "name": "UPLIFT QuadZen Standing Desk Review: A Standing Desk That Actually Looks Like a Table\u2026In a Good Way | Observe/Report",
     "value": 10
+   },
+   {
+    "name": "DOXA SUB 300 Professional Review: The Watch I\u2019ve Wanted Since I Was a Kid | Observe/Report",
+    "value": 9
    }
   ],
   "countries": [
    {
     "name": "United States",
-    "value": 320
+    "value": 307
    },
    {
     "name": "Germany",
@@ -130,21 +130,21 @@
    },
    {
     "month": "2026-11",
-    "users": 110,
-    "views": 163
+    "users": 114,
+    "views": 169
    }
   ]
  },
  "youtube": {
   "subscribers": 3,
-  "totalViews": 15759,
+  "totalViews": 16204,
   "videos": 15
  },
  "instagram": {
   "username": "observe.report.actual",
   "followers": 130,
-  "views": 3666,
-  "reach": 2891,
+  "views": 3674,
+  "reach": 2900,
   "engagements": 156,
   "monthly": [
    {
@@ -176,7 +176,7 @@
    {
     "title": "Little details like noise add up fast when you\u2019re working from home full-time. You can see",
     "url": "https://www.instagram.com/reel/DdWk-_VN71w/",
-    "views": 1325,
+    "views": 1328,
     "date": "2026-09-16"
    },
    {
@@ -188,7 +188,7 @@
    {
     "title": "A standing desk that actually looks like a table.",
     "url": "https://www.instagram.com/reel/DfJKQBIut56/",
-    "views": 427,
+    "views": 429,
     "date": "2026-10-31"
    }
   ],
