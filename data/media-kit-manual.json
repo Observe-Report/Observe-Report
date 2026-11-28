@@ -1,19 +1,65 @@
 {
   "period": "",
-  "updated": "2026-10-12",
+  "updated": "2026-11-28",
   "platforms": {
-    "reddit":    { "followers": 2,    "views": 115400, "engagements": 528 },
-    "instagram": { "followers": null, "views": null,  "engagements": null },
-    "youtube":   { "followers": null, "views": null,  "engagements": null },
-    "tiktok":    { "followers": null, "views": null,  "engagements": null },
-    "threads":   { "followers": null, "views": null,  "engagements": null },
-    "x":         { "followers": null, "views": null,  "engagements": null }
+    "reddit": {
+      "followers": 2,
+      "views": 303800,
+      "engagements": 977
+    },
+    "instagram": {
+      "followers": null,
+      "views": null,
+      "engagements": null
+    },
+    "youtube": {
+      "followers": null,
+      "views": 16435,
+      "engagements": 111
+    },
+    "tiktok": {
+      "followers": null,
+      "views": null,
+      "engagements": null
+    },
+    "threads": {
+      "followers": null,
+      "views": null,
+      "engagements": null
+    },
+    "x": {
+      "followers": null,
+      "views": null,
+      "engagements": null
+    }
   },
   "history": [],
   "top": [
-    { "title": "I Finally Joined the Movement (UPLIFT V3 standing desk)", "platform": "reddit", "url": "", "views": 71000, "date": "" },
-    { "title": "My Thoughts on the Keychron K5 Max", "platform": "reddit", "url": "", "views": 29000, "date": "" },
-    { "title": "We Cool with Counting Trays? (UPLIFT cable management)", "platform": "reddit", "url": "", "views": 12000, "date": "" }
+    {
+      "title": "I Finally Joined the Movement (UPLIFT V3 standing desk)",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/StandingDesk/s/k64N3qhbFf",
+      "views": 75000,
+      "date": ""
+    },
+    {
+      "title": "Looking for a Pocket Screwdriver",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/EDC/s/o7WgFswkZ2",
+      "views": 47000,
+      "date": ""
+    },
+    {
+      "title": "UPLIFT Released Their New QuadZen",
+      "platform": "reddit",
+      "url": "https://www.reddit.com/r/Workspaces/s/cDFvWndQ3S",
+      "views": 38000,
+      "date": ""
+    }
   ],
-  "audience": { "ages": "", "gender": "", "note": "" }
+  "audience": {
+    "ages": "",
+    "gender": "",
+    "note": ""
+  }
 }
